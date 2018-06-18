@@ -7,20 +7,20 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = 'Upload .XLS' or . = 'Upload .XLS') and @ref_element = 'Object Repository/DataInput/iframe_datainput-widget']</value>
+         <value>//span[@class = 'meterData-btn--uploadExcelTitle' and (text() = 'Upload .XLS' or . = 'Upload .XLS') and @ref_element = 'Object Repository/DataInput/iframe_datainput-widget']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>

@@ -44,14 +44,6 @@ def static "com.arc.ReusableMethods.ReusableMethodsLogin.logoutFromArcApplicatio
     (new com.arc.ReusableMethods.ReusableMethodsLogin()).logoutFromArcApplication()
 }
 
-def static "com.arc.ReusableMethods.ReusableMethodsDataInput.uploadArcDataTempte"() {
-    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).uploadArcDataTempte()
-}
-
-def static "com.arc.ReusableMethods.ReusableMethodsDataInput.uploadCreditFormTest"() {
-    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).uploadCreditFormTest()
-}
-
 def static "com.helper.javascript.JavaScriptHelper.executeScript"(
     	String script	) {
     (new com.helper.javascript.JavaScriptHelper()).executeScript(
@@ -72,6 +64,14 @@ def static "com.helper.javascript.JavaScriptHelper.executeAndReturnValue"(
     (new com.helper.javascript.JavaScriptHelper()).executeAndReturnValue(
         	script
          , 	testObject)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.uploadArcDataTempte"() {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).uploadArcDataTempte()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.uploadCreditFormTest"() {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).uploadCreditFormTest()
 }
 
 def static "com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram"(
@@ -142,6 +142,10 @@ def static "com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToBuilding
 
 def static "com.arc.ReusableMethods.ReusableMethodsNavigation.clickAddProject"() {
     (new com.arc.ReusableMethods.ReusableMethodsNavigation()).clickAddProject()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToCities"() {
+    (new com.arc.ReusableMethods.ReusableMethodsNavigation()).navigateToCities()
 }
 
 def static "com.arc.BaseClass.XlsWriteToNewFileNewFile.writeTOExcelFile"(

@@ -35,7 +35,8 @@ public class ReusableMethodsDataInput extends BaseClass {
 		WebUI.doubleClick(findTestObject('Object Repository/DataInput/span_Upload .XLS'))
 		WebUI.waitForElementClickable(findTestObject('Object Repository/DataInput/UploadArcDataTemplete'),10)
 		WebUI.uploadFile(findTestObject('Object Repository/DataInput/UploadArcDataTemplete'),BaseClass.UploadArcDataTemplete )
-		WebUI.click(findTestObject('DataInput/ClickToUploadFileButton'))
+
+		WebUI.doubleClick(findTestObject('DataInput/ClickToUploadFileButton'))
 		String successmessage= WebUI.getText(findTestObject('DataInput/p_Excel submitted successfully'))
 		WebUI.delay(5)
 		WebUI.verifyMatch(successmessage,'Excel submitted successfully. We will send you an email when you data is processed.' , true)

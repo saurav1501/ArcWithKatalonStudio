@@ -27,6 +27,4 @@ import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
 
 public class ResuableMethodsPortfolio extends BaseClass{
-	
-	
 }

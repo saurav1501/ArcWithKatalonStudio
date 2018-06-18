@@ -70,5 +70,9 @@ public class ReusableMethodsNavigation {
 		String postNavigationLoginText = WebUI.getText(findTestObject('Object Repository/Add_Project_Details/h1_Project Registration'))
 		WebUI.verifyMatch(postNavigationLoginText,'Project Registration',true)
 	}
+	@Keyword
+	public void navigateToCities(){
+		
+	}
 }
 
