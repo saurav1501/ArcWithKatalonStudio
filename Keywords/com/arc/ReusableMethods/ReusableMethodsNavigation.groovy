@@ -72,7 +72,6 @@ public class ReusableMethodsNavigation {
 	}
 	@Keyword
 	public void navigateToCities(){
-		
 	}
 }
 
