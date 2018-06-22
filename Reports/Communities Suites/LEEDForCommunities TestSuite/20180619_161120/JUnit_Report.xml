@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="LEEDForCommunities TestSuite" time="65" tests="0" failures="2" errors="2">
+   <testsuite name="LEEDForCommunities TestSuite" tests="0" failures="2" errors="2" time="65" timestamp="2018-06-19 16:11:23" hostname="Group10 - G10CHLT003" id="Test Suites/Communities Suites/LEEDForCommunities TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Communities Suites\\LEEDForCommunities TestSuite\\20180619_161120"/>
+         <property name="logFiles" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Communities Suites\\LEEDForCommunities TestSuite\\20180619_161120\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Group10 - G10CHLT003"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.87"/>
+         <property name="hostAddress" value="172.18.0.24"/>
+         <property name="sessionId" value="2088661070151a2131cbcd7a2afd3810"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/MyCommunities/LEEDForCommunities/LoginWithCommunitiesTest" classname="Test Cases/MyCommunities/LEEDForCommunities/LoginWithCommunitiesTest" status="FAILED">
+         <failure type="FAILED" message="Unable to click on object 'Object Repository/Page_Arc dashboard/Page_Arc dashboard/a_ My Communities' (Root cause: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: f7bb6e17705ed3c4fdb576ad2c6e12a7
+*** Element info: {Using=xpath, value=//a[@href = '/app/projects/my-projects/?project-type=community' and (text() = '  My Communities' or . = '  My Communities')]})"/>
+         <system-out><![CDATA[2018-06-19 16:11:26 - [TEST_CASE][FAILED] - Test Cases/MyCommunities/LEEDForCommunities/LoginWithCommunitiesTest: Test Cases/MyCommunities/LEEDForCommunities/LoginWithCommunitiesTest FAILED because (of) Unable to click on object 'Object Repository/Page_Arc dashboard/Page_Arc dashboard/a_ My Communities' (Root cause: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: f7bb6e17705ed3c4fdb576ad2c6e12a7
+*** Element info: {Using=xpath, value=//a[@href = '/app/projects/my-projects/?project-type=community' and (text() = '  My Communities' or . = '  My Communities')]})
+
+2018-06-19 16:11:26 - [TEST_STEP][ERROR] - Start listener action : beforeTestListener: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForPageLoad() is applicable for argument types: (null) values: [null]
+Possible solutions: waitForPageLoad(int), waitForPageLoad(int, com.kms.katalon.core.model.FailureHandling)
+
+2018-06-19 16:11:26 - [TEST_STEP][ERROR] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForPageLoad() is applicable for argument types: (null) values: [null]
+Possible solutions: waitForPageLoad(int), waitForPageLoad(int, com.kms.katalon.core.model.FailureHandling)
+
+2018-06-19 16:11:31 - [MESSAGE][PASSED] - Browser is opened with url: 'null'
+
+2018-06-19 16:11:32 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-19 16:11:32 - [MESSAGE][ERROR] - groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForPageLoad() is applicable for argument types: (null) values: [null]
+Possible solutions: waitForPageLoad(int), waitForPageLoad(int, com.kms.katalon.core.model.FailureHandling)
+
+2018-06-19 16:11:32 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForPageLoad() is applicable for argument types: (null) values: [null]
+Possible solutions: waitForPageLoad(int), waitForPageLoad(int, com.kms.katalon.core.model.FailureHandling)
+
+2018-06-19 16:11:32 - [TEST_STEP][FAILED] - Statement - Try: Unable to click on object 'Object Repository/Page_Arc dashboard/Page_Arc dashboard/a_ My Communities' (Root cause: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: f7bb6e17705ed3c4fdb576ad2c6e12a7
+*** Element info: {Using=xpath, value=//a[@href = '/app/projects/my-projects/?project-type=community' and (text() = '  My Communities' or . = '  My Communities')]})
+
+2018-06-19 16:11:32 - [TEST_STEP][FAILED] - com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToCommunities: Unable to click on object 'Object Repository/Page_Arc dashboard/Page_Arc dashboard/a_ My Communities' (Root cause: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: f7bb6e17705ed3c4fdb576ad2c6e12a7
+*** Element info: {Using=xpath, value=//a[@href = '/app/projects/my-projects/?project-type=community' and (text() = '  My Communities' or . = '  My Communities')]})
+
+2018-06-19 16:11:57 - [MESSAGE][WARNING] - Cannot take screenshot
+
+2018-06-19 16:11:57 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Page_Arc dashboard/Page_Arc dashboard/a_ My Communities' (Root cause: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: f7bb6e17705ed3c4fdb576ad2c6e12a7
+*** Element info: {Using=xpath, value=//a[@href = '/app/projects/my-projects/?project-type=community' and (text() = '  My Communities' or . = '  My Communities')]})
+
+2018-06-19 16:11:57 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Page_Arc dashboard/Page_Arc dashboard/a_ My Communities' (Root cause: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: f7bb6e17705ed3c4fdb576ad2c6e12a7
+*** Element info: {Using=xpath, value=//a[@href = '/app/projects/my-projects/?project-type=community' and (text() = '  My Communities' or . = '  My Communities')]})
+
+2018-06-19 16:11:57 - [TEST_STEP][PASSED] - Statement - Catch (Throwable t): null
+
+2018-06-19 16:11:57 - [TEST_STEP][PASSED] - Statement - out.println(t.getLocalizedMessage()): null
+
+2018-06-19 16:11:57 - [TEST_STEP][PASSED] - Statement - e1 = new java.lang.Error(t.getMessage()): null
+
+2018-06-19 16:11:57 - [TEST_STEP][PASSED] - Statement - e1.setStackTrace(t.getStackTrace()): null
+
+2018-06-19 16:11:57 - [TEST_STEP][PASSED] - Statement - e1.printStackTrace(): null
+
+2018-06-19 16:11:57 - [TEST_STEP][FAILED] - Start listener action : afterTestCase: Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'MasterTestListener.afterTestCase(...)' completed.
+
+2018-06-19 16:11:57 - [TEST_STEP][PASSED] - switchToDefaultContent: Switching to default content failed because of: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: f7bb6e17705ed3c4fdb576ad2c6e12a7
+
+2018-06-19 16:12:01 - [MESSAGE][WARNING] - Switching to default content failed because of: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: f7bb6e17705ed3c4fdb576ad2c6e12a7
+
+2018-06-19 16:12:01 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Name : " + testCase.getTestCaseId()): Test Case Name : Test Cases/MyCommunities/LEEDForCommunities/LoginWithCommunitiesTest
+
+2018-06-19 16:12:01 - [MESSAGE][WARNING] - Test Case Name : Test Cases/MyCommunities/LEEDForCommunities/LoginWithCommunitiesTest
+
+2018-06-19 16:12:01 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Status : " + testCase.getTestCaseStatus()): Test Case Status : FAILED
+
+2018-06-19 16:12:01 - [MESSAGE][WARNING] - Test Case Status : FAILED
+
+2018-06-19 16:12:01 - [TEST_STEP][FAILED] - Statement - If ("FAILED".equalsIgnoreCase(testCase.getTestCaseStatus())): Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'MasterTestListener.afterTestCase(...)' completed.
+
+2018-06-19 16:12:01 - [TEST_STEP][PASSED] - Statement - println("Test case Fail taking Screenshot"): null
+
+2018-06-19 16:12:01 - [TEST_STEP][FAILED] - Statement - Try: Cannot take screenshot (Root cause: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: f7bb6e17705ed3c4fdb576ad2c6e12a7)
+
+2018-06-19 16:12:01 - [TEST_STEP][PASSED] - Statement - data = new java.util.Date(java.lang.System.currentTimeMillis()): null
+
+2018-06-19 16:12:01 - [TEST_STEP][PASSED] - Statement - formatarDate = new java.text.SimpleDateFormat(yyyyMMddHHmmss): null
+
+2018-06-19 16:12:01 - [TEST_STEP][FAILED] - takeScreenshot: Cannot take screenshot (Root cause: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: f7bb6e17705ed3c4fdb576ad2c6e12a7)
+
+2018-06-19 16:12:09 - [MESSAGE][WARNING] - Cannot take screenshot
+
+2018-06-19 16:12:09 - [MESSAGE][FAILED] - Cannot take screenshot (Root cause: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: f7bb6e17705ed3c4fdb576ad2c6e12a7)
+
+2018-06-19 16:12:09 - [TEST_STEP][PASSED] - Statement - Catch (Exception e): Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'MasterTestListener.afterTestCase(...)' completed.
+
+2018-06-19 16:12:09 - [TEST_STEP][PASSED] - Statement - e.printStackTrace(): Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'MasterTestListener.afterTestCase(...)' completed.]]></system-out>
+         <system-err><![CDATA[2018-06-19 16:11:26 - [TEST_CASE][FAILED] - Test Cases/MyCommunities/LEEDForCommunities/LoginWithCommunitiesTest: Test Cases/MyCommunities/LEEDForCommunities/LoginWithCommunitiesTest FAILED because (of) Unable to click on object 'Object Repository/Page_Arc dashboard/Page_Arc dashboard/a_ My Communities' (Root cause: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: f7bb6e17705ed3c4fdb576ad2c6e12a7
+*** Element info: {Using=xpath, value=//a[@href = '/app/projects/my-projects/?project-type=community' and (text() = '  My Communities' or . = '  My Communities')]})]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/MyCommunities/LEEDForCommunities/AddNewProjectTest" classname="Test Cases/MyCommunities/LEEDForCommunities/AddNewProjectTest" status="ERROR">
+         <error type="ERROR" message="Test Cases/MyCommunities/LEEDForCommunities/AddNewProjectTest FAILED because (of) org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram() is applicable for argument types: (null, null) values: [null, null]
+Possible solutions: searchProgram(java.lang.String, int)"/>
+         <system-out><![CDATA[2018-06-19 16:12:09 - [TEST_CASE][ERROR] - Test Cases/MyCommunities/LEEDForCommunities/AddNewProjectTest: Test Cases/MyCommunities/LEEDForCommunities/AddNewProjectTest FAILED because (of) org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram() is applicable for argument types: (null, null) values: [null, null]
+Possible solutions: searchProgram(java.lang.String, int)
+
+2018-06-19 16:12:09 - [TEST_STEP][ERROR] - Start listener action : beforeTestListener: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForPageLoad() is applicable for argument types: (null) values: [null]
+Possible solutions: waitForPageLoad(int), waitForPageLoad(int, com.kms.katalon.core.model.FailureHandling)
+
+2018-06-19 16:12:09 - [TEST_STEP][ERROR] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForPageLoad() is applicable for argument types: (null) values: [null]
+Possible solutions: waitForPageLoad(int), waitForPageLoad(int, com.kms.katalon.core.model.FailureHandling)
+
+2018-06-19 16:12:09 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-06-19 16:12:17 - [MESSAGE][PASSED] - Browser is opened with url: 'null'
+
+2018-06-19 16:12:18 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-19 16:12:18 - [MESSAGE][ERROR] - groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForPageLoad() is applicable for argument types: (null) values: [null]
+Possible solutions: waitForPageLoad(int), waitForPageLoad(int, com.kms.katalon.core.model.FailureHandling)
+
+2018-06-19 16:12:18 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForPageLoad() is applicable for argument types: (null) values: [null]
+Possible solutions: waitForPageLoad(int), waitForPageLoad(int, com.kms.katalon.core.model.FailureHandling)
+
+2018-06-19 16:12:18 - [TEST_STEP][ERROR] - Statement - Try: No signature of method: com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram() is applicable for argument types: (null, null) values: [null, null]
+Possible solutions: searchProgram(java.lang.String, int)
+
+2018-06-19 16:12:18 - [TEST_STEP][ERROR] - com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram: No signature of method: com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram() is applicable for argument types: (null, null) values: [null, null]
+Possible solutions: searchProgram(java.lang.String, int)
+
+2018-06-19 16:12:18 - [MESSAGE][ERROR] - No signature of method: com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram() is applicable for argument types: (null, null) values: [null, null]
+Possible solutions: searchProgram(java.lang.String, int)
+
+2018-06-19 16:12:18 - [TEST_STEP][PASSED] - Statement - Catch (Throwable t): null
+
+2018-06-19 16:12:18 - [TEST_STEP][PASSED] - Statement - out.println(t.getLocalizedMessage()): null
+
+2018-06-19 16:12:18 - [TEST_STEP][PASSED] - Statement - e1 = new java.lang.Error(t.getMessage()): null
+
+2018-06-19 16:12:18 - [TEST_STEP][PASSED] - Statement - e1.setStackTrace(t.getStackTrace()): null
+
+2018-06-19 16:12:18 - [TEST_STEP][PASSED] - Statement - e1.printStackTrace(): null
+
+2018-06-19 16:12:18 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'MasterTestListener.afterTestCase(...)' completed.
+
+2018-06-19 16:12:18 - [TEST_STEP][PASSED] - switchToDefaultContent: Switching to default content
+
+2018-06-19 16:12:18 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Name : " + testCase.getTestCaseId()): Test Case Name : Test Cases/MyCommunities/LEEDForCommunities/AddNewProjectTest
+
+2018-06-19 16:12:18 - [MESSAGE][WARNING] - Test Case Name : Test Cases/MyCommunities/LEEDForCommunities/AddNewProjectTest
+
+2018-06-19 16:12:18 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Status : " + testCase.getTestCaseStatus()): Test Case Status : ERROR
+
+2018-06-19 16:12:18 - [MESSAGE][WARNING] - Test Case Status : ERROR
+
+2018-06-19 16:12:18 - [TEST_STEP][PASSED] - Statement - If ("FAILED".equalsIgnoreCase(testCase.getTestCaseStatus())): Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'MasterTestListener.afterTestCase(...)' completed.]]></system-out>
+         <system-err><![CDATA[2018-06-19 16:12:09 - [TEST_CASE][ERROR] - Test Cases/MyCommunities/LEEDForCommunities/AddNewProjectTest: Test Cases/MyCommunities/LEEDForCommunities/AddNewProjectTest FAILED because (of) org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram() is applicable for argument types: (null, null) values: [null, null]
+Possible solutions: searchProgram(java.lang.String, int)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/MyCommunities/LEEDForCommunities/PaymentByCreditCardTest" classname="Test Cases/MyCommunities/LEEDForCommunities/PaymentByCreditCardTest" status="ERROR">
+         <error type="ERROR" message="Test Cases/MyCommunities/LEEDForCommunities/PaymentByCreditCardTest FAILED because (of) org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram() is applicable for argument types: (null, null) values: [null, null]
+Possible solutions: searchProgram(java.lang.String, int)"/>
+         <system-out><![CDATA[2018-06-19 16:12:18 - [TEST_CASE][ERROR] - Test Cases/MyCommunities/LEEDForCommunities/PaymentByCreditCardTest: Test Cases/MyCommunities/LEEDForCommunities/PaymentByCreditCardTest FAILED because (of) org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram() is applicable for argument types: (null, null) values: [null, null]
+Possible solutions: searchProgram(java.lang.String, int)
+
+2018-06-19 16:12:18 - [TEST_STEP][ERROR] - Start listener action : beforeTestListener: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForPageLoad() is applicable for argument types: (null) values: [null]
+Possible solutions: waitForPageLoad(int), waitForPageLoad(int, com.kms.katalon.core.model.FailureHandling)
+
+2018-06-19 16:12:18 - [TEST_STEP][ERROR] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForPageLoad() is applicable for argument types: (null) values: [null]
+Possible solutions: waitForPageLoad(int), waitForPageLoad(int, com.kms.katalon.core.model.FailureHandling)
+
+2018-06-19 16:12:18 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-06-19 16:12:23 - [MESSAGE][PASSED] - Browser is opened with url: 'null'
+
+2018-06-19 16:12:24 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-19 16:12:24 - [MESSAGE][ERROR] - groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForPageLoad() is applicable for argument types: (null) values: [null]
+Possible solutions: waitForPageLoad(int), waitForPageLoad(int, com.kms.katalon.core.model.FailureHandling)
+
+2018-06-19 16:12:24 - [MESSAGE][ERROR] - org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForPageLoad() is applicable for argument types: (null) values: [null]
+Possible solutions: waitForPageLoad(int), waitForPageLoad(int, com.kms.katalon.core.model.FailureHandling)
+
+2018-06-19 16:12:24 - [TEST_STEP][ERROR] - Statement - Try: No signature of method: com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram() is applicable for argument types: (null, null) values: [null, null]
+Possible solutions: searchProgram(java.lang.String, int)
+
+2018-06-19 16:12:24 - [TEST_STEP][ERROR] - com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram: No signature of method: com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram() is applicable for argument types: (null, null) values: [null, null]
+Possible solutions: searchProgram(java.lang.String, int)
+
+2018-06-19 16:12:24 - [MESSAGE][ERROR] - No signature of method: com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram() is applicable for argument types: (null, null) values: [null, null]
+Possible solutions: searchProgram(java.lang.String, int)
+
+2018-06-19 16:12:24 - [TEST_STEP][PASSED] - Statement - Catch (Throwable t): null
+
+2018-06-19 16:12:24 - [TEST_STEP][PASSED] - Statement - out.println(t.getLocalizedMessage()): null
+
+2018-06-19 16:12:24 - [TEST_STEP][PASSED] - Statement - e1 = new java.lang.Error(t.getMessage()): null
+
+2018-06-19 16:12:24 - [TEST_STEP][PASSED] - Statement - e1.setStackTrace(t.getStackTrace()): null
+
+2018-06-19 16:12:24 - [TEST_STEP][PASSED] - Statement - e1.printStackTrace(): null
+
+2018-06-19 16:12:24 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'MasterTestListener.afterTestCase(...)' completed.
+
+2018-06-19 16:12:24 - [TEST_STEP][PASSED] - switchToDefaultContent: Switching to default content
+
+2018-06-19 16:12:24 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Name : " + testCase.getTestCaseId()): Test Case Name : Test Cases/MyCommunities/LEEDForCommunities/PaymentByCreditCardTest
+
+2018-06-19 16:12:24 - [MESSAGE][WARNING] - Test Case Name : Test Cases/MyCommunities/LEEDForCommunities/PaymentByCreditCardTest
+
+2018-06-19 16:12:24 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Status : " + testCase.getTestCaseStatus()): Test Case Status : ERROR
+
+2018-06-19 16:12:24 - [MESSAGE][WARNING] - Test Case Status : ERROR
+
+2018-06-19 16:12:24 - [TEST_STEP][PASSED] - Statement - If ("FAILED".equalsIgnoreCase(testCase.getTestCaseStatus())): Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'MasterTestListener.afterTestCase(...)' completed.]]></system-out>
+         <system-err><![CDATA[2018-06-19 16:12:18 - [TEST_CASE][ERROR] - Test Cases/MyCommunities/LEEDForCommunities/PaymentByCreditCardTest: Test Cases/MyCommunities/LEEDForCommunities/PaymentByCreditCardTest FAILED because (of) org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram() is applicable for argument types: (null, null) values: [null, null]
+Possible solutions: searchProgram(java.lang.String, int)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/MyCommunities/LEEDForCommunities/LogoutToArcTest" classname="Test Cases/MyCommunities/LEEDForCommunities/LogoutToArcTest" status="FAILED">
+         <failure type="FAILED" message="Unable to click on object 'Object Repository/Page_Arc dashboard/b_caret' (Root cause: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)"/>
+         <system-out><![CDATA[2018-06-19 16:12:24 - [TEST_CASE][FAILED] - Test Cases/MyCommunities/LEEDForCommunities/LogoutToArcTest: Test Cases/MyCommunities/LEEDForCommunities/LogoutToArcTest FAILED because (of) Unable to click on object 'Object Repository/Page_Arc dashboard/b_caret' (Root cause: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)
+
+2018-06-19 16:12:24 - [TEST_STEP][ERROR] - Start listener action : beforeTestListener: Unable to open browser (Root cause: org.openqa.selenium.SessionNotCreatedException: session not created exception
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.46 seconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: CChromeDriver)
+
+2018-06-19 16:12:24 - [TEST_STEP][ERROR] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable: Unable to open browser (Root cause: org.openqa.selenium.SessionNotCreatedException: session not created exception
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.46 seconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: CChromeDriver)
+
+2018-06-19 16:12:24 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-06-19 16:12:28 - [MESSAGE][FAILED] - Unable to open browser (Root cause: org.openqa.selenium.SessionNotCreatedException: session not created exception
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.46 seconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: CChromeDriver)
+
+2018-06-19 16:12:28 - [MESSAGE][FAILED] - Unable to open browser (Root cause: org.openqa.selenium.SessionNotCreatedException: session not created exception
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.46 seconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: CChromeDriver)
+
+2018-06-19 16:12:28 - [MESSAGE][ERROR] - Unable to open browser (Root cause: org.openqa.selenium.SessionNotCreatedException: session not created exception
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.46 seconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: CChromeDriver)
+
+2018-06-19 16:12:28 - [TEST_STEP][FAILED] - Statement - Try: Unable to click on object 'Object Repository/Page_Arc dashboard/b_caret' (Root cause: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)
+
+2018-06-19 16:12:28 - [TEST_STEP][FAILED] - com.arc.ReusableMethods.ReusableMethodsLogin.logoutFromArcApplication: Unable to click on object 'Object Repository/Page_Arc dashboard/b_caret' (Root cause: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)
+
+2018-06-19 16:12:28 - [MESSAGE][WARNING] - Cannot take screenshot
+
+2018-06-19 16:12:28 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Page_Arc dashboard/b_caret' (Root cause: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)
+
+2018-06-19 16:12:28 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Page_Arc dashboard/b_caret' (Root cause: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)
+
+2018-06-19 16:12:28 - [TEST_STEP][PASSED] - Statement - Catch (Throwable t): null
+
+2018-06-19 16:12:28 - [TEST_STEP][PASSED] - Statement - out.println(t.getLocalizedMessage()): null
+
+2018-06-19 16:12:28 - [TEST_STEP][PASSED] - Statement - e1 = new java.lang.Error(t.getMessage()): null
+
+2018-06-19 16:12:28 - [TEST_STEP][PASSED] - Statement - e1.setStackTrace(t.getStackTrace()): null
+
+2018-06-19 16:12:28 - [TEST_STEP][PASSED] - Statement - e1.printStackTrace(): null
+
+2018-06-19 16:12:28 - [TEST_STEP][FAILED] - Start listener action : afterTestCase: Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'MasterTestListener.afterTestCase(...)' completed.
+
+2018-06-19 16:12:28 - [TEST_STEP][PASSED] - switchToDefaultContent: Switching to default content failed because of: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: unknown
+
+2018-06-19 16:12:28 - [MESSAGE][WARNING] - Switching to default content failed because of: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: unknown
+
+2018-06-19 16:12:28 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Name : " + testCase.getTestCaseId()): Test Case Name : Test Cases/MyCommunities/LEEDForCommunities/LogoutToArcTest
+
+2018-06-19 16:12:28 - [MESSAGE][WARNING] - Test Case Name : Test Cases/MyCommunities/LEEDForCommunities/LogoutToArcTest
+
+2018-06-19 16:12:28 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Status : " + testCase.getTestCaseStatus()): Test Case Status : FAILED
+
+2018-06-19 16:12:28 - [MESSAGE][WARNING] - Test Case Status : FAILED
+
+2018-06-19 16:12:28 - [TEST_STEP][FAILED] - Statement - If ("FAILED".equalsIgnoreCase(testCase.getTestCaseStatus())): Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'MasterTestListener.afterTestCase(...)' completed.
+
+2018-06-19 16:12:28 - [TEST_STEP][PASSED] - Statement - println("Test case Fail taking Screenshot"): null
+
+2018-06-19 16:12:28 - [TEST_STEP][FAILED] - Statement - Try: Cannot take screenshot (Root cause: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)
+
+2018-06-19 16:12:28 - [TEST_STEP][PASSED] - Statement - data = new java.util.Date(java.lang.System.currentTimeMillis()): null
+
+2018-06-19 16:12:28 - [TEST_STEP][PASSED] - Statement - formatarDate = new java.text.SimpleDateFormat(yyyyMMddHHmmss): null
+
+2018-06-19 16:12:28 - [TEST_STEP][FAILED] - takeScreenshot: Cannot take screenshot (Root cause: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)
+
+2018-06-19 16:12:28 - [MESSAGE][WARNING] - Cannot take screenshot
+
+2018-06-19 16:12:28 - [MESSAGE][FAILED] - Cannot take screenshot (Root cause: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)
+
+2018-06-19 16:12:28 - [TEST_STEP][PASSED] - Statement - Catch (Exception e): Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'MasterTestListener.afterTestCase(...)' completed.
+
+2018-06-19 16:12:28 - [TEST_STEP][PASSED] - Statement - e.printStackTrace(): Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'MasterTestListener.afterTestCase(...)' completed.]]></system-out>
+         <system-err><![CDATA[2018-06-19 16:12:24 - [TEST_CASE][FAILED] - Test Cases/MyCommunities/LEEDForCommunities/LogoutToArcTest: Test Cases/MyCommunities/LEEDForCommunities/LogoutToArcTest FAILED because (of) Unable to click on object 'Object Repository/Page_Arc dashboard/b_caret' (Root cause: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-19 16:11:23 - [TEST_SUITE][FAILED] - LEEDForCommunities TestSuite: Test Cases/MyCommunities/LEEDForCommunities/LoginWithCommunitiesTest FAILED because (of) Unable to click on object 'Object Repository/Page_Arc dashboard/Page_Arc dashboard/a_ My Communities' (Root cause: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: f7bb6e17705ed3c4fdb576ad2c6e12a7
+*** Element info: {Using=xpath, value=//a[@href = '/app/projects/my-projects/?project-type=community' and (text() = '  My Communities' or . = '  My Communities')]})]]></system-out>
+      <system-err><![CDATA[2018-06-19 16:11:23 - [TEST_SUITE][FAILED] - LEEDForCommunities TestSuite: Test Cases/MyCommunities/LEEDForCommunities/LoginWithCommunitiesTest FAILED because (of) Unable to click on object 'Object Repository/Page_Arc dashboard/Page_Arc dashboard/a_ My Communities' (Root cause: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.24', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: f7bb6e17705ed3c4fdb576ad2c6e12a7
+*** Element info: {Using=xpath, value=//a[@href = '/app/projects/my-projects/?project-type=community' and (text() = '  My Communities' or . = '  My Communities')]})]]></system-err>
+   </testsuite>
+</testsuites>

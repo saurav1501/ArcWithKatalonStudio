@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+LEEDForCites TestSuite,Chrome 67.0.3396.87,,2018-06-20 22:02:16,2018-06-20 22:03:39,1m - 22.519s,PASSED
+,,,,,,
+Test Cases/MyCities/LEEDForCities/CreateEnergyMeterTest,Chrome 67.0.3396.87,Verifies if ability to create new energy meter & reading.,2018-06-20 22:02:18,2018-06-20 22:03:39,1m - 20.654s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.87,,2018-06-20 22:02:18,2018-06-20 22:03:14,55.411s,PASSED
+Statement - Try,Chrome 67.0.3396.87,,2018-06-20 22:03:14,2018-06-20 22:03:39,24.889s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.87,,2018-06-20 22:03:39,2018-06-20 22:03:39,0.113s,PASSED

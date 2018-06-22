@@ -21,52 +21,45 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
-WebUI.click(findTestObject('Test/Page_Arc dashboard/a_ My Cities'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Test/Page_Arc dashboard/span_My Cities'))
+WebUI.click(findTestObject('DataInput/a_ Data Input'))
 
-WebUI.click(findTestObject('Test/Page_Arc dashboard/button_ Add'))
+WebUI.click(findTestObject('DataInput/a_hidden-sm hidden-xs'))
 
-WebUI.setText(findTestObject('Test/Page_Arc dashboard/input_name'), 'Test')
+WebUI.click(findTestObject('DataInput/span_Energy'))
 
-WebUI.selectOptionByValue(findTestObject('Test/Page_Arc dashboard/select_Select a Project TypeCo'), 'string:city', true)
+WebUI.click(findTestObject('DataInput/button_Add Year'))
 
-WebUI.selectOptionByValue(findTestObject('Test/Page_Arc dashboard/select_Select a Rating SystemL'), 'string:LEED-CT', true)
+WebUI.click(findTestObject('DataInput/button_Next Year'))
 
-WebUI.click(findTestObject('Test/Page_Arc dashboard/html_.gm-style-pbctransitionop'))
+WebUI.click(findTestObject('DataInput/button_Previous Year'))
 
-WebUI.selectOptionByValue(findTestObject('Test/Page_Arc dashboard/select_Select Owner TypeBusine'), 'string:Educational: University, Private', 
-    true)
+WebUI.click(findTestObject('DataInput/button_Previous Year'))
 
-WebUI.setText(findTestObject('Test/Page_Arc dashboard/input_organization'), 'h')
+WebUI.click(findTestObject('DataInput/EditButton1'))
 
-WebUI.click(findTestObject('Test/Page_Arc dashboard/span_H  G BUILDING AND DESIGN'))
+WebUI.setText(findTestObject('DataInput/TextboxValue1'), '11')
 
-WebUI.setText(findTestObject('Test/Page_Arc dashboard/input_owner_email'), 'saurav@groupten.com')
+WebUI.click(findTestObject('DataInput/SaveButton1'))
 
-WebUI.click(findTestObject('Test/Page_Arc dashboard/html_.gm-style-pbctransitionop_1'))
+WebUI.click(findTestObject('DataInput/EditButton1'))
 
-WebUI.selectOptionByValue(findTestObject('Test/Page_Arc dashboard/select_AfghanistanAland Island'), 'US', true)
+WebUI.setText(findTestObject('DataInput/TextboxValue1'), '12')
 
-WebUI.setText(findTestObject('Test/Page_Arc dashboard/input_gross_area'), '5000')
+WebUI.click(findTestObject('DataInput/SaveButton1'))
 
-WebUI.setText(findTestObject('Test/Page_Arc dashboard/input_occupancy'), '10000')
+WebUI.click(findTestObject('DataInput/EditButton1'))
 
-WebUI.setText(findTestObject('Test/Page_Arc dashboard/input_street'), 'Test')
+WebUI.setText(findTestObject('DataInput/TextboxValue1'), '12')
 
-WebUI.click(findTestObject('Test/Page_Arc dashboard/html_.gm-style-pbctransitionop_1'))
+WebUI.click(findTestObject('DataInput/SaveButton1'))
 
-WebUI.setText(findTestObject('Test/Page_Arc dashboard/input_city'), 'Test')
+WebUI.click(findTestObject('DataInput/EditButton1'))
 
-WebUI.selectOptionByValue(findTestObject('Test/Page_Arc dashboard/select_AfghanistanAland Island_1'), 'US', true)
+WebUI.setText(findTestObject('DataInput/TextboxValue1'), '12')
 
-WebUI.selectOptionByValue(findTestObject('Test/Page_Arc dashboard/select_Select StateAlabamaAlas'), 'string:AK', true)
-
-WebUI.setText(findTestObject('Test/Page_Arc dashboard/input_zip_code'), '12121')
-
-WebUI.click(findTestObject('Test/Page_Arc dashboard/input_reg_agreement'))
-
-WebUI.click(findTestObject('Test/Page_Arc dashboard/button_Next'))
+WebUI.click(findTestObject('DataInput/SaveButton1'))
 
 WebUI.closeBrowser()
 

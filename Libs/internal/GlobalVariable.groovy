@@ -74,18 +74,6 @@ public class GlobalVariable {
     public static Object DevPassword
      
     /**
-     * <p>Profile dev : Explicit Wait Timeout
-Profile qas : Explicit Wait Timeout
-Profile stg : Explicit Wait Timeout</p>
-     */
-    public static Object timeOut
-     
-    /**
-     * <p></p>
-     */
-    public static Object env
-     
-    /**
      * <p></p>
      */
     public static Object url
@@ -101,9 +89,43 @@ Profile stg : Explicit Wait Timeout</p>
     public static Object password
      
     /**
+     * <p>Profile STG-CA : Explicit Wait Timeout
+Profile STG-CN : Explicit Wait Timeout
+Profile STG-IND : Explicit Wait Timeout
+Profile STG-US : Explicit Wait Timeout
+Profile dev : Explicit Wait Timeout
+Profile qas : Explicit Wait Timeout</p>
+     */
+    public static Object timeOut
+     
+    /**
      * <p></p>
      */
-    public static Object rowNum
+    public static Object env
+     
+    /**
+     * <p>Profile STG-CA : Adding canada projects
+Profile STG-CN : Adding china projects
+Profile STG-IND : Adding India projects
+Profile STG-US : Adding US projects</p>
+     */
+    public static Object BuildingSheet
+     
+    /**
+     * <p>Profile STG-CA : Adding new team member 
+Profile STG-CN : Adding new team member 
+Profile STG-IND : Adding new team member 
+Profile STG-US : Adding new team member </p>
+     */
+    public static Object BuildingTeam
+     
+    /**
+     * <p>Profile STG-CA : Adding Credit Card payment details 
+Profile STG-CN : Adding Credit Card payment details 
+Profile STG-IND : Adding Credit Card payment details 
+Profile STG-US : Adding Credit Card payment details </p>
+     */
+    public static Object CCPayment
      
     /**
      * <p></p>
@@ -131,27 +153,37 @@ Profile stg : Explicit Wait Timeout</p>
     public static Object rowNumSix
      
     /**
-     * <p>Profile stg : Adding US projects</p>
+     * <p>Profile STG-IND : Adding new  india city projects </p>
      */
-    public static Object BuildingSheet
+    public static Object CitySheet
      
     /**
-     * <p>Profile stg : Adding new team member </p>
+     * <p>Profile STG-CA : Adding new canada projects
+Profile STG-CN : Adding new china projects
+Profile STG-IND : Adding new Inida community projects </p>
      */
-    public static Object BuildingTeam
+    public static Object CommunitySheet
      
     /**
-     * <p>Profile stg : Adding Credit Card payment details </p>
+     * <p></p>
      */
-    public static Object CCPayment
+    public static Object CDataInput
+     
+    /**
+     * <p></p>
+     */
+    public static Object rowNum
      
 
     static {
         def allVariables = [:]        
         allVariables.put('default', ['StgUrl' : 'http://www.stg.arconline.io/', 'StgUserName' : 'Saurav@groupten.com', 'StgPassword' : 'LEEDg10', 'DelayTime' : 3, 'TimeOut' : 40, 'Env' : 'qas', 'QasUrl' : 'http://www.qas.arconline.io', 'QasUserName' : 'usgbcarc@gmail.com', 'QasPassword' : 'initpass', 'DevUrl' : 'http://www.dev.arconline.io', 'DevUserName' : 'rmishra@usgbc.org', 'DevPassword' : 'initpass'])
+        allVariables.put('STG-CA', allVariables['default'] + ['url' : 'http://www.stg.arconline.io/', 'userName' : 'Saurav@groupten.com', 'password' : 'LEEDg10', 'timeOut' : 40, 'env' : 'stg', 'BuildingSheet' : 'CanadaBuildingProject', 'BuildingTeam' : 'BTeam', 'CCPayment' : 'Payment', 'rowNumTwo' : 2, 'rowNumThree' : 3, 'rowNumFour' : 4, 'rowNumFive' : 5, 'rowNumSix' : 6, 'CitySheet' : 'CanadaCityProject', 'CommunitySheet' : 'CanadaCommunityProject', 'CDataInput' : 'CDataInput'])
+        allVariables.put('STG-CN', allVariables['default'] + ['url' : 'http://www.stg.arconline.io/', 'userName' : 'Saurav@groupten.com', 'password' : 'LEEDg10', 'timeOut' : 40, 'env' : 'stg', 'BuildingSheet' : 'ChinaBuildingProejct', 'BuildingTeam' : 'BTeam', 'CCPayment' : 'Payment', 'rowNumTwo' : 2, 'rowNumThree' : 3, 'rowNumFour' : 4, 'rowNumFive' : 5, 'rowNumSix' : 6, 'CitySheet' : 'ChinaCityProject', 'CommunitySheet' : 'ChinaCommunityProject', 'CDataInput' : 'CDataInput'])
+        allVariables.put('STG-IND', allVariables['default'] + ['url' : 'http://www.stg.arconline.io/', 'userName' : 'Saurav@groupten.com', 'password' : 'LEEDg10', 'timeOut' : 40, 'env' : 'stg', 'BuildingSheet' : 'BuildingIndiaProject', 'BuildingTeam' : 'BTeam', 'CCPayment' : 'Payment', 'rowNumTwo' : 2, 'rowNumThree' : 3, 'rowNumFour' : 4, 'rowNumFive' : 5, 'rowNumSix' : 6, 'CitySheet' : 'CityIndiaProject', 'CommunitySheet' : 'CommunityIndiaProject', 'CDataInput' : 'CDataInput'])
+        allVariables.put('STG-US', allVariables['default'] + ['url' : 'http://www.stg.arconline.io/', 'userName' : 'Saurav@groupten.com', 'password' : 'LEEDg10', 'timeOut' : 40, 'env' : 'stg', 'BuildingSheet' : 'USBuildingProject', 'BuildingTeam' : 'BTeam', 'CCPayment' : 'Payment', 'rowNumTwo' : 2, 'rowNumThree' : 3, 'rowNumFour' : 4, 'rowNumFive' : 5, 'rowNumSix' : 6, 'CitySheet' : 'USCityProject', 'CommunitySheet' : 'USCommunityProject', 'CDataInput' : 'CDataInput'])
         allVariables.put('dev', allVariables['default'] + ['timeOut' : 40, 'env' : 'dev', 'url' : 'http://www.dev.arconline.io', 'userName' : 'rmishra@usgbc.org', 'password' : 'initpass', 'rowNum' : 5])
         allVariables.put('qas', allVariables['default'] + ['timeOut' : 40, 'env' : 'qas', 'url' : 'http://www.qas.arconline.io', 'userName' : 'usgbcarc@gmail.com', 'password' : 'initpass', 'rowNumTwo' : 2, 'rowNumThree' : 3, 'rowNumFour' : 4, 'rowNumFive' : 5, 'rowNumSix' : 6])
-        allVariables.put('stg', allVariables['default'] + ['url' : 'http://www.stg.arconline.io/', 'userName' : 'Saurav@groupten.com', 'password' : 'LEEDg10', 'timeOut' : 40, 'env' : 'stg', 'BuildingSheet' : 'NewBuildingProject', 'BuildingTeam' : 'BTeam', 'CCPayment' : 'Payment', 'rowNumTwo' : 2, 'rowNumThree' : 3, 'rowNumFour' : 4, 'rowNumFive' : 5, 'rowNumSix' : 6])
         
         String profileName = RunConfiguration.getExecutionProfile()
         
@@ -168,20 +200,23 @@ Profile stg : Explicit Wait Timeout</p>
         DevUrl = selectedVariables['DevUrl']
         DevUserName = selectedVariables['DevUserName']
         DevPassword = selectedVariables['DevPassword']
-        timeOut = selectedVariables['timeOut']
-        env = selectedVariables['env']
         url = selectedVariables['url']
         userName = selectedVariables['userName']
         password = selectedVariables['password']
-        rowNum = selectedVariables['rowNum']
+        timeOut = selectedVariables['timeOut']
+        env = selectedVariables['env']
+        BuildingSheet = selectedVariables['BuildingSheet']
+        BuildingTeam = selectedVariables['BuildingTeam']
+        CCPayment = selectedVariables['CCPayment']
         rowNumTwo = selectedVariables['rowNumTwo']
         rowNumThree = selectedVariables['rowNumThree']
         rowNumFour = selectedVariables['rowNumFour']
         rowNumFive = selectedVariables['rowNumFive']
         rowNumSix = selectedVariables['rowNumSix']
-        BuildingSheet = selectedVariables['BuildingSheet']
-        BuildingTeam = selectedVariables['BuildingTeam']
-        CCPayment = selectedVariables['CCPayment']
+        CitySheet = selectedVariables['CitySheet']
+        CommunitySheet = selectedVariables['CommunitySheet']
+        CDataInput = selectedVariables['CDataInput']
+        rowNum = selectedVariables['rowNum']
         
     }
 }

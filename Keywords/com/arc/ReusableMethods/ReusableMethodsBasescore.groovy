@@ -26,4 +26,16 @@ import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
 
 public class ReusableMethodsBasescore {
+	@Keyword
+	public void basePointOptionA(String cdataInputSheet,int rowNum) throws IOException, InterruptedException{
+		CommonMethod.click(param);
+		CommonMethod.driverwait(3);
+		for(int count=1;count<=11;count++)
+		{
+		CommonMethod.click("Checkbox"+count);
+		}
+		CommonMethod.assertcontainsmessage("OptionA","10", "Not Valid");
+		CommonMethod.testlog("Pass","Option A Base point score verified Successully");
+		
+	}
 }

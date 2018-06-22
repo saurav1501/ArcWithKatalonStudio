@@ -33,10 +33,12 @@ public class ReusableMethodsSearch extends BaseClass{
 	public void searchProgram(String sheetName , int rowNum) {
 
 		String projectId = data.getCellData(sheetName,"Project ID",rowNum)
+		WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
+		WebUI.delay(2)
 		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/input_searchBar1'))
 
-	//	if(WebUI.getText(findTestObject('Object Repository/Page_Arc dashboard/input_searchBar1'))!= null)
-	//	WebUI.clearText(findTestObject('Object Repository/Page_Arc dashboard/input_searchBar1'))
+		//	if(WebUI.getText(findTestObject('Object Repository/Page_Arc dashboard/input_searchBar1'))!= null)
+		//	WebUI.clearText(findTestObject('Object Repository/Page_Arc dashboard/input_searchBar1'))
 
 
 		WebUI.setText(findTestObject('Object Repository/Page_Arc dashboard/input_searchBar1'), projectId)
@@ -46,7 +48,12 @@ public class ReusableMethodsSearch extends BaseClass{
 		println nuberOfProjects
 		WebUI.verifyMatch(nuberOfProjects,'Project (1 project)', false)
 		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/search_Result'))
-		WebUI.delay(5)
+		WebUI.delay(3)
+	//	WebUI.click(findTestObject('DataInput/a_Projects'))
+		WebUI.delay(2)
+
+
+
 	}
 }
 

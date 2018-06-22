@@ -28,24 +28,22 @@ import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
 
 public class ReusableMethodsManage extends BaseClass {
-	
+
 	@Keyword
 	public void verifyBillingDate() throws IOException, InterruptedException {
-				Calendar cal = Calendar.getInstance();
-				DateFormat dateFormat = new SimpleDateFormat("dd");
-				Date date = new Date();
-				String Month = new SimpleDateFormat("MMM").format(cal.getTime());
-				String Curdate = dateFormat.format(date);
-				int Year = Calendar.getInstance().get(Calendar.YEAR);
-				CommonMethod.ArcSpecifictoggle("Manage");
-				CommonMethod.scrolldowntoElement( "Billing");
-				CommonMethod.testlog( "Pass", "Clicking on Billing");
-				CommonMethod.click("Billing");
-				System.out.println(Month + " " + Curdate + ", " + Year);
-				CommonMethod.assertEqualsmessage( "BillingDate", Month + " " + Curdate + ", " + Year,
-						"Billing Date is not correct in Billing page");
-				CommonMethod.testlog( "Pass", "Verifying Billing date is correct");
-			}
-	
-	
+		Calendar cal = Calendar.getInstance();
+		DateFormat dateFormat = new SimpleDateFormat("dd");
+		Date date = new Date();
+		String Month = new SimpleDateFormat("MMM").format(cal.getTime());
+		String Curdate = dateFormat.format(date);
+		int Year = Calendar.getInstance().get(Calendar.YEAR);
+		CommonMethod.ArcSpecifictoggle("Manage");
+		CommonMethod.scrolldowntoElement( "Billing");
+		CommonMethod.testlog( "Pass", "Clicking on Billing");
+		CommonMethod.click("Billing");
+		System.out.println(Month + " " + Curdate + ", " + Year);
+		CommonMethod.assertEqualsmessage( "BillingDate", Month + " " + Curdate + ", " + Year,
+				"Billing Date is not correct in Billing page");
+		CommonMethod.testlog( "Pass", "Verifying Billing date is correct");
+	}
 }

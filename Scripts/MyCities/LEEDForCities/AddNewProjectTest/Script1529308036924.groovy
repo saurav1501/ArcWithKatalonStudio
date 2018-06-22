@@ -29,9 +29,9 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 
 	try {
 	
-		CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToBuilding'()
-		CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsAddNewProject.USBuildingAddNewProject'(GlobalVariable.BuildingSheet, GlobalVariable.rowNumSix)		
-	
+		CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToCities'()
+		CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsAddNewProject.USCitiesAddNewProject'(GlobalVariable.CitySheet, GlobalVariable.rowNumTwo)		
+		
 	} catch (Throwable t) {
 	
 		System.out.println(t.getLocalizedMessage())

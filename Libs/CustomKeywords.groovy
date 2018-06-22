@@ -44,14 +44,6 @@ def static "com.arc.ReusableMethods.ReusableMethodsLogin.logoutFromArcApplicatio
     (new com.arc.ReusableMethods.ReusableMethodsLogin()).logoutFromArcApplication()
 }
 
-def static "com.arc.ReusableMethods.ReusableMethodsDataInput.uploadArcDataTempte"() {
-    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).uploadArcDataTempte()
-}
-
-def static "com.arc.ReusableMethods.ReusableMethodsDataInput.uploadCreditFormTest"() {
-    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).uploadCreditFormTest()
-}
-
 def static "com.helper.javascript.JavaScriptHelper.executeScript"(
     	String script	) {
     (new com.helper.javascript.JavaScriptHelper()).executeScript(
@@ -74,6 +66,92 @@ def static "com.helper.javascript.JavaScriptHelper.executeAndReturnValue"(
          , 	testObject)
 }
 
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.uploadArcDataTempte"() {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).uploadArcDataTempte()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.uploadCreditFormTest"() {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).uploadCreditFormTest()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createEnergyMeterReading"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createEnergyMeterReading(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createWaterMeterReading"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createWaterMeterReading(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createWasteGeneration"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createWasteGeneration(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createWasteDiversionMeterReading"(
+    	String param	
+     , 	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createWasteDiversionMeterReading(
+        	param
+         , 	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createADReadingPointOptionB"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createADReadingPointOptionB(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createADMeterReading"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createADMeterReading(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createTransportReading"(
+    	String param	
+     , 	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createTransportReading(
+        	param
+         , 	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createHumtMeterReading"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createHumtMeterReading(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createHumanExpMeterReading"(
+    	String param	
+     , 	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createHumanExpMeterReading(
+        	param
+         , 	sheetName
+         , 	rowNum)
+}
+
 def static "com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram"(
     	String sheetName	
      , 	int rowNum	) {
@@ -82,10 +160,18 @@ def static "com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram"(
          , 	rowNum)
 }
 
-def static "com.arc.ReusableMethods.ReusableMethodsAddNewProject.USBuildingAddNewProject"(
+def static "com.arc.ReusableMethods.ReusableMethodsAddNewProject.buildingAddNewProject"(
     	String sheetName	
      , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsAddNewProject()).USBuildingAddNewProject(
+    (new com.arc.ReusableMethods.ReusableMethodsAddNewProject()).buildingAddNewProject(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsAddNewProject.USCommunitiesAddNewProject"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsAddNewProject()).USCommunitiesAddNewProject(
         	sheetName
          , 	rowNum)
 }
@@ -130,6 +216,14 @@ def static "com.helper.grid.GridHelper.getValueOrClickOnColumn"(
          , 	type)
 }
 
+def static "com.arc.ReusableMethods.ReusableMethodsBasescore.basePointOptionA"(
+    	String cdataInputSheet	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsBasescore()).basePointOptionA(
+        	cdataInputSheet
+         , 	rowNum)
+}
+
 def static "com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToMenuItem"(
     	String menuName	) {
     (new com.arc.ReusableMethods.ReusableMethodsNavigation()).navigateToMenuItem(
@@ -146,6 +240,18 @@ def static "com.arc.ReusableMethods.ReusableMethodsNavigation.clickAddProject"()
 
 def static "com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToCities"() {
     (new com.arc.ReusableMethods.ReusableMethodsNavigation()).navigateToCities()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToCommunities"() {
+    (new com.arc.ReusableMethods.ReusableMethodsNavigation()).navigateToCommunities()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToParking"() {
+    (new com.arc.ReusableMethods.ReusableMethodsNavigation()).navigateToParking()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToPortfolio"() {
+    (new com.arc.ReusableMethods.ReusableMethodsNavigation()).navigateToPortfolio()
 }
 
 def static "com.arc.BaseClass.XlsWriteToNewFileNewFile.writeTOExcelFile"(

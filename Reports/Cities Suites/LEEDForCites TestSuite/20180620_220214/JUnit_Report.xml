@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="LEEDForCites TestSuite" time="82" tests="1" failures="0" errors="0">
+   <testsuite name="LEEDForCites TestSuite" tests="1" failures="0" errors="0" time="82" timestamp="2018-06-20 22:02:16" hostname="Group10 - G10CHLT003" id="Test Suites/Cities Suites/LEEDForCites TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Cities Suites\\LEEDForCites TestSuite\\20180620_220214"/>
+         <property name="logFiles" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Cities Suites\\LEEDForCites TestSuite\\20180620_220214\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Group10 - G10CHLT003"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.87"/>
+         <property name="hostAddress" value="192.168.43.44"/>
+         <property name="sessionId" value="fd711191d85a90561e443190b69c8d43"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/MyCities/LEEDForCities/CreateEnergyMeterTest" classname="Test Cases/MyCities/LEEDForCities/CreateEnergyMeterTest" status="PASSED">
+         <system-out><![CDATA[2018-06-20 22:02:18 - [TEST_CASE][PASSED] - Test Cases/MyCities/LEEDForCities/CreateEnergyMeterTest: Test Cases/MyCities/LEEDForCities/CreateEnergyMeterTest
+
+2018-06-20 22:02:18 - [TEST_STEP][PASSED] - Start listener action : beforeTestListener: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-20 22:02:18 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-20 22:02:35 - [MESSAGE][PASSED] - Browser is opened with url: 'http://www.stg.arconline.io/'
+
+2018-06-20 22:02:36 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-20 22:02:36 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-06-20 22:02:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_ACCEPT AND CLOSE' is clicked on
+
+2018-06-20 22:02:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/Click_Log in' is clicked on
+
+2018-06-20 22:02:38 - [MESSAGE][PASSED] - Text 'Saurav@groupten.com' is set on object 'Object Repository/Page_Home  Arc/input_name'
+
+2018-06-20 22:02:38 - [MESSAGE][PASSED] - Text 'LEEDg10' is set on object 'Object Repository/Page_Home  Arc/input_pass'
+
+2018-06-20 22:02:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/input_field_policy_accept' is clicked on
+
+2018-06-20 22:03:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_Log in' is clicked on
+
+2018-06-20 22:03:11 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-20 22:03:11 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/span_My Projects' is: 'My Projects'
+
+2018-06-20 22:03:11 - [MESSAGE][PASSED] - Actual text 'My Projects' and expected text 'My Projects' are matched  using regular expression
+
+2018-06-20 22:03:14 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-20 22:03:14 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-20 22:03:14 - [TEST_STEP][PASSED] - Statement - Try: com.arc.ReusableMethods.ReusableMethodsDataInput.createEnergyMeterCities is PASSED
+
+2018-06-20 22:03:14 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram: com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram is PASSED
+
+2018-06-20 22:03:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/input_searchBar1' is clicked on
+
+2018-06-20 22:03:15 - [MESSAGE][PASSED] - Text '1000151216' is set on object 'Object Repository/Page_Arc dashboard/input_searchBar1'
+
+2018-06-20 22:03:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/input_searchBar1' is clicked on
+
+2018-06-20 22:03:18 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-20 22:03:18 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/no_Project (1 project)' is: 'Project (1 project)'
+
+2018-06-20 22:03:18 - [MESSAGE][PASSED] - Actual text 'Project (1 project)' and expected text 'Project (1 project)' are matched 
+
+2018-06-20 22:03:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/search_Result' is clicked on
+
+2018-06-20 22:03:23 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-20 22:03:23 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram is PASSED
+
+2018-06-20 22:03:23 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsDataInput.createEnergyMeterCities: com.arc.ReusableMethods.ReusableMethodsDataInput.createEnergyMeterCities is PASSED
+
+2018-06-20 22:03:23 - [MESSAGE][PASSED] - Object: 'Object Repository/DataInput/a_Projects' is clicked on
+
+2018-06-20 22:03:25 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-20 22:03:25 - [MESSAGE][PASSED] - Object: 'Object Repository/DataInput/a_ Data Input' is double clicked on
+
+2018-06-20 22:03:26 - [MESSAGE][PASSED] - Object: 'Object Repository/DataInput/span_Energy' is clicked on
+
+2018-06-20 22:03:28 - [MESSAGE][PASSED] - Object: 'Object Repository/DataInput/button_Add Year' is clicked on
+
+2018-06-20 22:03:29 - [MESSAGE][PASSED] - Object: 'Object Repository/DataInput/button_Next Year' is clicked on
+
+2018-06-20 22:03:29 - [MESSAGE][PASSED] - Object: 'Object Repository/DataInput/button_Previous Year' is clicked on
+
+2018-06-20 22:03:29 - [MESSAGE][PASSED] - Object: 'Object Repository/DataInput/button_Previous Year' is clicked on
+
+2018-06-20 22:03:29 - [MESSAGE][PASSED] - Object: 'Object Repository/DataInput/EditButton1' is clicked on
+
+2018-06-20 22:03:29 - [MESSAGE][PASSED] - Text '0.98' is set on object 'Object Repository/DataInput/TextboxValue1'
+
+2018-06-20 22:03:29 - [MESSAGE][PASSED] - Object: 'Object Repository/DataInput/SaveButton1' is clicked on
+
+2018-06-20 22:03:31 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-20 22:03:31 - [MESSAGE][PASSED] - Object: 'Object Repository/DataInput/EditButton2' is clicked on
+
+2018-06-20 22:03:32 - [MESSAGE][PASSED] - Text '0.66' is set on object 'Object Repository/DataInput/TextboxValue2'
+
+2018-06-20 22:03:32 - [MESSAGE][PASSED] - Object: 'Object Repository/DataInput/SaveButton2' is clicked on
+
+2018-06-20 22:03:34 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-20 22:03:34 - [MESSAGE][PASSED] - Object: 'Object Repository/DataInput/EditButton3' is clicked on
+
+2018-06-20 22:03:34 - [MESSAGE][PASSED] - Text '1.22' is set on object 'Object Repository/DataInput/TextboxValue3'
+
+2018-06-20 22:03:34 - [MESSAGE][PASSED] - Object: 'Object Repository/DataInput/SaveButton3' is clicked on
+
+2018-06-20 22:03:36 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-20 22:03:36 - [MESSAGE][PASSED] - Object: 'Object Repository/DataInput/EditButton4' is clicked on
+
+2018-06-20 22:03:37 - [MESSAGE][PASSED] - Text '0.99' is set on object 'Object Repository/DataInput/TextboxValue4'
+
+2018-06-20 22:03:37 - [MESSAGE][PASSED] - Object: 'Object Repository/DataInput/SaveButton4' is clicked on
+
+2018-06-20 22:03:39 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-20 22:03:39 - [MESSAGE][PASSED] - Attribute '0.98' of object 'Object Repository/DataInput/TextboxValue1' is: 'null'
+
+2018-06-20 22:03:39 - [MESSAGE][PASSED] - Attribute '0.98' of object 'Object Repository/DataInput/TextboxValue2' is: 'null'
+
+2018-06-20 22:03:39 - [MESSAGE][PASSED] - Attribute '0.98' of object 'Object Repository/DataInput/TextboxValue3' is: 'null'
+
+2018-06-20 22:03:39 - [MESSAGE][PASSED] - Attribute '0.98' of object 'Object Repository/DataInput/TextboxValue4' is: 'null'
+
+2018-06-20 22:03:39 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsDataInput.createEnergyMeterCities is PASSED
+
+2018-06-20 22:03:39 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'MasterTestListener.afterTestCase(...)' completed.
+
+2018-06-20 22:03:39 - [TEST_STEP][PASSED] - switchToDefaultContent: Switching to default content
+
+2018-06-20 22:03:39 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Name : " + testCase.getTestCaseId()): Test Case Name : Test Cases/MyCities/LEEDForCities/CreateEnergyMeterTest
+
+2018-06-20 22:03:39 - [MESSAGE][WARNING] - Test Case Name : Test Cases/MyCities/LEEDForCities/CreateEnergyMeterTest
+
+2018-06-20 22:03:39 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Status : " + testCase.getTestCaseStatus()): Test Case Status : PASSED
+
+2018-06-20 22:03:39 - [MESSAGE][WARNING] - Test Case Status : PASSED
+
+2018-06-20 22:03:39 - [TEST_STEP][PASSED] - Statement - If ("FAILED".equalsIgnoreCase(testCase.getTestCaseStatus())): Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'MasterTestListener.afterTestCase(...)' completed.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-20 22:02:16 - [TEST_SUITE][PASSED] - LEEDForCites TestSuite: Test Cases/MyCities/LEEDForCities/CreateEnergyMeterTest]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

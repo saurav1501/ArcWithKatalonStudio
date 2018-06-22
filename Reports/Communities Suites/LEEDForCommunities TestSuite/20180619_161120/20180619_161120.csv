@@ -1,0 +1,26 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+LEEDForCommunities TestSuite,Chrome 67.0.3396.87,,2018-06-19 16:11:23,2018-06-19 16:12:28,1m - 5.294s,FAILED
+,,,,,,
+Test Cases/MyCommunities/LEEDForCommunities/LoginWithCommunitiesTest,Chrome 67.0.3396.87,Verifies login & navigate to communites & verify communites the text.,2018-06-19 16:11:26,2018-06-19 16:12:09,43.680s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.87,,2018-06-19 16:11:26,2018-06-19 16:11:32,6.211s,ERROR
+Statement - Try,Chrome 67.0.3396.87,,2018-06-19 16:11:32,2018-06-19 16:11:57,24.821s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.87,,2018-06-19 16:11:57,2018-06-19 16:11:57,0.070s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.87,,2018-06-19 16:11:57,2018-06-19 16:12:09,12.377s,FAILED
+,,,,,,
+Test Cases/MyCommunities/LEEDForCommunities/AddNewProjectTest,Chrome 67.0.3396.87,Verify ablility to register the new communities project.,2018-06-19 16:12:09,2018-06-19 16:12:18,9.104s,ERROR
+Start listener action : beforeTestListener,Chrome 67.0.3396.87,,2018-06-19 16:12:09,2018-06-19 16:12:18,8.823s,ERROR
+Statement - Try,Chrome 67.0.3396.87,,2018-06-19 16:12:18,2018-06-19 16:12:18,0.013s,ERROR
+Statement - Catch (Throwable t),Chrome 67.0.3396.87,,2018-06-19 16:12:18,2018-06-19 16:12:18,0.020s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.87,,2018-06-19 16:12:18,2018-06-19 16:12:18,0.040s,PASSED
+,,,,,,
+Test Cases/MyCommunities/LEEDForCommunities/PaymentByCreditCardTest,Chrome 67.0.3396.87,,2018-06-19 16:12:18,2018-06-19 16:12:24,5.769s,ERROR
+Start listener action : beforeTestListener,Chrome 67.0.3396.87,,2018-06-19 16:12:18,2018-06-19 16:12:24,5.510s,ERROR
+Statement - Try,Chrome 67.0.3396.87,,2018-06-19 16:12:24,2018-06-19 16:12:24,0.004s,ERROR
+Statement - Catch (Throwable t),Chrome 67.0.3396.87,,2018-06-19 16:12:24,2018-06-19 16:12:24,0.012s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.87,,2018-06-19 16:12:24,2018-06-19 16:12:24,0.034s,PASSED
+,,,,,,
+Test Cases/MyCommunities/LEEDForCommunities/LogoutToArcTest,Chrome 67.0.3396.87,Verify the logout functionlity of Arc.,2018-06-19 16:12:24,2018-06-19 16:12:28,4.020s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.87,,2018-06-19 16:12:24,2018-06-19 16:12:28,3.633s,ERROR
+Statement - Try,Chrome 67.0.3396.87,,2018-06-19 16:12:28,2018-06-19 16:12:28,0.012s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.87,,2018-06-19 16:12:28,2018-06-19 16:12:28,0.011s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.87,,2018-06-19 16:12:28,2018-06-19 16:12:28,0.027s,FAILED

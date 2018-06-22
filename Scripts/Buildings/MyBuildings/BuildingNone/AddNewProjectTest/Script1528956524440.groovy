@@ -30,7 +30,7 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 	try {
 	
 		CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToBuilding'()
-		CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsAddNewProject.USBuildingAddNewProject'(GlobalVariable.BuildingSheet, GlobalVariable.rowNumSix)		
+		CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsAddNewProject.buildingAddNewProject'(GlobalVariable.BuildingSheet, GlobalVariable.rowNumSix)		
 	
 	} catch (Throwable t) {
 	

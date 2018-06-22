@@ -53,6 +53,7 @@ public class ReusableMethodsNavigation {
 		WebUI.click(menuItem)
 		WebUI.delay(1)
 	}
+
 	@Keyword
 	public void navigateToBuilding() {
 		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/a_ Buildings'))
@@ -72,6 +73,34 @@ public class ReusableMethodsNavigation {
 	}
 	@Keyword
 	public void navigateToCities(){
+		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/a_ My Cities'))
+		WebUI.delay(1)
+		String postNavigationLoginText = WebUI.getText(findTestObject('Object Repository/Page_Arc dashboard/span_My Cities'))
+		WebUI.verifyMatch(postNavigationLoginText,'My Cities',false)
+	}
+
+	@Keyword
+	public void navigateToCommunities(){
+		WebUI.click(findTestObject('Page_Arc dashboard/Page_Arc dashboard/a_ My Communities'))
+		WebUI.delay(1)
+		String postNavigationLoginText = WebUI.getText(findTestObject('Page_Arc dashboard/Page_Arc dashboard/span_My Communities'))
+		WebUI.verifyMatch(postNavigationLoginText,'My Communities',false)
+	}
+
+	@Keyword
+	public void navigateToParking(){
+		WebUI.click(findTestObject('Page_Arc dashboard/Page_Arc dashboard/a_ My Parking'))
+		WebUI.delay(1)
+		String postNavigationLoginText = WebUI.getText(findTestObject('Page_Arc dashboard/Page_Arc dashboard/span_My Parking'))
+		WebUI.verifyMatch(postNavigationLoginText,'My Parking',false)
+	}
+
+	@Keyword
+	public void navigateToPortfolio(){
+		WebUI.click(findTestObject('Page_Arc dashboard/Page_Arc dashboard/a_ My Portfolios'))
+		WebUI.delay(1)
+		String postNavigationLoginText = WebUI.getText(findTestObject('Page_Arc dashboard/Page_Arc dashboard/span_My Portfolios'))
+		WebUI.verifyMatch(postNavigationLoginText,'My Portfolios',false)
 	}
 }
 

@@ -43,7 +43,7 @@ public class ReusableMethodsPayment extends BaseClass{
 		String country    = data.getCellData(sheetName, "Country", rowNum);
 		String state      = data.getCellData(sheetName, "State", rowNum);
 		String zip        = data.getCellData(sheetName, "Zip", rowNum);
-	
+
 		WebUI.setText(findTestObject('Object Repository/PaymenntLocator/input_name '),cardName)
 		WebUI.setText(findTestObject('Object Repository/PaymenntLocator/input_CC_number'), cardNum)
 		WebUI.setText(findTestObject('Object Repository/PaymenntLocator/input_CC_expiry'),cardDate)
