@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+CitiesNone TestSuite,Chrome 67.0.3396.99,,2018-06-27 12:17:17,2018-06-27 12:18:32,1m - 14.922s,PASSED
+,,,,,,
+Test Cases/MyCities/CitiesOther/RegPaymentByCheckTest,Chrome 67.0.3396.99,,2018-06-27 12:17:19,2018-06-27 12:18:32,1m - 12.705s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-27 12:17:19,2018-06-27 12:17:55,35.786s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-27 12:17:55,2018-06-27 12:18:31,35.657s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-27 12:18:31,2018-06-27 12:18:32,0.827s,PASSED

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="BuildingNone TestSuite" time="155" tests="2" failures="0" errors="0">
+   <testsuite name="BuildingNone TestSuite" tests="2" failures="0" errors="0" time="155" timestamp="2018-06-27 14:13:21" hostname="Group10 - G10CHLT003" id="Test Suites/Building Suites/IND Building Suite/BuildingNone TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Building Suites\\IND Building Suite\\BuildingNone TestSuite\\20180627_141315"/>
+         <property name="logFiles" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Building Suites\\IND Building Suite\\BuildingNone TestSuite\\20180627_141315\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Group10 - G10CHLT003"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="172.18.0.84"/>
+         <property name="sessionId" value="2d2525d6d20cd3e06d2b862810b073eb"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Buildings/MyBuildings/BuildingNone/AddNewProjectTest" classname="Test Cases/Buildings/MyBuildings/BuildingNone/AddNewProjectTest" status="PASSED">
+         <system-out><![CDATA[2018-06-27 14:13:25 - [TEST_CASE][PASSED] - Test Cases/Buildings/MyBuildings/BuildingNone/AddNewProjectTest: Test Cases/Buildings/MyBuildings/BuildingNone/AddNewProjectTest
+
+2018-06-27 14:13:25 - [TEST_STEP][PASSED] - Start listener action : beforeTestListener: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 14:13:25 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 14:13:39 - [MESSAGE][PASSED] - Browser is opened with url: 'http://www.qas.arconline.io/'
+
+2018-06-27 14:13:41 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-27 14:13:41 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-06-27 14:13:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_ACCEPT AND CLOSE' is clicked on
+
+2018-06-27 14:13:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/Click_Log in' is clicked on
+
+2018-06-27 14:13:44 - [MESSAGE][PASSED] - Text 'testleed1@gmail.com' is set on object 'Object Repository/Page_Home  Arc/input_name'
+
+2018-06-27 14:13:44 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/Page_Home  Arc/input_pass'
+
+2018-06-27 14:13:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/input_field_policy_accept' is clicked on
+
+2018-06-27 14:13:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_Log in' is clicked on
+
+2018-06-27 14:14:02 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-27 14:14:02 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/span_My Projects' is: 'My Projects'
+
+2018-06-27 14:14:02 - [MESSAGE][PASSED] - Actual text 'My Projects' and expected text 'My Projects' are matched  using regular expression
+
+2018-06-27 14:14:05 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-27 14:14:05 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 14:14:06 - [TEST_STEP][PASSED] - Statement - Try: com.arc.ReusableMethods.ReusableMethodsAddNewProject.buildingAddNewProject is PASSED
+
+2018-06-27 14:14:06 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToBuilding: com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToBuilding is PASSED
+
+2018-06-27 14:14:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/a_ Buildings' is clicked on
+
+2018-06-27 14:14:08 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-27 14:14:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/a_ My Buildings' is clicked on
+
+2018-06-27 14:14:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/i_fa fa-bars fa-lg' is clicked on
+
+2018-06-27 14:14:09 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/span_My Buildings' is: 'My Buildings'
+
+2018-06-27 14:14:09 - [MESSAGE][PASSED] - Actual text 'My Buildings' and expected text 'My Buildings' are matched  using regular expression
+
+2018-06-27 14:14:09 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToBuilding is PASSED
+
+2018-06-27 14:14:09 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsAddNewProject.buildingAddNewProject: com.arc.ReusableMethods.ReusableMethodsAddNewProject.buildingAddNewProject is PASSED
+
+2018-06-27 14:14:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Project_Details/button_ Add' is clicked on
+
+2018-06-27 14:14:14 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-06-27 14:14:14 - [MESSAGE][PASSED] - Text of object 'Object Repository/Add_Project_Details/h1_Project Registration' is: 'Project Registration'
+
+2018-06-27 14:14:14 - [MESSAGE][PASSED] - Actual text 'Project Registration' and expected text 'Project Registration' are matched  using regular expression
+
+2018-06-27 14:14:15 - [MESSAGE][PASSED] - Text 'INDBuildingNone 144321None 144940None 14:14:09' is set on object 'Object Repository/Add_Project_Details/input_name'
+
+2018-06-27 14:14:15 - [MESSAGE][PASSED] - All options with label 'Buildings' are selected in object 'Object Repository/Add_Project_Details/select_Select a Project TypeCo'  using regular expression
+
+2018-06-27 14:14:16 - [MESSAGE][PASSED] - All options with label 'None' are selected in object 'Object Repository/Add_Project_Details/select_Select a Rating SystemL'  using regular expression
+
+2018-06-27 14:14:18 - [MESSAGE][PASSED] - All options with label 'Airport: Hangar' are selected in object 'Object Repository/Add_Project_Details/select_Select space type'  using regular expression
+
+2018-06-27 14:14:19 - [MESSAGE][PASSED] - All options with label 'Business Improvement District' are selected in object 'Object Repository/Add_Project_Details/select_Select Owner Type'  using regular expression
+
+2018-06-27 14:14:20 - [MESSAGE][PASSED] - Text 'Habitat for Humanity' is set on object 'Object Repository/Add_Project_Details/input_organization'
+
+2018-06-27 14:14:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Project_Details/input_organization' is clicked on
+
+2018-06-27 14:14:22 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-27 14:14:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Project_Details/span_Habitat for Humanity' is clicked on
+
+2018-06-27 14:14:23 - [MESSAGE][PASSED] - Text 'usgbcarc@gmail.com' is set on object 'Object Repository/Add_Project_Details/input_owner_email'
+
+2018-06-27 14:14:24 - [MESSAGE][PASSED] - All options with label 'India' are selected in object 'Object Repository/Add_Project_Details/select_OwnerCountry' 
+
+2018-06-27 14:14:24 - [MESSAGE][PASSED] - Text '50000' is set on object 'Object Repository/Add_Project_Details/input_gross_area'
+
+2018-06-27 14:14:26 - [MESSAGE][PASSED] - Text '611-618, Tower A, Spaze I-Tech Park, Sohna Road, Sector 53' is set on object 'Object Repository/Add_Project_Details/input_street'
+
+2018-06-27 14:14:26 - [MESSAGE][PASSED] - Text 'Gurgaon' is set on object 'Object Repository/Add_Project_Details/input_city'
+
+2018-06-27 14:14:26 - [MESSAGE][PASSED] - All options with label 'India' are selected in object 'Object Repository/Add_Project_Details/country' 
+
+2018-06-27 14:14:29 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-27 14:14:29 - [MESSAGE][PASSED] - All options with label 'Haryana' are selected in object 'Object Repository/Add_Project_Details/state' 
+
+2018-06-27 14:14:30 - [MESSAGE][PASSED] - Text '122022' is set on object 'Object Repository/Add_Project_Details/input_zip_code'
+
+2018-06-27 14:14:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Project_Details/input_reg_agreement' is clicked on
+
+2018-06-27 14:14:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Project_Details/button_Next' is clicked on
+
+2018-06-27 14:14:35 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-27 14:14:38 - [MESSAGE][PASSED] - Text of object 'Object Repository/Add_Project_Details/strong_Promotional Code' is: 'Promotional Code'
+
+2018-06-27 14:14:38 - [MESSAGE][PASSED] - Actual text 'Promotional Code' and expected text 'Promotional Code' are matched  using regular expression
+
+2018-06-27 14:14:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/Add_Project_Details/td_BuildingID' is: '1000073615'
+
+2018-06-27 14:14:44 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-27 14:14:44 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsAddNewProject.buildingAddNewProject is PASSED
+
+2018-06-27 14:14:44 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Browser is closed
+
+2018-06-27 14:14:44 - [TEST_STEP][PASSED] - switchToDefaultContent: Switching to default content
+
+2018-06-27 14:14:44 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Name : " + testCase.getTestCaseId()): Test Case Name : Test Cases/Buildings/MyBuildings/BuildingNone/AddNewProjectTest
+
+2018-06-27 14:14:44 - [MESSAGE][WARNING] - Test Case Name : Test Cases/Buildings/MyBuildings/BuildingNone/AddNewProjectTest
+
+2018-06-27 14:14:44 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Status : " + testCase.getTestCaseStatus()): Test Case Status : PASSED
+
+2018-06-27 14:14:44 - [MESSAGE][WARNING] - Test Case Status : PASSED
+
+2018-06-27 14:14:44 - [TEST_STEP][PASSED] - Statement - If ("FAILED".equalsIgnoreCase(testCase.getTestCaseStatus())): null
+
+2018-06-27 14:14:44 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-27 14:14:45 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest" classname="Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest" status="PASSED">
+         <system-out><![CDATA[2018-06-27 14:14:45 - [TEST_CASE][PASSED] - Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest: Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest
+
+2018-06-27 14:14:45 - [TEST_STEP][PASSED] - Start listener action : beforeTestListener: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 14:14:45 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 14:14:56 - [MESSAGE][PASSED] - Browser is opened with url: 'http://www.qas.arconline.io/'
+
+2018-06-27 14:14:57 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-27 14:14:58 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-06-27 14:14:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_ACCEPT AND CLOSE' is clicked on
+
+2018-06-27 14:14:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/Click_Log in' is clicked on
+
+2018-06-27 14:15:01 - [MESSAGE][PASSED] - Text 'testleed1@gmail.com' is set on object 'Object Repository/Page_Home  Arc/input_name'
+
+2018-06-27 14:15:01 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/Page_Home  Arc/input_pass'
+
+2018-06-27 14:15:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/input_field_policy_accept' is clicked on
+
+2018-06-27 14:15:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_Log in' is clicked on
+
+2018-06-27 14:15:21 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-27 14:15:21 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/span_My Projects' is: 'My Projects'
+
+2018-06-27 14:15:21 - [MESSAGE][PASSED] - Actual text 'My Projects' and expected text 'My Projects' are matched  using regular expression
+
+2018-06-27 14:15:24 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-27 14:15:24 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 14:15:25 - [TEST_STEP][PASSED] - Statement - Try: com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCheck is PASSED
+
+2018-06-27 14:15:25 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram: com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram is PASSED
+
+2018-06-27 14:15:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/sideBar' is clicked on
+
+2018-06-27 14:15:27 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-27 14:15:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/input_searchBar1' is clicked on
+
+2018-06-27 14:15:28 - [MESSAGE][PASSED] - Text '1000073615' is set on object 'Object Repository/Page_Arc dashboard/input_searchBar1'
+
+2018-06-27 14:15:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/input_searchBar1' is clicked on
+
+2018-06-27 14:15:31 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-27 14:15:31 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/no_Project (1 project)' is: 'Project (1 project)'
+
+2018-06-27 14:15:31 - [MESSAGE][PASSED] - Actual text 'Project (1 project)' and expected text 'Project (1 project)' are matched 
+
+2018-06-27 14:15:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/search_Result' is clicked on
+
+2018-06-27 14:15:35 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-27 14:15:35 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram is PASSED
+
+2018-06-27 14:15:35 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCheck: com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCheck is PASSED
+
+2018-06-27 14:15:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/PaymenntLocator/input_party_name' is cleared
+
+2018-06-27 14:15:36 - [MESSAGE][PASSED] - Text 'J R Gems' is set on object 'Object Repository/PaymenntLocator/input_party_name'
+
+2018-06-27 14:15:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/PaymenntLocator/input_email' is cleared
+
+2018-06-27 14:15:37 - [MESSAGE][PASSED] - Text 'usgbcarc@gmail.com' is set on object 'Object Repository/PaymenntLocator/input_email'
+
+2018-06-27 14:15:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/PaymenntLocator/input_street' is cleared
+
+2018-06-27 14:15:39 - [MESSAGE][PASSED] - Text '611-618, Tower A, Spaze I-Tech Park, Sohna Road, Sector 51' is set on object 'Object Repository/PaymenntLocator/input_street'
+
+2018-06-27 14:15:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/PaymenntLocator/input_city' is cleared
+
+2018-06-27 14:15:39 - [MESSAGE][PASSED] - Text 'Gurgaon' is set on object 'Object Repository/PaymenntLocator/input_city'
+
+2018-06-27 14:15:39 - [MESSAGE][PASSED] - All options with label 'India' are selected in object 'Object Repository/PaymenntLocator/Country' 
+
+2018-06-27 14:15:42 - [MESSAGE][PASSED] - All options with label 'Haryana' are selected in object 'Object Repository/PaymenntLocator/Select_State'  using regular expression
+
+2018-06-27 14:15:42 - [MESSAGE][PASSED] - Text of object 'Object Repository/PaymenntLocator/input_zip_code' is cleared
+
+2018-06-27 14:15:42 - [MESSAGE][PASSED] - Text '122020' is set on object 'Object Repository/PaymenntLocator/input_zip_code'
+
+2018-06-27 14:15:43 - [MESSAGE][PASSED] - Object: 'Object Repository/PaymenntLocator/button_Next' is clicked on
+
+2018-06-27 14:15:48 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-27 14:15:48 - [MESSAGE][PASSED] - Object: 'Object Repository/PaymenntLocator/button_Continue' is clicked on
+
+2018-06-27 14:15:53 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-27 14:15:56 - [MESSAGE][PASSED] - Text of object 'Object Repository/PaymenntLocator/h2_Congratulations' is: 'Congratulations!'
+
+2018-06-27 14:15:56 - [MESSAGE][PASSED] - Actual text 'Congratulations!' and expected text 'Congratulations!' are matched  using regular expression
+
+2018-06-27 14:15:56 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCheck is PASSED
+
+2018-06-27 14:15:56 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Browser is closed
+
+2018-06-27 14:15:56 - [TEST_STEP][PASSED] - switchToDefaultContent: Switching to default content
+
+2018-06-27 14:15:56 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Name : " + testCase.getTestCaseId()): Test Case Name : Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest
+
+2018-06-27 14:15:56 - [MESSAGE][WARNING] - Test Case Name : Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest
+
+2018-06-27 14:15:56 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Status : " + testCase.getTestCaseStatus()): Test Case Status : PASSED
+
+2018-06-27 14:15:56 - [MESSAGE][WARNING] - Test Case Status : PASSED
+
+2018-06-27 14:15:56 - [TEST_STEP][PASSED] - Statement - If ("FAILED".equalsIgnoreCase(testCase.getTestCaseStatus())): null
+
+2018-06-27 14:15:56 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-27 14:15:57 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-27 14:13:21 - [TEST_SUITE][PASSED] - BuildingNone TestSuite: Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -9,6 +9,10 @@
          <key>BASIC</key>
          <value>//select[@id = 'state' and @name = 'state' and (text() = 'Select StateAndaman and Nico.In.Andhra PradeshArunachal PradeshAssamBiharChandigarhChhaattisgarhDadra and Nagar Hav.Daman and DiuDelhiGoaGujaratHaryanaHimachal PradeshJammu and KashmirJharkhandKarnatakaKeralaLakshadweepMadhya PradeshMaharashtraManipurMegalayaMizoramNagalandOrissaPondicherryPunjabRajasthanSikkimTamil NaduTelanganaTripuraUttar PradeshUttaranchalWest Bengal' or . = 'Select StateAndaman and Nico.In.Andhra PradeshArunachal PradeshAssamBiharChandigarhChhaattisgarhDadra and Nagar Hav.Daman and DiuDelhiGoaGujaratHaryanaHimachal PradeshJammu and KashmirJharkhandKarnatakaKeralaLakshadweepMadhya PradeshMaharashtraManipurMegalayaMizoramNagalandOrissaPondicherryPunjabRajasthanSikkimTamil NaduTelanganaTripuraUttar PradeshUttaranchalWest Bengal')]</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>

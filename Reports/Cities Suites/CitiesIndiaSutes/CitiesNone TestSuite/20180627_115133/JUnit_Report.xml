@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="CitiesNone TestSuite" time="97" tests="0" failures="1" errors="0">
+   <testsuite name="CitiesNone TestSuite" tests="0" failures="1" errors="0" time="97" timestamp="2018-06-27 11:51:37" hostname="Group10 - G10CHLT003" id="Test Suites/Cities Suites/CitiesIndiaSutes/CitiesNone TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Cities Suites\\CitiesIndiaSutes\\CitiesNone TestSuite\\20180627_115133"/>
+         <property name="logFiles" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Cities Suites\\CitiesIndiaSutes\\CitiesNone TestSuite\\20180627_115133\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Cities Suites\\CitiesIndiaSutes\\CitiesNone TestSuite\\20180627_115133\\1530080591739.png, C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Cities Suites\\CitiesIndiaSutes\\CitiesNone TestSuite\\20180627_115133\\1530080592200.png, C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\ScreenShot\\screenshot_20180627115313.png"/>
+         <property name="hostName" value="Group10 - G10CHLT003"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="172.18.0.84"/>
+         <property name="sessionId" value="1c22dcd487ecee1032295f8fc988e5ea"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest" classname="Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest" status="FAILED">
+         <failure type="FAILED" message="Unable to switch to window with index: '1' (Root cause: Cannot find window with index: '1')"/>
+         <system-out><![CDATA[2018-06-27 11:51:39 - [TEST_CASE][FAILED] - Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest: Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest FAILED because (of) Unable to switch to window with index: '1' (Root cause: Cannot find window with index: '1')
+
+2018-06-27 11:51:39 - [TEST_STEP][PASSED] - Start listener action : beforeTestListener: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 11:51:39 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 11:51:50 - [MESSAGE][PASSED] - Browser is opened with url: 'http://www.qas.arconline.io/'
+
+2018-06-27 11:51:51 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-27 11:51:51 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-06-27 11:51:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_ACCEPT AND CLOSE' is clicked on
+
+2018-06-27 11:51:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/Click_Log in' is clicked on
+
+2018-06-27 11:51:53 - [MESSAGE][PASSED] - Text 'usgbcarc@gmail.com' is set on object 'Object Repository/Page_Home  Arc/input_name'
+
+2018-06-27 11:51:53 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/Page_Home  Arc/input_pass'
+
+2018-06-27 11:51:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/input_field_policy_accept' is clicked on
+
+2018-06-27 11:52:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_Log in' is clicked on
+
+2018-06-27 11:52:09 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-27 11:52:10 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/span_My Projects' is: 'My Projects'
+
+2018-06-27 11:52:10 - [MESSAGE][PASSED] - Actual text 'My Projects' and expected text 'My Projects' are matched  using regular expression
+
+2018-06-27 11:52:13 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-27 11:52:13 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 11:52:13 - [TEST_STEP][FAILED] - Statement - Try: Unable to switch to window with index: '1' (Root cause: Cannot find window with index: '1')
+
+2018-06-27 11:52:13 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram: com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram is PASSED
+
+2018-06-27 11:52:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/sideBar' is clicked on
+
+2018-06-27 11:52:16 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-27 11:52:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/input_searchBar1' is clicked on
+
+2018-06-27 11:52:17 - [MESSAGE][PASSED] - Text '1000073594' is set on object 'Object Repository/Page_Arc dashboard/input_searchBar1'
+
+2018-06-27 11:52:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/input_searchBar1' is clicked on
+
+2018-06-27 11:52:20 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-27 11:52:20 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/no_Project (1 project)' is: 'Project (1 project)'
+
+2018-06-27 11:52:20 - [MESSAGE][PASSED] - Actual text 'Project (1 project)' and expected text 'Project (1 project)' are matched 
+
+2018-06-27 11:52:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/search_Result' is clicked on
+
+2018-06-27 11:52:24 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-27 11:52:24 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram is PASSED
+
+2018-06-27 11:52:24 - [TEST_STEP][FAILED] - com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCheck: Unable to switch to window with index: '1' (Root cause: Cannot find window with index: '1')
+
+2018-06-27 11:52:24 - [MESSAGE][PASSED] - Text of object 'Object Repository/PaymenntLocator/input_party_name' is cleared
+
+2018-06-27 11:52:25 - [MESSAGE][PASSED] - Text 'J R Gems' is set on object 'Object Repository/PaymenntLocator/input_party_name'
+
+2018-06-27 11:52:25 - [MESSAGE][PASSED] - Text of object 'Object Repository/PaymenntLocator/input_email' is cleared
+
+2018-06-27 11:52:26 - [MESSAGE][PASSED] - Text 'usgbcarc@gmail.com' is set on object 'Object Repository/PaymenntLocator/input_email'
+
+2018-06-27 11:52:26 - [MESSAGE][PASSED] - Text of object 'Object Repository/PaymenntLocator/input_street' is cleared
+
+2018-06-27 11:52:27 - [MESSAGE][PASSED] - Text '611-618, Tower A, Spaze I-Tech Park, Sohna Road, Sector 51' is set on object 'Object Repository/PaymenntLocator/input_street'
+
+2018-06-27 11:52:27 - [MESSAGE][PASSED] - Text of object 'Object Repository/PaymenntLocator/input_city' is cleared
+
+2018-06-27 11:52:27 - [MESSAGE][PASSED] - Text 'Gurgaon' is set on object 'Object Repository/PaymenntLocator/input_city'
+
+2018-06-27 11:52:28 - [MESSAGE][PASSED] - All options with label 'India' are selected in object 'Object Repository/PaymenntLocator/Country' 
+
+2018-06-27 11:52:29 - [MESSAGE][PASSED] - All options with label 'Haryana' are selected in object 'Object Repository/PaymenntLocator/Select_State'  using regular expression
+
+2018-06-27 11:52:30 - [MESSAGE][PASSED] - Text of object 'Object Repository/PaymenntLocator/input_zip_code' is cleared
+
+2018-06-27 11:52:30 - [MESSAGE][PASSED] - Text '122020' is set on object 'Object Repository/PaymenntLocator/input_zip_code'
+
+2018-06-27 11:52:30 - [MESSAGE][PASSED] - Object: 'Object Repository/PaymenntLocator/button_Next' is clicked on
+
+2018-06-27 11:52:40 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2018-06-27 11:53:12 - [MESSAGE][FAILED] - Cannot find window with index: '1'
+[[ATTACHMENT|C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Cities Suites\\CitiesIndiaSutes\\CitiesNone TestSuite\\20180627_115133\\1530080591739.png]]
+
+2018-06-27 11:53:12 - [MESSAGE][FAILED] - Unable to switch to window with index: '1' (Root cause: Cannot find window with index: '1')
+[[ATTACHMENT|C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Cities Suites\\CitiesIndiaSutes\\CitiesNone TestSuite\\20180627_115133\\1530080592200.png]]
+
+2018-06-27 11:53:12 - [MESSAGE][FAILED] - Unable to switch to window with index: '1' (Root cause: Cannot find window with index: '1')
+
+2018-06-27 11:53:12 - [TEST_STEP][PASSED] - Statement - Catch (Throwable t): null
+
+2018-06-27 11:53:12 - [TEST_STEP][PASSED] - Statement - out.println(t.getLocalizedMessage()): null
+
+2018-06-27 11:53:12 - [TEST_STEP][PASSED] - Statement - e1 = new java.lang.Error(t.getMessage()): null
+
+2018-06-27 11:53:12 - [TEST_STEP][PASSED] - Statement - e1.setStackTrace(t.getStackTrace()): null
+
+2018-06-27 11:53:12 - [TEST_STEP][PASSED] - Statement - e1.printStackTrace(): null
+
+2018-06-27 11:53:12 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Browser is closed
+
+2018-06-27 11:53:12 - [TEST_STEP][PASSED] - switchToDefaultContent: Switching to default content
+
+2018-06-27 11:53:13 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Name : " + testCase.getTestCaseId()): Test Case Name : Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest
+
+2018-06-27 11:53:13 - [MESSAGE][WARNING] - Test Case Name : Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest
+
+2018-06-27 11:53:13 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Status : " + testCase.getTestCaseStatus()): Test Case Status : FAILED
+
+2018-06-27 11:53:13 - [MESSAGE][WARNING] - Test Case Status : FAILED
+
+2018-06-27 11:53:13 - [TEST_STEP][PASSED] - Statement - If ("FAILED".equalsIgnoreCase(testCase.getTestCaseStatus())): Taking screenshot successfully
+
+2018-06-27 11:53:13 - [TEST_STEP][PASSED] - Statement - println("Test case Fail taking Screenshot"): null
+
+2018-06-27 11:53:13 - [TEST_STEP][PASSED] - Statement - Try: Taking screenshot successfully
+
+2018-06-27 11:53:13 - [TEST_STEP][PASSED] - Statement - data = new java.util.Date(java.lang.System.currentTimeMillis()): null
+
+2018-06-27 11:53:13 - [TEST_STEP][PASSED] - Statement - formatarDate = new java.text.SimpleDateFormat(yyyyMMddHHmmss): null
+
+2018-06-27 11:53:13 - [TEST_STEP][PASSED] - takeScreenshot: Taking screenshot successfully
+
+2018-06-27 11:53:13 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\ScreenShot\\screenshot_20180627115313.png]]
+
+2018-06-27 11:53:13 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-27 11:53:14 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2018-06-27 11:51:39 - [TEST_CASE][FAILED] - Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest: Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest FAILED because (of) Unable to switch to window with index: '1' (Root cause: Cannot find window with index: '1')]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-27 11:51:37 - [TEST_SUITE][FAILED] - CitiesNone TestSuite: Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest FAILED because (of) Unable to switch to window with index: '1' (Root cause: Cannot find window with index: '1')]]></system-out>
+      <system-err><![CDATA[2018-06-27 11:51:37 - [TEST_SUITE][FAILED] - CitiesNone TestSuite: Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest FAILED because (of) Unable to switch to window with index: '1' (Root cause: Cannot find window with index: '1')]]></system-err>
+   </testsuite>
+</testsuites>

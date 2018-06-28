@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 try {
 	
 	    CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToCommunities'()
-    	CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsAddNewProject.USCommunitiesAddNewProject'(GlobalVariable.CommunitySheet, GlobalVariable.rowNumFour)		
+    	CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsAddNewProject.addNewProjectCityORCom'(GlobalVariable.CommunitySheet, GlobalVariable.rowNumFour)		
 		
 } catch (Throwable t) {
 	

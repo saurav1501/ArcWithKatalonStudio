@@ -9,6 +9,10 @@
          <key>BASIC</key>
          <value>//select[@id = 'state' and @name = 'state']</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="LEEDForCites TestSuite" time="96" tests="0" failures="2" errors="0">
+   <testsuite name="LEEDForCites TestSuite" tests="0" failures="2" errors="0" time="96" timestamp="2018-06-27 14:06:43" hostname="Group10 - G10CHLT003" id="Test Suites/Cities Suites/CitiesIndiaSutes/LEEDForCites TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Cities Suites\\CitiesIndiaSutes\\LEEDForCites TestSuite\\20180627_140634"/>
+         <property name="logFiles" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Cities Suites\\CitiesIndiaSutes\\LEEDForCites TestSuite\\20180627_140634\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Cities Suites\\CitiesIndiaSutes\\LEEDForCites TestSuite\\20180627_140634\\1530088656685.png, C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\ScreenShot\\screenshot_20180627140738.png, C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Cities Suites\\CitiesIndiaSutes\\LEEDForCites TestSuite\\20180627_140634\\1530088698012.png, C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\ScreenShot\\screenshot_20180627140818.png"/>
+         <property name="hostName" value="Group10 - G10CHLT003"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="172.18.0.84"/>
+         <property name="sessionId" value="f81eb2b1effdd20f573173774e4e23a2"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/MyCities/LEEDForCities/AddNewProjectTest" classname="Test Cases/MyCities/LEEDForCities/AddNewProjectTest" status="FAILED">
+         <failure type="FAILED" message="Unable to click on object 'Object Repository/Page_Arc dashboard/a_ My Cities' (Root cause: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: headless chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 272a0663a33539b3333c6fbe9c4ef3e8)"/>
+         <system-out><![CDATA[2018-06-27 14:06:49 - [TEST_CASE][FAILED] - Test Cases/MyCities/LEEDForCities/AddNewProjectTest: Test Cases/MyCities/LEEDForCities/AddNewProjectTest FAILED because (of) Unable to click on object 'Object Repository/Page_Arc dashboard/a_ My Cities' (Root cause: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: headless chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 272a0663a33539b3333c6fbe9c4ef3e8)
+
+2018-06-27 14:06:49 - [TEST_STEP][PASSED] - Start listener action : beforeTestListener: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 14:06:49 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 14:07:04 - [MESSAGE][PASSED] - Browser is opened with url: 'http://www.qas.arconline.io/'
+
+2018-06-27 14:07:05 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-27 14:07:05 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-06-27 14:07:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_ACCEPT AND CLOSE' is clicked on
+
+2018-06-27 14:07:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/Click_Log in' is clicked on
+
+2018-06-27 14:07:08 - [MESSAGE][PASSED] - Text 'testleed1@gmail.com' is set on object 'Object Repository/Page_Home  Arc/input_name'
+
+2018-06-27 14:07:08 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/Page_Home  Arc/input_pass'
+
+2018-06-27 14:07:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/input_field_policy_accept' is clicked on
+
+2018-06-27 14:07:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_Log in' is clicked on
+
+2018-06-27 14:07:32 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-27 14:07:32 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/span_My Projects' is: 'My Projects'
+
+2018-06-27 14:07:32 - [MESSAGE][PASSED] - Actual text 'My Projects' and expected text 'My Projects' are matched  using regular expression
+
+2018-06-27 14:07:36 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-27 14:07:36 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 14:07:36 - [TEST_STEP][FAILED] - Statement - Try: Unable to click on object 'Object Repository/Page_Arc dashboard/a_ My Cities' (Root cause: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: headless chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 272a0663a33539b3333c6fbe9c4ef3e8)
+
+2018-06-27 14:07:36 - [TEST_STEP][FAILED] - com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToCities: Unable to click on object 'Object Repository/Page_Arc dashboard/a_ My Cities' (Root cause: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: headless chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 272a0663a33539b3333c6fbe9c4ef3e8)
+
+2018-06-27 14:07:37 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Page_Arc dashboard/a_ My Cities' (Root cause: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: headless chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 272a0663a33539b3333c6fbe9c4ef3e8)
+[[ATTACHMENT|C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Cities Suites\\CitiesIndiaSutes\\LEEDForCites TestSuite\\20180627_140634\\1530088656685.png]]
+
+2018-06-27 14:07:37 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Page_Arc dashboard/a_ My Cities' (Root cause: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: headless chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 272a0663a33539b3333c6fbe9c4ef3e8)
+
+2018-06-27 14:07:37 - [TEST_STEP][PASSED] - Statement - Catch (Throwable t): null
+
+2018-06-27 14:07:37 - [TEST_STEP][PASSED] - Statement - out.println(t.getLocalizedMessage()): null
+
+2018-06-27 14:07:37 - [TEST_STEP][PASSED] - Statement - e1 = new java.lang.Error(t.getMessage()): null
+
+2018-06-27 14:07:37 - [TEST_STEP][PASSED] - Statement - e1.setStackTrace(t.getStackTrace()): null
+
+2018-06-27 14:07:37 - [TEST_STEP][PASSED] - Statement - e1.printStackTrace(): null
+
+2018-06-27 14:07:37 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Browser is closed
+
+2018-06-27 14:07:37 - [TEST_STEP][PASSED] - switchToDefaultContent: Switching to default content
+
+2018-06-27 14:07:37 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Name : " + testCase.getTestCaseId()): Test Case Name : Test Cases/MyCities/LEEDForCities/AddNewProjectTest
+
+2018-06-27 14:07:37 - [MESSAGE][WARNING] - Test Case Name : Test Cases/MyCities/LEEDForCities/AddNewProjectTest
+
+2018-06-27 14:07:37 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Status : " + testCase.getTestCaseStatus()): Test Case Status : FAILED
+
+2018-06-27 14:07:37 - [MESSAGE][WARNING] - Test Case Status : FAILED
+
+2018-06-27 14:07:37 - [TEST_STEP][PASSED] - Statement - If ("FAILED".equalsIgnoreCase(testCase.getTestCaseStatus())): Taking screenshot successfully
+
+2018-06-27 14:07:37 - [TEST_STEP][PASSED] - Statement - println("Test case Fail taking Screenshot"): null
+
+2018-06-27 14:07:37 - [TEST_STEP][PASSED] - Statement - Try: Taking screenshot successfully
+
+2018-06-27 14:07:38 - [TEST_STEP][PASSED] - Statement - data = new java.util.Date(java.lang.System.currentTimeMillis()): null
+
+2018-06-27 14:07:38 - [TEST_STEP][PASSED] - Statement - formatarDate = new java.text.SimpleDateFormat(yyyyMMddHHmmss): null
+
+2018-06-27 14:07:38 - [TEST_STEP][PASSED] - takeScreenshot: Taking screenshot successfully
+
+2018-06-27 14:07:38 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\ScreenShot\\screenshot_20180627140738.png]]
+
+2018-06-27 14:07:38 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-27 14:07:39 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2018-06-27 14:06:49 - [TEST_CASE][FAILED] - Test Cases/MyCities/LEEDForCities/AddNewProjectTest: Test Cases/MyCities/LEEDForCities/AddNewProjectTest FAILED because (of) Unable to click on object 'Object Repository/Page_Arc dashboard/a_ My Cities' (Root cause: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: headless chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 272a0663a33539b3333c6fbe9c4ef3e8)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest" classname="Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest" status="FAILED">
+         <failure type="FAILED" message="Unable to click on object 'Object Repository/Page_Arc dashboard/sideBar' (Root cause: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: headless chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: f81eb2b1effdd20f573173774e4e23a2)"/>
+         <system-out><![CDATA[2018-06-27 14:07:39 - [TEST_CASE][FAILED] - Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest: Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest FAILED because (of) Unable to click on object 'Object Repository/Page_Arc dashboard/sideBar' (Root cause: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: headless chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: f81eb2b1effdd20f573173774e4e23a2)
+
+2018-06-27 14:07:39 - [TEST_STEP][PASSED] - Start listener action : beforeTestListener: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 14:07:39 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 14:07:48 - [MESSAGE][PASSED] - Browser is opened with url: 'http://www.qas.arconline.io/'
+
+2018-06-27 14:07:49 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-27 14:07:49 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-06-27 14:07:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_ACCEPT AND CLOSE' is clicked on
+
+2018-06-27 14:07:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/Click_Log in' is clicked on
+
+2018-06-27 14:07:51 - [MESSAGE][PASSED] - Text 'testleed1@gmail.com' is set on object 'Object Repository/Page_Home  Arc/input_name'
+
+2018-06-27 14:07:52 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/Page_Home  Arc/input_pass'
+
+2018-06-27 14:07:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/input_field_policy_accept' is clicked on
+
+2018-06-27 14:08:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_Log in' is clicked on
+
+2018-06-27 14:08:13 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-27 14:08:14 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/span_My Projects' is: 'My Projects'
+
+2018-06-27 14:08:14 - [MESSAGE][PASSED] - Actual text 'My Projects' and expected text 'My Projects' are matched  using regular expression
+
+2018-06-27 14:08:17 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-27 14:08:17 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 14:08:17 - [TEST_STEP][FAILED] - Statement - Try: Unable to click on object 'Object Repository/Page_Arc dashboard/sideBar' (Root cause: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: headless chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: f81eb2b1effdd20f573173774e4e23a2)
+
+2018-06-27 14:08:17 - [TEST_STEP][FAILED] - com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram: Unable to click on object 'Object Repository/Page_Arc dashboard/sideBar' (Root cause: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: headless chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: f81eb2b1effdd20f573173774e4e23a2)
+
+2018-06-27 14:08:18 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Page_Arc dashboard/sideBar' (Root cause: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: headless chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: f81eb2b1effdd20f573173774e4e23a2)
+[[ATTACHMENT|C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Cities Suites\\CitiesIndiaSutes\\LEEDForCites TestSuite\\20180627_140634\\1530088698012.png]]
+
+2018-06-27 14:08:18 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Page_Arc dashboard/sideBar' (Root cause: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: headless chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: f81eb2b1effdd20f573173774e4e23a2)
+
+2018-06-27 14:08:18 - [TEST_STEP][PASSED] - Statement - Catch (Throwable t): null
+
+2018-06-27 14:08:18 - [TEST_STEP][PASSED] - Statement - out.println(t.getLocalizedMessage()): null
+
+2018-06-27 14:08:18 - [TEST_STEP][PASSED] - Statement - e1 = new java.lang.Error(t.getMessage()): null
+
+2018-06-27 14:08:18 - [TEST_STEP][PASSED] - Statement - e1.setStackTrace(t.getStackTrace()): null
+
+2018-06-27 14:08:18 - [TEST_STEP][PASSED] - Statement - e1.printStackTrace(): null
+
+2018-06-27 14:08:18 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Browser is closed
+
+2018-06-27 14:08:18 - [TEST_STEP][PASSED] - switchToDefaultContent: Switching to default content
+
+2018-06-27 14:08:18 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Name : " + testCase.getTestCaseId()): Test Case Name : Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest
+
+2018-06-27 14:08:18 - [MESSAGE][WARNING] - Test Case Name : Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest
+
+2018-06-27 14:08:18 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Status : " + testCase.getTestCaseStatus()): Test Case Status : FAILED
+
+2018-06-27 14:08:18 - [MESSAGE][WARNING] - Test Case Status : FAILED
+
+2018-06-27 14:08:18 - [TEST_STEP][PASSED] - Statement - If ("FAILED".equalsIgnoreCase(testCase.getTestCaseStatus())): Taking screenshot successfully
+
+2018-06-27 14:08:18 - [TEST_STEP][PASSED] - Statement - println("Test case Fail taking Screenshot"): null
+
+2018-06-27 14:08:18 - [TEST_STEP][PASSED] - Statement - Try: Taking screenshot successfully
+
+2018-06-27 14:08:18 - [TEST_STEP][PASSED] - Statement - data = new java.util.Date(java.lang.System.currentTimeMillis()): null
+
+2018-06-27 14:08:18 - [TEST_STEP][PASSED] - Statement - formatarDate = new java.text.SimpleDateFormat(yyyyMMddHHmmss): null
+
+2018-06-27 14:08:18 - [TEST_STEP][PASSED] - takeScreenshot: Taking screenshot successfully
+
+2018-06-27 14:08:18 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\ScreenShot\\screenshot_20180627140818.png]]
+
+2018-06-27 14:08:18 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-27 14:08:19 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2018-06-27 14:07:39 - [TEST_CASE][FAILED] - Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest: Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest FAILED because (of) Unable to click on object 'Object Repository/Page_Arc dashboard/sideBar' (Root cause: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: headless chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: f81eb2b1effdd20f573173774e4e23a2)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-27 14:06:43 - [TEST_SUITE][FAILED] - LEEDForCites TestSuite: Test Cases/MyCities/LEEDForCities/AddNewProjectTest FAILED because (of) Unable to click on object 'Object Repository/Page_Arc dashboard/a_ My Cities' (Root cause: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: headless chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 272a0663a33539b3333c6fbe9c4ef3e8)]]></system-out>
+      <system-err><![CDATA[2018-06-27 14:06:43 - [TEST_SUITE][FAILED] - LEEDForCites TestSuite: Test Cases/MyCities/LEEDForCities/AddNewProjectTest FAILED because (of) Unable to click on object 'Object Repository/Page_Arc dashboard/a_ My Cities' (Root cause: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: headless chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 272a0663a33539b3333c6fbe9c4ef3e8)]]></system-err>
+   </testsuite>
+</testsuites>

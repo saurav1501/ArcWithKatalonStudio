@@ -1,0 +1,13 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+LEEDForCommunities TestSuite,Chrome 67.0.3396.99,,2018-06-27 14:28:12,2018-06-27 14:30:36,2m - 23.972s,FAILED
+,,,,,,
+Test Cases/MyCommunities/LEEDForCommunities/AddNewProjectTest,Chrome 67.0.3396.99,Verify ablility to register the new communities project.,2018-06-27 14:28:18,2018-06-27 14:29:41,1m - 22.446s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-27 14:28:18,2018-06-27 14:29:06,47.716s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-27 14:29:06,2018-06-27 14:29:40,33.282s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-27 14:29:40,2018-06-27 14:29:41,1.108s,PASSED
+,,,,,,
+Test Cases/MyCommunities/LEEDForCommunities/RegPaymentByCheckTest,Chrome 67.0.3396.99,,2018-06-27 14:29:41,2018-06-27 14:30:36,55.216s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-27 14:29:41,2018-06-27 14:30:15,34.071s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-27 14:30:15,2018-06-27 14:30:35,19.618s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-27 14:30:35,2018-06-27 14:30:35,0.026s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-27 14:30:35,2018-06-27 14:30:36,1.169s,PASSED

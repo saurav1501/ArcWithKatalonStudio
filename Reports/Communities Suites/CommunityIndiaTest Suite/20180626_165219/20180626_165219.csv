@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+CommunityIndiaTest Suite,Chrome 67.0.3396.99,,2018-06-26 16:52:21,2018-06-26 16:55:58,3m - 37.103s,FAILED
+,,,,,,
+Test Cases/MyCommunities/CommunitiesNone/AddNewProjectTest,Chrome 67.0.3396.99,Verify ablility to register the new communities project.,2018-06-26 16:52:23,2018-06-26 16:53:40,1m - 16.618s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-26 16:52:23,2018-06-26 16:52:50,26.619s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-26 16:52:50,2018-06-26 16:53:39,48.668s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-26 16:53:39,2018-06-26 16:53:39,0.031s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-26 16:53:39,2018-06-26 16:53:40,1.126s,PASSED
+,,,,,,
+Test Cases/MyCommunities/CommunitiesOther/AddNewProjectTest,Chrome 67.0.3396.99,Verify ablility to register the new communities project.,2018-06-26 16:53:40,2018-06-26 16:55:00,1m - 20.172s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-26 16:53:40,2018-06-26 16:54:10,29.936s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-26 16:54:10,2018-06-26 16:54:59,49.031s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-26 16:54:59,2018-06-26 16:54:59,0.008s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-26 16:54:59,2018-06-26 16:55:00,0.993s,PASSED
+,,,,,,
+Test Cases/MyCommunities/LEEDForCommunities/AddNewProjectTest,Chrome 67.0.3396.99,Verify ablility to register the new communities project.,2018-06-26 16:55:00,2018-06-26 16:55:58,58.347s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-26 16:55:00,2018-06-26 16:55:24,24.488s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-26 16:55:24,2018-06-26 16:55:57,32.740s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-26 16:55:57,2018-06-26 16:55:57,0.005s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-26 16:55:57,2018-06-26 16:55:58,0.956s,PASSED

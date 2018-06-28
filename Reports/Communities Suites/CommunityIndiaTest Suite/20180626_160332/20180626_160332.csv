@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+CommunityIndiaTest Suite,Chrome 67.0.3396.99,,2018-06-26 16:03:34,2018-06-26 16:05:02,1m - 28.207s,ERROR
+,,,,,,
+Test Cases/MyCommunities/CommunitiesNone/AddNewProjectTest,Chrome 67.0.3396.99,Verify ablility to register the new communities project.,2018-06-26 16:03:36,2018-06-26 16:04:08,32.026s,ERROR
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-26 16:03:36,2018-06-26 16:04:06,29.707s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-26 16:04:06,2018-06-26 16:04:07,1.407s,ERROR
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-26 16:04:07,2018-06-26 16:04:07,0.028s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-26 16:04:07,2018-06-26 16:04:08,0.680s,PASSED
+,,,,,,
+Test Cases/MyCommunities/CommunitiesNone/PaymentByCreditCardTest,Chrome 67.0.3396.99,,2018-06-26 16:04:08,2018-06-26 16:05:02,54.308s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-26 16:04:08,2018-06-26 16:04:59,51.387s,ERROR
+Statement - Try,Chrome 67.0.3396.99,,2018-06-26 16:04:59,2018-06-26 16:05:00,0.084s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-26 16:05:00,2018-06-26 16:05:00,0.014s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-26 16:05:00,2018-06-26 16:05:02,2.620s,FAILED

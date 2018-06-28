@@ -81,7 +81,7 @@ public class MasterTestListener extends BaseClass {
 		 WebUI.closeWindowIndex(1)
 		 WebUI.closeBrowser()
 		 WebUI.switchToWindowIndex(0)*/
-	//	 WebUI.closeBrowser()
+		 WebUI.closeBrowser()
 	 
 	}
 	
@@ -94,7 +94,7 @@ public class MasterTestListener extends BaseClass {
 	@TearDown
 	void TearDown(){
 		System.out.println("[--- This is Tear Down Method ---]")
-		//WebUI.closeBrowser()
+		WebUI.closeBrowser()
 		
 	}
 	

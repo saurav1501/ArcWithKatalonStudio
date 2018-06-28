@@ -30,7 +30,6 @@ public class ReusableMethodsPayment extends BaseClass{
 
 	@Keyword
 	public void paymentByCC(String sheetName , int rowNum){
-
 		/********************Fetching the data via Excel Sheet ******************************/
 		String cardName   = data.getCellData(sheetName, "Card Name", rowNum);
 		String cardNum    = data.getCellData(sheetName, "Card Number", rowNum);
@@ -56,12 +55,42 @@ public class ReusableMethodsPayment extends BaseClass{
 		WebUI.setText(findTestObject('Object Repository/PaymenntLocator/input_street'), address)
 		WebUI.clearText(findTestObject('Object Repository/PaymenntLocator/input_city'))
 		WebUI.setText(findTestObject('Object Repository/PaymenntLocator/input_city'), city)
-		WebUI.selectOptionByLabel(findTestObject('Object Repository/PaymenntLocator/select_AfghanistanAland Island'), country, false)
-		WebUI.selectOptionByLabel(findTestObject('Object Repository/PaymenntLocator/select_Select StateAlabamaAlas'),state , true)
+		WebUI.selectOptionByLabel(findTestObject('PaymenntLocator/Country'), country, false)
+		WebUI.selectOptionByLabel(findTestObject('PaymenntLocator/Select_State'),state , true)
 		WebUI.clearText(findTestObject('Object Repository/PaymenntLocator/input_zip_code'))
 		WebUI.setText(findTestObject('Object Repository/PaymenntLocator/input_zip_code'),zip )
 		WebUI.click(findTestObject('Object Repository/PaymenntLocator/button_Next'))
 		WebUI.delay(10)
+		String paymentSuccessText = WebUI.getText(findTestObject('Object Repository/PaymenntLocator/h2_Congratulations'))
+		WebUI.verifyMatch(paymentSuccessText,'Congratulations!',true)
+	}
+
+	@Keyword
+	public void paymentByCheck(String sheetName , int rowNum){
+		/********************Fetching the data via Excel Sheet ******************************/
+		String partyName  = data.getCellData(sheetName, "Party Name", rowNum);
+		String partyEmail = data.getCellData(sheetName, "Party Email", rowNum);
+		String address    = data.getCellData(sheetName, "Address", rowNum);
+		String city       = data.getCellData(sheetName, "City", rowNum);
+		String country    = data.getCellData(sheetName, "Country", rowNum);
+		String state      = data.getCellData(sheetName, "State", rowNum);
+		String zip        = data.getCellData(sheetName, "Zip", rowNum);
+		WebUI.clearText(findTestObject('Object Repository/PaymenntLocator/input_party_name'))
+		WebUI.setText(findTestObject('Object Repository/PaymenntLocator/input_party_name'),partyName)
+		WebUI.clearText(findTestObject('Object Repository/PaymenntLocator/input_email'))
+		WebUI.setText(findTestObject('Object Repository/PaymenntLocator/input_email'), partyEmail)
+		WebUI.clearText(findTestObject('Object Repository/PaymenntLocator/input_street'))
+		WebUI.setText(findTestObject('Object Repository/PaymenntLocator/input_street'), address)
+		WebUI.clearText(findTestObject('Object Repository/PaymenntLocator/input_city'))
+		WebUI.setText(findTestObject('Object Repository/PaymenntLocator/input_city'), city)
+		WebUI.selectOptionByLabel(findTestObject('PaymenntLocator/Country'), country, false)
+		WebUI.selectOptionByLabel(findTestObject('PaymenntLocator/Select_State'),state , true)
+		WebUI.clearText(findTestObject('Object Repository/PaymenntLocator/input_zip_code'))
+		WebUI.setText(findTestObject('Object Repository/PaymenntLocator/input_zip_code'),zip )
+		WebUI.click(findTestObject('Object Repository/PaymenntLocator/button_Next'))
+		WebUI.delay(5)
+		WebUI.click(findTestObject('Object Repository/PaymenntLocator/button_Continue'))
+		WebUI.delay(5)
 		String paymentSuccessText = WebUI.getText(findTestObject('Object Repository/PaymenntLocator/h2_Congratulations'))
 		WebUI.verifyMatch(paymentSuccessText,'Congratulations!',true)
 	}

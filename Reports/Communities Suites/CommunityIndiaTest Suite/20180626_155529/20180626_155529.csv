@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+CommunityIndiaTest Suite,Chrome 67.0.3396.99,,2018-06-26 15:55:31,2018-06-26 15:57:36,2m - 5.461s,INCOMPLETE
+,,,,,,
+Test Cases/MyCommunities/CommunitiesNone/AddNewProjectTest,Chrome 67.0.3396.99,Verify ablility to register the new communities project.,2018-06-26 15:55:33,2018-06-26 15:56:06,33.180s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-26 15:55:33,2018-06-26 15:56:03,30.128s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-26 15:56:03,2018-06-26 15:56:05,1.570s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-26 15:56:05,2018-06-26 15:56:05,0.040s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-26 15:56:05,2018-06-26 15:56:06,1.261s,PASSED
+,,,,,,
+Test Cases/MyCommunities/CommunitiesNone/PaymentByCreditCardTest,Chrome 67.0.3396.99,,2018-06-26 15:56:06,2018-06-26 15:57:21,1m - 15.061s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-26 15:56:06,2018-06-26 15:56:35,29.194s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-26 15:56:36,2018-06-26 15:57:20,44.768s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-26 15:57:20,2018-06-26 15:57:20,0.008s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-26 15:57:20,2018-06-26 15:57:21,0.918s,PASSED
+,,,,,,
+Test Cases/MyCommunities/CommunitiesOther/AddNewProjectTest,Chrome 67.0.3396.99,Verify ablility to register the new communities project.,2018-06-26 15:57:21,2018-06-26 15:57:36,15.244s,INCOMPLETE
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-26 15:57:21,2018-06-26 15:57:24,2.820s,ERROR
+Statement - Try,Chrome 67.0.3396.99,,2018-06-26 15:57:24,2018-06-26 15:57:32,8.024s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-26 15:57:32,2018-06-26 15:57:32,0.021s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-26 15:57:32,2018-06-26 15:57:36,4.040s,INCOMPLETE

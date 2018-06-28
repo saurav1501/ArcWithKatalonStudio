@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="BuildingNone TestSuite" time="85" tests="0" failures="1" errors="0">
+   <testsuite name="BuildingNone TestSuite" tests="0" failures="1" errors="0" time="85" timestamp="2018-06-27 13:25:15" hostname="Group10 - G10CHLT003" id="Test Suites/Building Suites/IND Building Suite/BuildingNone TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Building Suites\\IND Building Suite\\BuildingNone TestSuite\\20180627_132507"/>
+         <property name="logFiles" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Building Suites\\IND Building Suite\\BuildingNone TestSuite\\20180627_132507\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Building Suites\\IND Building Suite\\BuildingNone TestSuite\\20180627_132507\\1530086198937.png, C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\ScreenShot\\screenshot_20180627132639.png"/>
+         <property name="hostName" value="Group10 - G10CHLT003"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="172.18.0.84"/>
+         <property name="sessionId" value="5c9dafd00d69c6651e7e8a5b30244c66"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest" classname="Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest" status="FAILED">
+         <failure type="FAILED" message="Unable to get text of object 'Object Repository/Page_Arc dashboard/no_Project (1 project)' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Arc dashboard/no_Project (1 project)' located by 'By.xpath: //div[@class = 'searchLabels ng-binding' and (text() = ' Project (1 project)' or . = ' Project (1 project)')]' not found)"/>
+         <system-out><![CDATA[2018-06-27 13:25:20 - [TEST_CASE][FAILED] - Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest: Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest FAILED because (of) Unable to get text of object 'Object Repository/Page_Arc dashboard/no_Project (1 project)' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Arc dashboard/no_Project (1 project)' located by 'By.xpath: //div[@class = 'searchLabels ng-binding' and (text() = ' Project (1 project)' or . = ' Project (1 project)')]' not found)
+
+2018-06-27 13:25:20 - [TEST_STEP][PASSED] - Start listener action : beforeTestListener: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 13:25:20 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 13:25:30 - [MESSAGE][PASSED] - Browser is opened with url: 'http://www.qas.arconline.io/'
+
+2018-06-27 13:25:32 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-27 13:25:32 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-06-27 13:25:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_ACCEPT AND CLOSE' is clicked on
+
+2018-06-27 13:25:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/Click_Log in' is clicked on
+
+2018-06-27 13:25:33 - [MESSAGE][PASSED] - Text 'usgbcarc@gmail.com' is set on object 'Object Repository/Page_Home  Arc/input_name'
+
+2018-06-27 13:25:33 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/Page_Home  Arc/input_pass'
+
+2018-06-27 13:25:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/input_field_policy_accept' is clicked on
+
+2018-06-27 13:25:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_Log in' is clicked on
+
+2018-06-27 13:25:54 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-27 13:25:55 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/span_My Projects' is: 'My Projects'
+
+2018-06-27 13:25:55 - [MESSAGE][PASSED] - Actual text 'My Projects' and expected text 'My Projects' are matched  using regular expression
+
+2018-06-27 13:25:58 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-27 13:25:58 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 13:25:58 - [TEST_STEP][FAILED] - Statement - Try: Unable to get text of object 'Object Repository/Page_Arc dashboard/no_Project (1 project)' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Arc dashboard/no_Project (1 project)' located by 'By.xpath: //div[@class = 'searchLabels ng-binding' and (text() = ' Project (1 project)' or . = ' Project (1 project)')]' not found)
+
+2018-06-27 13:25:58 - [TEST_STEP][FAILED] - com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram: Unable to get text of object 'Object Repository/Page_Arc dashboard/no_Project (1 project)' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Arc dashboard/no_Project (1 project)' located by 'By.xpath: //div[@class = 'searchLabels ng-binding' and (text() = ' Project (1 project)' or . = ' Project (1 project)')]' not found)
+
+2018-06-27 13:25:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/sideBar' is clicked on
+
+2018-06-27 13:26:01 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-27 13:26:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/input_searchBar1' is clicked on
+
+2018-06-27 13:26:02 - [MESSAGE][PASSED] - Text '1000151082' is set on object 'Object Repository/Page_Arc dashboard/input_searchBar1'
+
+2018-06-27 13:26:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/input_searchBar1' is clicked on
+
+2018-06-27 13:26:06 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-27 13:26:39 - [MESSAGE][FAILED] - Unable to get text of object 'Object Repository/Page_Arc dashboard/no_Project (1 project)' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Arc dashboard/no_Project (1 project)' located by 'By.xpath: //div[@class = 'searchLabels ng-binding' and (text() = ' Project (1 project)' or . = ' Project (1 project)')]' not found)
+[[ATTACHMENT|C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Building Suites\\IND Building Suite\\BuildingNone TestSuite\\20180627_132507\\1530086198937.png]]
+
+2018-06-27 13:26:39 - [MESSAGE][FAILED] - Unable to get text of object 'Object Repository/Page_Arc dashboard/no_Project (1 project)' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Arc dashboard/no_Project (1 project)' located by 'By.xpath: //div[@class = 'searchLabels ng-binding' and (text() = ' Project (1 project)' or . = ' Project (1 project)')]' not found)
+
+2018-06-27 13:26:39 - [TEST_STEP][PASSED] - Statement - Catch (Throwable t): null
+
+2018-06-27 13:26:39 - [TEST_STEP][PASSED] - Statement - out.println(t.getLocalizedMessage()): null
+
+2018-06-27 13:26:39 - [TEST_STEP][PASSED] - Statement - e1 = new java.lang.Error(t.getMessage()): null
+
+2018-06-27 13:26:39 - [TEST_STEP][PASSED] - Statement - e1.setStackTrace(t.getStackTrace()): null
+
+2018-06-27 13:26:39 - [TEST_STEP][PASSED] - Statement - e1.printStackTrace(): null
+
+2018-06-27 13:26:39 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Browser is closed
+
+2018-06-27 13:26:39 - [TEST_STEP][PASSED] - switchToDefaultContent: Switching to default content
+
+2018-06-27 13:26:39 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Name : " + testCase.getTestCaseId()): Test Case Name : Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest
+
+2018-06-27 13:26:39 - [MESSAGE][WARNING] - Test Case Name : Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest
+
+2018-06-27 13:26:39 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Status : " + testCase.getTestCaseStatus()): Test Case Status : FAILED
+
+2018-06-27 13:26:39 - [MESSAGE][WARNING] - Test Case Status : FAILED
+
+2018-06-27 13:26:39 - [TEST_STEP][PASSED] - Statement - If ("FAILED".equalsIgnoreCase(testCase.getTestCaseStatus())): Taking screenshot successfully
+
+2018-06-27 13:26:39 - [TEST_STEP][PASSED] - Statement - println("Test case Fail taking Screenshot"): null
+
+2018-06-27 13:26:39 - [TEST_STEP][PASSED] - Statement - Try: Taking screenshot successfully
+
+2018-06-27 13:26:39 - [TEST_STEP][PASSED] - Statement - data = new java.util.Date(java.lang.System.currentTimeMillis()): null
+
+2018-06-27 13:26:39 - [TEST_STEP][PASSED] - Statement - formatarDate = new java.text.SimpleDateFormat(yyyyMMddHHmmss): null
+
+2018-06-27 13:26:39 - [TEST_STEP][PASSED] - takeScreenshot: Taking screenshot successfully
+
+2018-06-27 13:26:40 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\ScreenShot\\screenshot_20180627132639.png]]
+
+2018-06-27 13:26:40 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-27 13:26:40 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2018-06-27 13:25:20 - [TEST_CASE][FAILED] - Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest: Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest FAILED because (of) Unable to get text of object 'Object Repository/Page_Arc dashboard/no_Project (1 project)' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Arc dashboard/no_Project (1 project)' located by 'By.xpath: //div[@class = 'searchLabels ng-binding' and (text() = ' Project (1 project)' or . = ' Project (1 project)')]' not found)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-27 13:25:15 - [TEST_SUITE][FAILED] - BuildingNone TestSuite: Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest FAILED because (of) Unable to get text of object 'Object Repository/Page_Arc dashboard/no_Project (1 project)' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Arc dashboard/no_Project (1 project)' located by 'By.xpath: //div[@class = 'searchLabels ng-binding' and (text() = ' Project (1 project)' or . = ' Project (1 project)')]' not found)]]></system-out>
+      <system-err><![CDATA[2018-06-27 13:25:15 - [TEST_SUITE][FAILED] - BuildingNone TestSuite: Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest FAILED because (of) Unable to get text of object 'Object Repository/Page_Arc dashboard/no_Project (1 project)' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Arc dashboard/no_Project (1 project)' located by 'By.xpath: //div[@class = 'searchLabels ng-binding' and (text() = ' Project (1 project)' or . = ' Project (1 project)')]' not found)]]></system-err>
+   </testsuite>
+</testsuites>

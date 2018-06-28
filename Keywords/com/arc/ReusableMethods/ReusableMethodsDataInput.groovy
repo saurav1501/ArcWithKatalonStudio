@@ -1,14 +1,11 @@
 package com.arc.ReusableMethods
-
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-import org.testng.Assert
-
 import com.arc.BaseClass.BaseClass
+import org.testng.Assert
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
+import com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
 
 public class ReusableMethodsDataInput extends BaseClass {
 
@@ -54,76 +51,61 @@ public class ReusableMethodsDataInput extends BaseClass {
 		String reading4  = data.getCellData(sheetName, "EReading4", rowNum);
 		String reading5  = data.getCellData(sheetName, "EReading5", rowNum);
 
-
 		WebUI.doubleClick(findTestObject('DataInput/a_ Data Input'))
 		WebUI.click(findTestObject('DataInput/span_Energy'))
-
-		/*WebUI.click(findTestObject('DataInput/button_Add Year'))
+		WebUI.waitForElementClickable(findTestObject('DataInput/button_Add Year'), rowNum)
+		WebUI.click(findTestObject('DataInput/button_Add Year'))
 		WebUI.click(findTestObject('DataInput/button_Next Year'))
 		WebUI.click(findTestObject('DataInput/button_Previous Year'))
 		WebUI.click(findTestObject('DataInput/button_Previous Year'))
 		WebUI.click(findTestObject('DataInput/button_Previous Year'))
-
-
 		WebUI.click(findTestObject('DataInput/EditButton1'))
 		WebUI.setText(findTestObject('DataInput/TextboxValue1'), reading1)
 		WebUI.click(findTestObject('DataInput/SaveButton1'))
 		WebUI.delay(2)
-
 		WebUI.click(findTestObject('DataInput/EditButton2'))
 		WebUI.setText(findTestObject('DataInput/TextboxValue2'), reading2)
 		WebUI.click(findTestObject('DataInput/SaveButton2'))
 		WebUI.delay(2)
-
 		WebUI.click(findTestObject('DataInput/EditButton3'))
 		WebUI.setText(findTestObject('DataInput/TextboxValue3'), reading3)
 		WebUI.click(findTestObject('DataInput/SaveButton3'))
 		WebUI.delay(2)
-
 		WebUI.click(findTestObject('DataInput/EditButton4'))
 		WebUI.setText(findTestObject('DataInput/TextboxValue4'), reading4)
 		WebUI.click(findTestObject('DataInput/SaveButton4'))
 		WebUI.delay(2)
-
 		WebUI.click(findTestObject('DataInput/EditButton5'))
 		WebUI.setText(findTestObject('DataInput/TextboxValue5'), reading5)
 		WebUI.click(findTestObject('DataInput/SaveButton5'))
-		WebUI.delay(2)*/
-       
-		//Assert.assertTrue(WebUI(findTestObject('DataInput/TextboxValue1')
-         Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue1'),"value"). contains(reading1),"Not Valid") 
-
-		/*	String str = WebUI.getText(findTestObject('DataInput/TextboxValue1'))
-		 println str
-		 Assert.assertTrue(findTestObject('DataInput/TextboxValue1').getProperties().contains(reading1), "Not valid");
-		 WebUI.verifyElementAttributeValue(findTestObject('DataInput/TextboxValue1'), reading1 ,false)
-		 WebUI.verifyElementText(findTestObject('DataInput/TextboxValue1'), reading1, FailureHandling.STOP_ON_FAILURE)
-		 WebUI.getAttribute(findTestObject('DataInput/TextboxValue1'), reading1, FailureHandling.STOP_ON_FAILURE)
-		 //	WebUI.getAttribute(findTestObject('DataInput/TextboxValue2'), reading1, FailureHandling.STOP_ON_FAILURE)
-		 //	WebUI.getAttribute(findTestObject('DataInput/TextboxValue3'), reading1, FailureHandling.STOP_ON_FAILURE)
-		 //	WebUI.getAttribute(findTestObject('DataInput/TextboxValue4'), reading1, FailureHandling.STOP_ON_FAILURE)
-		 */
+		WebUI.delay(2)
+		WebUI.refresh()
+		WebUI.waitForPageLoad(10)
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue1'),"value").contains(reading1),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue2'),"value").contains(reading2),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue3'),"value").contains(reading3),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue4'),"value").contains(reading4),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue5'),"value").contains(reading5),"Not Valid")
 	}
 	@Keyword
 	public void createWaterMeterReading(String sheetName, int rowNum ) throws IOException, InterruptedException {
 		/*************************Reading data from excel sheet ************************************/
-
 		String reading1  = data.getCellData(sheetName, "WaterReading1", rowNum);
 		String reading2  = data.getCellData(sheetName, "WaterReading2", rowNum);
 		String reading3  = data.getCellData(sheetName, "WaterReading3", rowNum);
 		String reading4  = data.getCellData(sheetName, "WaterReading4", rowNum);
 		String reading5  = data.getCellData(sheetName, "WaterReading5", rowNum);
 
-
 		WebUI.doubleClick(findTestObject('DataInput/a_ Data Input'))
 		WebUI.click(findTestObject('Object Repository/DataInput/span_Water'))
 
+		WebUI.waitForElementClickable(findTestObject('DataInput/button_Add Year'), rowNum)
 		WebUI.click(findTestObject('DataInput/button_Add Year'))
+
 		WebUI.click(findTestObject('DataInput/button_Next Year'))
 		WebUI.click(findTestObject('DataInput/button_Previous Year'))
 		WebUI.click(findTestObject('DataInput/button_Previous Year'))
 		WebUI.click(findTestObject('DataInput/button_Previous Year'))
-
 
 		WebUI.click(findTestObject('DataInput/EditButton1'))
 		WebUI.setText(findTestObject('DataInput/TextboxValue1'), reading1)
@@ -150,20 +132,17 @@ public class ReusableMethodsDataInput extends BaseClass {
 		WebUI.click(findTestObject('DataInput/SaveButton5'))
 		WebUI.delay(2)
 
-
-		/*	WebUI.refresh();
-		 Thread.sleep(5000);
-		 CommonMethod.assertcontainsattributevalue("TextboxValue1", reading1,"Not Correct");
-		 CommonMethod.assertcontainsattributevalue("TextboxValue2", reading2,"Not Correct");
-		 CommonMethod.assertcontainsattributevalue("TextboxValue3", reading3,"Not Correct");
-		 CommonMethod.assertcontainsattributevalue("TextboxValue4", reading4,"Not Correct");
-		 CommonMethod.assertcontainsattributevalue("TextboxValue5", reading5,"Not Correct");
-		 CommonMethod.testlog( "Pass"," Verifies added meter reading saved & displays correctly after refresh");
-		 */
+		WebUI.refresh()
+		WebUI.waitForPageLoad(15)
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue1'),"value").contains(reading1),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue2'),"value").contains(reading2),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue3'),"value").contains(reading3),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue4'),"value").contains(reading4),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue5'),"value").contains(reading5),"Not Valid")
 	}
 
 	@Keyword
-	public void createWasteGeneration (String sheetName,int rowNum) throws IOException, InterruptedException {
+	public void createWasteGenerationMeterReading(String sheetName,int rowNum) throws IOException, InterruptedException {
 
 		/*************************Reading data from excel sheet ************************************/
 		String reading1  = data.getCellData(sheetName, "wastegeneration1", rowNum);
@@ -172,12 +151,12 @@ public class ReusableMethodsDataInput extends BaseClass {
 		String reading4  = data.getCellData(sheetName, "wastegeneration4", rowNum);
 		String reading5  = data.getCellData(sheetName, "wastegeneration5", rowNum);
 
-
 		WebUI.doubleClick(findTestObject('DataInput/a_ Data Input'))
-		WebUI.click(findTestObject('Object Repository/DataInput/span_Waste'))
+		WebUI.doubleClick(findTestObject('Object Repository/DataInput/span_Waste'))
 
-		WebUI.click(findTestObject('Object Repository/DataInput/GwAddYear'))
-		WebUI.delay(2)
+		WebUI.waitForElementClickable(findTestObject('Object Repository/DataInput/GwAddYear'),10)
+		WebUI.doubleClick(findTestObject('Object Repository/DataInput/GwAddYear'))
+		WebUI.delay(3)
 
 		WebUI.click(findTestObject('DataInput/button_Next Year'))
 		WebUI.delay(2)
@@ -211,108 +190,211 @@ public class ReusableMethodsDataInput extends BaseClass {
 		WebUI.click(findTestObject('DataInput/SaveButton5'))
 		WebUI.delay(2)
 
-
-		/*	CommonMethod.assertcontainsattributevalue("CWTextboxValue1", reading1,"Not Correct");
-		 CommonMethod.assertcontainsattributevalue("CWTextboxValue2", reading2,"Not Correct");
-		 CommonMethod.assertcontainsattributevalue("CWTextboxValue3", reading3,"Not Correct");
-		 CommonMethod.assertcontainsattributevalue("CWTextboxValue4", reading4,"Not Correct");
-		 CommonMethod.assertcontainsattributevalue("CWTextboxValue5", reading5,"Not Correct");
-		 CommonMethod.testlog( "Pass"," Verifies added meter reading saved & displays correctly after refresh ");
-		 Thread.sleep(3000);*/
+		WebUI.refresh()
+		WebUI.waitForPageLoad(15)
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue1'),"value").contains(reading1),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue2'),"value").contains(reading2),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue3'),"value").contains(reading3),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue4'),"value").contains(reading4),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue5'),"value").contains(reading5),"Not Valid")
 	}
 
 	@Keyword
-	public void createWasteDiversionMeterReading(String param, String sheetName, int rowNum) throws IOException, InterruptedException{
+	public void createWasteDiversionMeterReading(String sheetName, int rowNum) throws IOException, InterruptedException{
 		/*************************Reading data from excel sheet ************************************/
-
 		String reading1  = data.getCellData(sheetName, "wastediversion1", rowNum);
 		String reading2  = data.getCellData(sheetName, "wastediversion2", rowNum);
 		String reading3  = data.getCellData(sheetName, "wastediversion3", rowNum);
 		String reading4  = data.getCellData(sheetName, "wastediversion4", rowNum);
 		String reading5  = data.getCellData(sheetName, "wastediversion5", rowNum);
 
+		WebUI.doubleClick(findTestObject('DataInput/a_ Data Input'))
+		WebUI.doubleClick(findTestObject('Object Repository/DataInput/span_Waste'))
+		WebUI.doubleClick(findTestObject('Object Repository/DataInput/DwAddYear'))
 
-		CommonMethod.ArcSpecifictoggle( "CreditAction");
-		ClickDataInput();
-		ClickDataInputParam(param);
+		WebUI.click(findTestObject('DataInput/DPreviousYear'))
+		WebUI.click(findTestObject('DataInput/DPreviousYear'))
+		WebUI.click(findTestObject('DataInput/DPreviousYear'))
+		WebUI.click(findTestObject('DataInput/DNextButton'))
 
-		CommonMethod.click("DwAddYear");
-		CommonMethod.driverwait(1);
+		WebUI.click(findTestObject('DataInput/EditButton6'))
+		WebUI.setText(findTestObject('Object Repository/DataInput/dWTextboxValue1'), reading1)
+		WebUI.click(findTestObject('DataInput/SaveButton6'))
+		WebUI.delay(2)
 
-		CommonMethod.click("DPreviousYear");
-		CommonMethod.driverwait(1);
+		WebUI.click(findTestObject('DataInput/EditButton7'))
+		WebUI.setText(findTestObject('Object Repository/DataInput/dWTextboxValue2'), reading2)
+		WebUI.click(findTestObject('DataInput/SaveButton7'))
+		WebUI.delay(2)
 
-		CommonMethod.click("DPreviousYear");
-		CommonMethod.driverwait(1);
+		WebUI.click(findTestObject('DataInput/EditButton8'))
+		WebUI.setText(findTestObject('Object Repository/DataInput/dWTextboxValue3'), reading3)
+		WebUI.click(findTestObject('DataInput/SaveButton8'))
+		WebUI.delay(2)
 
-		CommonMethod.click("DPreviousYear");
-		CommonMethod.driverwait(1);
+		WebUI.click(findTestObject('DataInput/EditButton9'))
+		WebUI.setText(findTestObject('Object Repository/DataInput/dWTextboxValue4'), reading4)
+		WebUI.click(findTestObject('DataInput/SaveButton9'))
+		WebUI.delay(2)
 
-		CommonMethod.click("DPreviousYear");
-		CommonMethod.driverwait(1);
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Object Repository/DataInput/dWTextboxValue1'),"value").contains(reading1),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Object Repository/DataInput/dWTextboxValue2'),"value").contains(reading2),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Object Repository/DataInput/dWTextboxValue3'),"value").contains(reading3),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Object Repository/DataInput/dWTextboxValue4'),"value").contains(reading4),"Not Valid")
+	}
+	@Keyword
+	public void createTransportReading(String sheetName, int rowNum) throws IOException, InterruptedException{
+		/*************************Reading data from excel sheet ************************************/
+
+		String reading1  = data.getCellData(sheetName, "TReading1", rowNum);
+		String reading2  = data.getCellData(sheetName, "TReading2", rowNum);
+		String reading3  = data.getCellData(sheetName, "TReading3", rowNum);
+		String reading4  = data.getCellData(sheetName, "TReading4", rowNum);
+		String reading5  = data.getCellData(sheetName, "TReading5", rowNum);
+
+		WebUI.doubleClick(findTestObject('DataInput/a_ Data Input'))
+		WebUI.click(findTestObject('Object Repository/DataInput/span_Transportation'))
+		WebUI.delay(2)
+
+		WebUI.waitForElementClickable(findTestObject('DataInput/button_Add Year'))
+		WebUI.click(findTestObject('DataInput/button_Add Year'))
+
+		WebUI.click(findTestObject('DataInput/button_Next Year'))
+		WebUI.click(findTestObject('DataInput/button_Previous Year'))
+		WebUI.click(findTestObject('DataInput/button_Previous Year'))
+		WebUI.click(findTestObject('DataInput/button_Previous Year'))
+
+		WebUI.click(findTestObject('DataInput/EditButton1'))
+		WebUI.setText(findTestObject('DataInput/TextboxValue1'), reading1)
+		WebUI.click(findTestObject('DataInput/SaveButton1'))
+		WebUI.delay(2)
+
+		WebUI.click(findTestObject('DataInput/EditButton2'))
+		WebUI.setText(findTestObject('DataInput/TextboxValue2'), reading2)
+		WebUI.click(findTestObject('DataInput/SaveButton2'))
+		WebUI.delay(2)
+
+		WebUI.click(findTestObject('DataInput/EditButton3'))
+		WebUI.setText(findTestObject('DataInput/TextboxValue3'), reading3)
+		WebUI.click(findTestObject('DataInput/SaveButton3'))
+		WebUI.delay(2)
+
+		WebUI.click(findTestObject('DataInput/EditButton4'))
+		WebUI.setText(findTestObject('DataInput/TextboxValue4'), reading4)
+		WebUI.click(findTestObject('DataInput/SaveButton4'))
+		WebUI.delay(2)
+
+		WebUI.click(findTestObject('DataInput/EditButton5'))
+		WebUI.setText(findTestObject('DataInput/TextboxValue5'), reading5)
+		WebUI.click(findTestObject('DataInput/SaveButton5'))
+		WebUI.delay(2)
+
+		WebUI.refresh()
+		WebUI.waitForPageLoad(15)
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue1'),"value").contains(reading1),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue2'),"value").contains(reading2),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue3'),"value").contains(reading3),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue4'),"value").contains(reading4),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue5'),"value").contains(reading5),"Not Valid")
+	}
+	@Keyword
+	public void createHumanExpMeterReading(String sheetName, int rowNum)throws IOException, InterruptedException {
+		/*************************Reading data from excel sheet ************************************/
+		String reading1  = data.getCellData(sheetName, "EPReading1", rowNum);
+		String reading2  = data.getCellData(sheetName, "EPReading2", rowNum);
+		String reading3  = data.getCellData(sheetName, "HGiniReading1", rowNum);
+		String reading4  = data.getCellData(sheetName, "HGiniReading2", rowNum);
+		String reading5  = data.getCellData(sheetName, "Hincome1", rowNum);
+		String reading6  = data.getCellData(sheetName, "Hincome2", rowNum);
+
+		WebUI.doubleClick(findTestObject('DataInput/a_ Data Input'))
+		WebUI.delay(1)
+		WebUI.doubleClick(findTestObject('Object Repository/DataInput/span_Human Experience'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Object Repository/DataInput/EducationAddYear'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Object Repository/DataInput/EducationAddPrevYear'))
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('DataInput/EditButton1'))
+		WebUI.setText(findTestObject('DataInput/TextboxValue1'), reading1)
+		WebUI.click(findTestObject('DataInput/SaveButton1'))
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('DataInput/EditButton2'))
+		WebUI.setText(findTestObject('DataInput/TextboxValue2'), reading2)
+		WebUI.click(findTestObject('DataInput/SaveButton2'))
+		WebUI.delay(2)
+
+		WebUI.click(findTestObject('Object Repository/DataInput/BachelorAddYear'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Object Repository/DataInput/BachelorAddPrevYear'))
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('DataInput/EditButton3'))
+		WebUI.sendKeys(findTestObject('DataInput/HTextboxValue3'), reading1)
+		WebUI.click(findTestObject('DataInput/SaveButton3'))
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('DataInput/EditButton4'))
+		WebUI.sendKeys(findTestObject('DataInput/HTextboxValue4'), reading2)
+		WebUI.click(findTestObject('DataInput/SaveButton4'))
+		WebUI.delay(1)
 
 
-		CommonMethod.click("EditButton6");
-		Thread.sleep(2000);
+		WebUI.click(findTestObject('Object Repository/DataInput/EquAddYear'))
+		WebUI.delay(1)
 
-		CommonMethod.clear("dWTextboxValue1");
-		CommonMethod.sendKeys("dWTextboxValue1",reading1);
-		CommonMethod.click("SaveButton6");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Waste Reading 1 ");
+		WebUI.click(findTestObject('DataInput/EditButton5'))
+		WebUI.sendKeys(findTestObject('DataInput/HTextboxValue5'), reading1)
+		WebUI.click(findTestObject('DataInput/SaveButton5'))
+		WebUI.delay(1)
 
-		CommonMethod.click("EditButton7");
-		Thread.sleep(2000);
-		CommonMethod.clear("dWTextboxValue2");
-		CommonMethod.sendKeys("dWTextboxValue2", reading2);
-		CommonMethod.click("SaveButton7");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Waste Reading 2 ");
+		WebUI.click(findTestObject('DataInput/EditButton6'))
+		WebUI.sendKeys(findTestObject('DataInput/HTextboxValue6'), reading2)
+		WebUI.click(findTestObject('DataInput/SaveButton6'))
+		WebUI.delay(1)
 
-		CommonMethod.click("EditButton8");
-		Thread.sleep(2000);
-		CommonMethod.clear("dWTextboxValue3");
-		CommonMethod.sendKeys("dWTextboxValue3", reading3);
-		CommonMethod.click("SaveButton8");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Waste Reading 3 ");
+		WebUI.click(findTestObject('Object Repository/DataInput/GiniAddYear'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Object Repository/DataInput/GiniAddPrevYear'))
+		WebUI.delay(1)
 
+		WebUI.click(findTestObject('DataInput/EditButton7'))
+		WebUI.sendKeys(findTestObject('DataInput/HTextboxValue7'), reading3)
+		WebUI.click(findTestObject('DataInput/SaveButton7'))
+		WebUI.delay(1)
 
-		CommonMethod.click("EditButton9");
-		Thread.sleep(2000);
-		CommonMethod.clear("dWTextboxValue4");
-		CommonMethod.sendKeys("dWTextboxValue4", reading4);
-		CommonMethod.click("SaveButton9");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Waste Reading 4 ");
-
-		CommonMethod.click("EditButton10");
-		Thread.sleep(2000);
-		CommonMethod.clear("dWTextboxValue5");
-		CommonMethod.sendKeys("dWTextboxValue5", reading5);
-		CommonMethod.click("SaveButton10");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Waste Reading 5 ");
-
-		driver.navigate().refresh();
-		Thread.sleep(5000);
+		WebUI.click(findTestObject('DataInput/EditButton8'))
+		WebUI.sendKeys(findTestObject('DataInput/HTextboxValue8'), reading4)
+		WebUI.click(findTestObject('DataInput/SaveButton8'))
+		WebUI.delay(1)
 
 
-		CommonMethod.assertcontainsattributevalue("dWTextboxValue1", reading1,"Not Correct");
-		CommonMethod.assertcontainsattributevalue("dWTextboxValue2", reading2,"Not Correct");
-		CommonMethod.assertcontainsattributevalue("dWTextboxValue3", reading3,"Not Correct");
-		CommonMethod.assertcontainsattributevalue("dWTextboxValue4", reading4,"Not Correct");
-		CommonMethod.assertcontainsattributevalue("dWTextboxValue5", reading5,"Not Correct");
+		WebUI.click(findTestObject('Object Repository/DataInput/ProsperityAddYear'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Object Repository/DataInput/ProsperityAddPrevYear'))
+		WebUI.delay(1)
 
+		WebUI.click(findTestObject('DataInput/EditButton9'))
+		WebUI.sendKeys(findTestObject('DataInput/HTextboxValue9'), reading5)
+		WebUI.click(findTestObject('DataInput/SaveButton9'))
+		WebUI.delay(1)
 
-		CommonMethod.testlog( "Pass"," Verifies added meter reading saved & displays correctly after refresh ");
-
-
-		Thread.sleep(3000);
+		WebUI.refresh()
+		WebUI.waitForPageLoad(10)
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue1'),"value").contains(reading1),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/TextboxValue2'),"value").contains(reading2),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/HTextboxValue3'),"value").contains(reading1),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/HTextboxValue4'),"value").contains(reading2),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/HTextboxValue5'),"value").contains(reading1),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/HTextboxValue6'),"value").contains(reading2),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/HTextboxValue7'),"value").contains(reading3),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/HTextboxValue8'),"value").contains(reading4),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('DataInput/HTextboxValue9'),"value").contains(reading5),"Not Valid")
 	}
 
-
-
+/*
 	@Keyword
 	public void createADReadingPointOptionB(String sheetName, int rowNum) throws IOException, InterruptedException {
 		CommonMethod.click(param);
@@ -321,7 +403,7 @@ public class ReusableMethodsDataInput extends BaseClass {
 		CommonMethod.driverwait(1);
 		CommonMethod.click("ClickOptionB");
 
-		/*************************Reading data from excel sheet ************************************/
+		*//*************************Reading data from excel sheet ************************************//*
 
 
 		String reading1  = data.getCellData(sheetName, "ADeatailsValueReading1", rowNum);
@@ -413,7 +495,7 @@ public class ReusableMethodsDataInput extends BaseClass {
 		CommonMethod.assertcontainsmessage("OptionB","2", "Not Valid");
 		CommonMethod.testlog("Pass","Option B Base point score 2 verified Successully");
 	}
-
+*/
 	@Keyword
 	public void createADMeterReading(String sheetName, int rowNum) throws IOException, InterruptedException {
 		/*************************Reading data from excel sheet ************************************/
@@ -522,218 +604,9 @@ public class ReusableMethodsDataInput extends BaseClass {
 		CommonMethod.testlog("Pass","Verifies added meter reading saved & displays correctly after refresh");
 	}
 
-	@Keyword
-	public void createTransportReading(String param, String sheetName, int rowNum) throws IOException, InterruptedException{
-
-		/*************************Reading data from excel sheet ************************************/
-
-		String reading1  = data.getCellData(sheetName, "TReading1", rowNum);
-		String reading2  = data.getCellData(sheetName, "TReading2", rowNum);
-		String reading3  = data.getCellData(sheetName, "TReading3", rowNum);
-		String reading4  = data.getCellData(sheetName, "TReading4", rowNum);
-		String reading5  = data.getCellData(sheetName, "TReading5", rowNum);
 
 
-		CommonMethod.ArcSpecifictoggle( "CreditAction");
-		ClickDataInput();
-		ClickDataInputParam(param);
 
-		CommonMethod.click("AddYear");
-		CommonMethod.driverwait(1);
-
-		CommonMethod.click("PreviousYear");
-		CommonMethod.driverwait(1);
-
-		CommonMethod.click("PreviousYear");
-		CommonMethod.driverwait(1);
-
-		CommonMethod.click("PreviousYear");
-		CommonMethod.driverwait(1);
-
-		CommonMethod.click("PreviousYear");
-		CommonMethod.driverwait(1);
-
-		CommonMethod.click("EditButton1");
-		Thread.sleep(2000);
-		CommonMethod.clear("TextboxValue1");
-		CommonMethod.sendKeys("TextboxValue1",reading1);
-		CommonMethod.click("SaveButton1");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Transportationr Reading 1 ");
-
-		CommonMethod.click("EditButton2");
-		Thread.sleep(2000);
-		CommonMethod.clear("TextboxValue2");
-		CommonMethod.sendKeys("TextboxValue2", reading2);
-		CommonMethod.click("SaveButton2");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Transportation Reading 2 ");
-
-		CommonMethod.click("EditButton3");
-		Thread.sleep(2000);
-		CommonMethod.clear("TextboxValue3");
-		CommonMethod.sendKeys("TextboxValue3", reading3);
-		CommonMethod.click("SaveButton3");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Transportation Reading 3 ");
-
-		CommonMethod.click("EditButton4");
-		Thread.sleep(2000);
-		CommonMethod.clear("TextboxValue4");
-		CommonMethod.sendKeys("TextboxValue4", reading4);
-		CommonMethod.click("SaveButton4");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Transportation Reading 4 ");
-
-		CommonMethod.click("EditButton5");
-		Thread.sleep(2000);
-		CommonMethod.clear("TextboxValue5");
-		CommonMethod.sendKeys("TextboxValue5", reading5);
-		CommonMethod.click("SaveButton5");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Transportation Reading 5 ");
-
-		driver.navigate().refresh();
-		Thread.sleep(5000);
-
-		CommonMethod.assertcontainsattributevalue("TextboxValue1", reading1,"Not Correct");
-		CommonMethod.assertcontainsattributevalue("TextboxValue2", reading2,"Not Correct");
-		CommonMethod.assertcontainsattributevalue("TextboxValue3", reading3,"Not Correct");
-		CommonMethod.assertcontainsattributevalue("TextboxValue4", reading4,"Not Correct");
-		CommonMethod.assertcontainsattributevalue("TextboxValue5", reading5,"Not Correct");
-
-		Thread.sleep(3000);
-		CommonMethod.testlog( "Pass"," Verifies added meter reading saved & displays correctly after refresh ");
-	}
-
-	@Keyword
-	public void createHumtMeterReading(String sheetName, int rowNum) throws IOException, InterruptedException {
-		/*************************Reading data from excel sheet ************************************/
-
-		String reading1  = data.getCellData(sheetName, "EPReading1", rowNum);
-		String reading2  = data.getCellData(sheetName, "EPReading2", rowNum);
-		String reading3  = data.getCellData(sheetName, "HGiniReading1", rowNum);
-		String reading4  = data.getCellData(sheetName, "HGiniReading2", rowNum);
-		String reading5  = data.getCellData(sheetName, "Hincome1", rowNum);
-		String reading6  = data.getCellData(sheetName, "Hincome2", rowNum);
-
-
-		CommonMethod.ArcSpecifictoggle( "CreditAction");
-		ClickDataInput();
-		ClickDataInputParam(param);
-		CommonMethod.driverwait(1);
-
-		CommonMethod.click("EducationAddYear");
-		CommonMethod.driverwait(1);
-		CommonMethod.click("EducationAddPrevYear");
-		CommonMethod.driverwait(1);
-
-		CommonMethod.click("EditButton1");
-		Thread.sleep(2000);
-		CommonMethod.clear("TextboxValue1");
-		CommonMethod.sendKeys("TextboxValue1",reading1);
-		CommonMethod.click("SaveButton1");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Human Experience Reading 1 ");
-
-		CommonMethod.click("EditButton2");
-		Thread.sleep(2000);
-		CommonMethod.clear("TextboxValue2");
-		CommonMethod.sendKeys("TextboxValue2", reading2);
-		CommonMethod.click("SaveButton2");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Human Experience Reading 2 ");
-
-
-		CommonMethod.click("BachelorAddYear");
-		CommonMethod.driverwait(1);
-		CommonMethod.click("BachelorAddPrevYear");
-		CommonMethod.driverwait(1);
-
-		CommonMethod.click("EditButton3");
-		Thread.sleep(2000);
-		CommonMethod.clear("HTextboxValue3");
-		CommonMethod.sendKeys("HTextboxValue3", reading1);
-		CommonMethod.click("SaveButton3");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Human Experience Reading 3 ");
-
-		CommonMethod.click("EditButton4");
-		Thread.sleep(2000);
-		CommonMethod.clear("HTextboxValue4");
-		CommonMethod.sendKeys("HTextboxValue4", reading2);
-		CommonMethod.click("SaveButton4");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Human Experience Reading 4 ");
-
-
-		CommonMethod.click("EquAddYear");
-		CommonMethod.driverwait(1);
-		CommonMethod.click("EquAddPrevYear");
-		CommonMethod.driverwait(1);
-
-		CommonMethod.click("EditButton5");
-		Thread.sleep(2000);
-		CommonMethod.clear("HTextboxValue5");
-		CommonMethod.sendKeys("HTextboxValue5", reading1);
-		CommonMethod.click("SaveButton5");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Human Experience Reading 5 ");
-
-		CommonMethod.click("EditButton6");
-		Thread.sleep(2000);
-		CommonMethod.clear("HTextboxValue6");
-		CommonMethod.sendKeys("HTextboxValue6", reading2);
-		CommonMethod.click("SaveButton6");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Human Experience Reading 5 ");
-
-
-		CommonMethod.click("GiniAddYear");
-		CommonMethod.driverwait(1);
-		CommonMethod.click("GiniAddPrevYear");
-		CommonMethod.driverwait(1);
-
-		CommonMethod.click("EditButton7");
-		Thread.sleep(2000);
-		CommonMethod.clear("HTextboxValue7");
-		CommonMethod.sendKeys("HTextboxValue7", reading3);
-		CommonMethod.click("SaveButton7");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Human Experience Reading 5 ");
-
-		CommonMethod.click("EditButton8");
-		Thread.sleep(2000);
-		CommonMethod.clear("HTextboxValue8");
-		CommonMethod.sendKeys("HTextboxValue8", reading4);
-		CommonMethod.click("SaveButton8");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Human Experience Reading 5 ");
-
-
-		CommonMethod.click("ProsperityAddYear");
-		CommonMethod.driverwait(1);
-		CommonMethod.click("ProsperityAddPrevYear");
-		CommonMethod.driverwait(1);
-
-		CommonMethod.click("EditButton9");
-		Thread.sleep(2000);
-		CommonMethod.clear("HTextboxValue9");
-		CommonMethod.sendKeys("HTextboxValue9", reading5);
-		CommonMethod.click("SaveButton9");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Human Experience Reading 5 ");
-
-		CommonMethod.click("EditButton10");
-		Thread.sleep(2000);
-		CommonMethod.clear("HTextboxValue10");
-		CommonMethod.sendKeys("HTextboxValue10", reading6);
-		CommonMethod.click("SaveButton10");
-		Thread.sleep(2000);
-		CommonMethod.testlog("Pass", "Saving Human Experience Reading 5 ");
-
-		CommonMethod.testlog( "Pass"," Verifies added meter reading saved & displays correctly after refresh");
-	}
 
 
 	@Keyword

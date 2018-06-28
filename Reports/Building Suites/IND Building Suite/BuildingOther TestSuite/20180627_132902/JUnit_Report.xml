@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="BuildingOther TestSuite" time="106" tests="0" failures="1" errors="1">
+   <testsuite name="BuildingOther TestSuite" tests="0" failures="1" errors="1" time="106" timestamp="2018-06-27 13:29:09" hostname="Group10 - G10CHLT003" id="Test Suites/Building Suites/IND Building Suite/BuildingOther TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Building Suites\\IND Building Suite\\BuildingOther TestSuite\\20180627_132902"/>
+         <property name="logFiles" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Building Suites\\IND Building Suite\\BuildingOther TestSuite\\20180627_132902\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Group10 - G10CHLT003"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="172.18.0.84"/>
+         <property name="sessionId" value="717b9f0fa40c91119828a3efb14d1b71"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Buildings/MyBuildings/BuildingOther/AddNewProjectTest" classname="Test Cases/Buildings/MyBuildings/BuildingOther/AddNewProjectTest" status="ERROR">
+         <error type="ERROR" message="Test Cases/Buildings/MyBuildings/BuildingOther/AddNewProjectTest FAILED because (of) org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: com.arc.ReusableMethods.ReusableMethodsAddNewProject.USBuildingAddNewProject() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [BuildingIndiaProject, 5]
+Possible solutions: buildingAddNewProject(java.lang.String, int)"/>
+         <system-out><![CDATA[2018-06-27 13:29:12 - [TEST_CASE][ERROR] - Test Cases/Buildings/MyBuildings/BuildingOther/AddNewProjectTest: Test Cases/Buildings/MyBuildings/BuildingOther/AddNewProjectTest FAILED because (of) org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: com.arc.ReusableMethods.ReusableMethodsAddNewProject.USBuildingAddNewProject() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [BuildingIndiaProject, 5]
+Possible solutions: buildingAddNewProject(java.lang.String, int)
+
+2018-06-27 13:29:12 - [TEST_STEP][PASSED] - Start listener action : beforeTestListener: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 13:29:12 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 13:29:25 - [MESSAGE][PASSED] - Browser is opened with url: 'http://www.qas.arconline.io/'
+
+2018-06-27 13:29:26 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-27 13:29:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-06-27 13:29:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_ACCEPT AND CLOSE' is clicked on
+
+2018-06-27 13:29:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/Click_Log in' is clicked on
+
+2018-06-27 13:29:29 - [MESSAGE][PASSED] - Text 'usgbcarc@gmail.com' is set on object 'Object Repository/Page_Home  Arc/input_name'
+
+2018-06-27 13:29:29 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/Page_Home  Arc/input_pass'
+
+2018-06-27 13:29:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/input_field_policy_accept' is clicked on
+
+2018-06-27 13:29:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_Log in' is clicked on
+
+2018-06-27 13:29:50 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-27 13:29:50 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/span_My Projects' is: 'My Projects'
+
+2018-06-27 13:29:50 - [MESSAGE][PASSED] - Actual text 'My Projects' and expected text 'My Projects' are matched  using regular expression
+
+2018-06-27 13:29:53 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-27 13:29:53 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 13:29:53 - [TEST_STEP][ERROR] - Statement - Try: No signature of method: com.arc.ReusableMethods.ReusableMethodsAddNewProject.USBuildingAddNewProject() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [BuildingIndiaProject, 5]
+Possible solutions: buildingAddNewProject(java.lang.String, int)
+
+2018-06-27 13:29:53 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToBuilding: com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToBuilding is PASSED
+
+2018-06-27 13:29:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/a_ Buildings' is clicked on
+
+2018-06-27 13:29:56 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-27 13:29:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/a_ My Buildings' is clicked on
+
+2018-06-27 13:29:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/i_fa fa-bars fa-lg' is clicked on
+
+2018-06-27 13:29:57 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/span_My Buildings' is: 'My Buildings'
+
+2018-06-27 13:29:57 - [MESSAGE][PASSED] - Actual text 'My Buildings' and expected text 'My Buildings' are matched  using regular expression
+
+2018-06-27 13:29:57 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToBuilding is PASSED
+
+2018-06-27 13:29:57 - [TEST_STEP][ERROR] - com.arc.ReusableMethods.ReusableMethodsAddNewProject.USBuildingAddNewProject: No signature of method: com.arc.ReusableMethods.ReusableMethodsAddNewProject.USBuildingAddNewProject() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [BuildingIndiaProject, 5]
+Possible solutions: buildingAddNewProject(java.lang.String, int)
+
+2018-06-27 13:29:57 - [MESSAGE][ERROR] - No signature of method: com.arc.ReusableMethods.ReusableMethodsAddNewProject.USBuildingAddNewProject() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [BuildingIndiaProject, 5]
+Possible solutions: buildingAddNewProject(java.lang.String, int)
+
+2018-06-27 13:29:57 - [TEST_STEP][PASSED] - Statement - Catch (Throwable t): null
+
+2018-06-27 13:29:57 - [TEST_STEP][PASSED] - Statement - out.println(t.getLocalizedMessage()): null
+
+2018-06-27 13:29:57 - [TEST_STEP][PASSED] - Statement - e1 = new java.lang.Error(t.getMessage()): null
+
+2018-06-27 13:29:57 - [TEST_STEP][PASSED] - Statement - e1.setStackTrace(t.getStackTrace()): null
+
+2018-06-27 13:29:57 - [TEST_STEP][PASSED] - Statement - e1.printStackTrace(): null
+
+2018-06-27 13:29:57 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Browser is closed
+
+2018-06-27 13:29:57 - [TEST_STEP][PASSED] - switchToDefaultContent: Switching to default content
+
+2018-06-27 13:29:57 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Name : " + testCase.getTestCaseId()): Test Case Name : Test Cases/Buildings/MyBuildings/BuildingOther/AddNewProjectTest
+
+2018-06-27 13:29:57 - [MESSAGE][WARNING] - Test Case Name : Test Cases/Buildings/MyBuildings/BuildingOther/AddNewProjectTest
+
+2018-06-27 13:29:57 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Status : " + testCase.getTestCaseStatus()): Test Case Status : ERROR
+
+2018-06-27 13:29:57 - [MESSAGE][WARNING] - Test Case Status : ERROR
+
+2018-06-27 13:29:57 - [TEST_STEP][PASSED] - Statement - If ("FAILED".equalsIgnoreCase(testCase.getTestCaseStatus())): null
+
+2018-06-27 13:29:57 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-27 13:29:58 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2018-06-27 13:29:12 - [TEST_CASE][ERROR] - Test Cases/Buildings/MyBuildings/BuildingOther/AddNewProjectTest: Test Cases/Buildings/MyBuildings/BuildingOther/AddNewProjectTest FAILED because (of) org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: com.arc.ReusableMethods.ReusableMethodsAddNewProject.USBuildingAddNewProject() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [BuildingIndiaProject, 5]
+Possible solutions: buildingAddNewProject(java.lang.String, int)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Buildings/MyBuildings/BuildingOther/RegPaymentByCheckTest" classname="Test Cases/Buildings/MyBuildings/BuildingOther/RegPaymentByCheckTest" status="FAILED">
+         <failure type="FAILED" message="Unable to click on object 'Object Repository/Page_Arc dashboard/sideBar' (Root cause: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 717b9f0fa40c91119828a3efb14d1b71
+*** Element info: {Using=xpath, value=id(&quot;app&quot;)/div[@class=&quot;ng-scope&quot;]/nav[@class=&quot;page-controls navbar navbar-default ng-scope&quot;]/div[@class=&quot;container-fluid ng-scope&quot;]/div[@class=&quot;navbar-header&quot;]/ul[@class=&quot;nav navbar-nav&quot;]/li[1]/a[@class=&quot;hidden-sm hidden-xs&quot;]/i[@class=&quot;fa fa-bars fa-lg&quot;]})"/>
+         <system-out><![CDATA[2018-06-27 13:29:58 - [TEST_CASE][FAILED] - Test Cases/Buildings/MyBuildings/BuildingOther/RegPaymentByCheckTest: Test Cases/Buildings/MyBuildings/BuildingOther/RegPaymentByCheckTest FAILED because (of) Unable to click on object 'Object Repository/Page_Arc dashboard/sideBar' (Root cause: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 717b9f0fa40c91119828a3efb14d1b71
+*** Element info: {Using=xpath, value=id("app")/div[@class="ng-scope"]/nav[@class="page-controls navbar navbar-default ng-scope"]/div[@class="container-fluid ng-scope"]/div[@class="navbar-header"]/ul[@class="nav navbar-nav"]/li[1]/a[@class="hidden-sm hidden-xs"]/i[@class="fa fa-bars fa-lg"]})
+
+2018-06-27 13:29:58 - [TEST_STEP][ERROR] - Start listener action : beforeTestListener: Unable to wait for page load (Root cause: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.kms.katalon.core.webui.keyword.builtin.WaitForPageLoadKeyword$1@23811a09 (tried for 40 second(s) with 500 MILLISECONDS interval))
+
+2018-06-27 13:29:58 - [TEST_STEP][ERROR] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable: Unable to wait for page load (Root cause: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.kms.katalon.core.webui.keyword.builtin.WaitForPageLoadKeyword$1@23811a09 (tried for 40 second(s) with 500 MILLISECONDS interval))
+
+2018-06-27 13:30:05 - [MESSAGE][PASSED] - Browser is opened with url: 'http://www.qas.arconline.io/'
+
+2018-06-27 13:30:11 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-27 13:30:51 - [MESSAGE][WARNING] - Cannot take screenshot
+
+2018-06-27 13:30:51 - [MESSAGE][FAILED] - Unable to wait for page load (Root cause: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.kms.katalon.core.webui.keyword.builtin.WaitForPageLoadKeyword$1@23811a09 (tried for 40 second(s) with 500 MILLISECONDS interval))
+
+2018-06-27 13:30:51 - [MESSAGE][FAILED] - Unable to wait for page load (Root cause: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.kms.katalon.core.webui.keyword.builtin.WaitForPageLoadKeyword$1@23811a09 (tried for 40 second(s) with 500 MILLISECONDS interval))
+
+2018-06-27 13:30:51 - [MESSAGE][ERROR] - Unable to wait for page load (Root cause: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.kms.katalon.core.webui.keyword.builtin.WaitForPageLoadKeyword$1@23811a09 (tried for 40 second(s) with 500 MILLISECONDS interval))
+
+2018-06-27 13:30:52 - [TEST_STEP][FAILED] - Statement - Try: Unable to click on object 'Object Repository/Page_Arc dashboard/sideBar' (Root cause: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 717b9f0fa40c91119828a3efb14d1b71
+*** Element info: {Using=xpath, value=id("app")/div[@class="ng-scope"]/nav[@class="page-controls navbar navbar-default ng-scope"]/div[@class="container-fluid ng-scope"]/div[@class="navbar-header"]/ul[@class="nav navbar-nav"]/li[1]/a[@class="hidden-sm hidden-xs"]/i[@class="fa fa-bars fa-lg"]})
+
+2018-06-27 13:30:52 - [TEST_STEP][FAILED] - com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram: Unable to click on object 'Object Repository/Page_Arc dashboard/sideBar' (Root cause: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 717b9f0fa40c91119828a3efb14d1b71
+*** Element info: {Using=xpath, value=id("app")/div[@class="ng-scope"]/nav[@class="page-controls navbar navbar-default ng-scope"]/div[@class="container-fluid ng-scope"]/div[@class="navbar-header"]/ul[@class="nav navbar-nav"]/li[1]/a[@class="hidden-sm hidden-xs"]/i[@class="fa fa-bars fa-lg"]})
+
+2018-06-27 13:30:53 - [MESSAGE][WARNING] - Cannot take screenshot
+
+2018-06-27 13:30:53 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Page_Arc dashboard/sideBar' (Root cause: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 717b9f0fa40c91119828a3efb14d1b71
+*** Element info: {Using=xpath, value=id("app")/div[@class="ng-scope"]/nav[@class="page-controls navbar navbar-default ng-scope"]/div[@class="container-fluid ng-scope"]/div[@class="navbar-header"]/ul[@class="nav navbar-nav"]/li[1]/a[@class="hidden-sm hidden-xs"]/i[@class="fa fa-bars fa-lg"]})
+
+2018-06-27 13:30:53 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Page_Arc dashboard/sideBar' (Root cause: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 717b9f0fa40c91119828a3efb14d1b71
+*** Element info: {Using=xpath, value=id("app")/div[@class="ng-scope"]/nav[@class="page-controls navbar navbar-default ng-scope"]/div[@class="container-fluid ng-scope"]/div[@class="navbar-header"]/ul[@class="nav navbar-nav"]/li[1]/a[@class="hidden-sm hidden-xs"]/i[@class="fa fa-bars fa-lg"]})
+
+2018-06-27 13:30:53 - [TEST_STEP][PASSED] - Statement - Catch (Throwable t): null
+
+2018-06-27 13:30:53 - [TEST_STEP][PASSED] - Statement - out.println(t.getLocalizedMessage()): null
+
+2018-06-27 13:30:53 - [TEST_STEP][PASSED] - Statement - e1 = new java.lang.Error(t.getMessage()): null
+
+2018-06-27 13:30:53 - [TEST_STEP][PASSED] - Statement - e1.setStackTrace(t.getStackTrace()): null
+
+2018-06-27 13:30:53 - [TEST_STEP][PASSED] - Statement - e1.printStackTrace(): null
+
+2018-06-27 13:30:53 - [TEST_STEP][FAILED] - Start listener action : afterTestCase: Browser is closed
+
+2018-06-27 13:30:53 - [TEST_STEP][PASSED] - switchToDefaultContent: Switching to default content failed because of: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 717b9f0fa40c91119828a3efb14d1b71
+
+2018-06-27 13:30:55 - [MESSAGE][WARNING] - Switching to default content failed because of: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 717b9f0fa40c91119828a3efb14d1b71
+
+2018-06-27 13:30:55 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Name : " + testCase.getTestCaseId()): Test Case Name : Test Cases/Buildings/MyBuildings/BuildingOther/RegPaymentByCheckTest
+
+2018-06-27 13:30:55 - [MESSAGE][WARNING] - Test Case Name : Test Cases/Buildings/MyBuildings/BuildingOther/RegPaymentByCheckTest
+
+2018-06-27 13:30:55 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Status : " + testCase.getTestCaseStatus()): Test Case Status : FAILED
+
+2018-06-27 13:30:55 - [MESSAGE][WARNING] - Test Case Status : FAILED
+
+2018-06-27 13:30:55 - [TEST_STEP][FAILED] - Statement - If ("FAILED".equalsIgnoreCase(testCase.getTestCaseStatus())): null
+
+2018-06-27 13:30:55 - [TEST_STEP][PASSED] - Statement - println("Test case Fail taking Screenshot"): null
+
+2018-06-27 13:30:55 - [TEST_STEP][FAILED] - Statement - Try: Cannot take screenshot (Root cause: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 717b9f0fa40c91119828a3efb14d1b71)
+
+2018-06-27 13:30:55 - [TEST_STEP][PASSED] - Statement - data = new java.util.Date(java.lang.System.currentTimeMillis()): null
+
+2018-06-27 13:30:55 - [TEST_STEP][PASSED] - Statement - formatarDate = new java.text.SimpleDateFormat(yyyyMMddHHmmss): null
+
+2018-06-27 13:30:55 - [TEST_STEP][FAILED] - takeScreenshot: Cannot take screenshot (Root cause: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 717b9f0fa40c91119828a3efb14d1b71)
+
+2018-06-27 13:30:55 - [MESSAGE][WARNING] - Cannot take screenshot
+
+2018-06-27 13:30:55 - [MESSAGE][FAILED] - Cannot take screenshot (Root cause: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 717b9f0fa40c91119828a3efb14d1b71)
+
+2018-06-27 13:30:55 - [TEST_STEP][PASSED] - Statement - Catch (Exception e): null
+
+2018-06-27 13:30:55 - [TEST_STEP][PASSED] - Statement - e.printStackTrace(): null
+
+2018-06-27 13:30:55 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-27 13:30:55 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2018-06-27 13:29:58 - [TEST_CASE][FAILED] - Test Cases/Buildings/MyBuildings/BuildingOther/RegPaymentByCheckTest: Test Cases/Buildings/MyBuildings/BuildingOther/RegPaymentByCheckTest FAILED because (of) Unable to click on object 'Object Repository/Page_Arc dashboard/sideBar' (Root cause: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 717b9f0fa40c91119828a3efb14d1b71
+*** Element info: {Using=xpath, value=id("app")/div[@class="ng-scope"]/nav[@class="page-controls navbar navbar-default ng-scope"]/div[@class="container-fluid ng-scope"]/div[@class="navbar-header"]/ul[@class="nav navbar-nav"]/li[1]/a[@class="hidden-sm hidden-xs"]/i[@class="fa fa-bars fa-lg"]})]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-27 13:29:09 - [TEST_SUITE][ERROR] - BuildingOther TestSuite: Test Cases/Buildings/MyBuildings/BuildingOther/AddNewProjectTest FAILED because (of) org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: com.arc.ReusableMethods.ReusableMethodsAddNewProject.USBuildingAddNewProject() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [BuildingIndiaProject, 5]
+Possible solutions: buildingAddNewProject(java.lang.String, int)]]></system-out>
+      <system-err><![CDATA[2018-06-27 13:29:09 - [TEST_SUITE][ERROR] - BuildingOther TestSuite: Test Cases/Buildings/MyBuildings/BuildingOther/AddNewProjectTest FAILED because (of) org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: com.arc.ReusableMethods.ReusableMethodsAddNewProject.USBuildingAddNewProject() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [BuildingIndiaProject, 5]
+Possible solutions: buildingAddNewProject(java.lang.String, int)]]></system-err>
+   </testsuite>
+</testsuites>

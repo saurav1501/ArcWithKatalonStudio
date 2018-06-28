@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="BuildingNone TestSuite" time="140" tests="1" failures="1" errors="0">
+   <testsuite name="BuildingNone TestSuite" tests="1" failures="1" errors="0" time="140" timestamp="2018-06-27 13:54:56" hostname="Group10 - G10CHLT003" id="Test Suites/Building Suites/IND Building Suite/BuildingNone TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Building Suites\\IND Building Suite\\BuildingNone TestSuite\\20180627_135450"/>
+         <property name="logFiles" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Building Suites\\IND Building Suite\\BuildingNone TestSuite\\20180627_135450\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Building Suites\\IND Building Suite\\BuildingNone TestSuite\\20180627_135450\\1530088036003.png, C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\ScreenShot\\screenshot_20180627135716.png"/>
+         <property name="hostName" value="Group10 - G10CHLT003"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="172.18.0.84"/>
+         <property name="sessionId" value="76285dde042ff6dfff7d509730f7b882"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Buildings/MyBuildings/BuildingNone/AddNewProjectTest" classname="Test Cases/Buildings/MyBuildings/BuildingNone/AddNewProjectTest" status="PASSED">
+         <system-out><![CDATA[2018-06-27 13:54:59 - [TEST_CASE][PASSED] - Test Cases/Buildings/MyBuildings/BuildingNone/AddNewProjectTest: Test Cases/Buildings/MyBuildings/BuildingNone/AddNewProjectTest
+
+2018-06-27 13:55:00 - [TEST_STEP][PASSED] - Start listener action : beforeTestListener: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 13:55:00 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 13:55:13 - [MESSAGE][PASSED] - Browser is opened with url: 'http://www.qas.arconline.io/'
+
+2018-06-27 13:55:14 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-27 13:55:15 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-06-27 13:55:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_ACCEPT AND CLOSE' is clicked on
+
+2018-06-27 13:55:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/Click_Log in' is clicked on
+
+2018-06-27 13:55:17 - [MESSAGE][PASSED] - Text 'testleed1@gmail.com' is set on object 'Object Repository/Page_Home  Arc/input_name'
+
+2018-06-27 13:55:17 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/Page_Home  Arc/input_pass'
+
+2018-06-27 13:55:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/input_field_policy_accept' is clicked on
+
+2018-06-27 13:55:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_Log in' is clicked on
+
+2018-06-27 13:55:35 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-27 13:55:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/span_My Projects' is: 'My Projects'
+
+2018-06-27 13:55:36 - [MESSAGE][PASSED] - Actual text 'My Projects' and expected text 'My Projects' are matched  using regular expression
+
+2018-06-27 13:55:39 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-27 13:55:39 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 13:55:39 - [TEST_STEP][PASSED] - Statement - Try: com.arc.ReusableMethods.ReusableMethodsAddNewProject.buildingAddNewProject is PASSED
+
+2018-06-27 13:55:39 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToBuilding: com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToBuilding is PASSED
+
+2018-06-27 13:55:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/a_ Buildings' is clicked on
+
+2018-06-27 13:55:41 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-27 13:55:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/a_ My Buildings' is clicked on
+
+2018-06-27 13:55:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/i_fa fa-bars fa-lg' is clicked on
+
+2018-06-27 13:55:43 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/span_My Buildings' is: 'My Buildings'
+
+2018-06-27 13:55:43 - [MESSAGE][PASSED] - Actual text 'My Buildings' and expected text 'My Buildings' are matched  using regular expression
+
+2018-06-27 13:55:43 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToBuilding is PASSED
+
+2018-06-27 13:55:43 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsAddNewProject.buildingAddNewProject: com.arc.ReusableMethods.ReusableMethodsAddNewProject.buildingAddNewProject is PASSED
+
+2018-06-27 13:55:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Project_Details/button_ Add' is clicked on
+
+2018-06-27 13:55:48 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-06-27 13:55:48 - [MESSAGE][PASSED] - Text of object 'Object Repository/Add_Project_Details/h1_Project Registration' is: 'Project Registration'
+
+2018-06-27 13:55:48 - [MESSAGE][PASSED] - Actual text 'Project Registration' and expected text 'Project Registration' are matched  using regular expression
+
+2018-06-27 13:55:48 - [MESSAGE][PASSED] - Text 'INDBuildingNone 144321None 144940None 13:55:43' is set on object 'Object Repository/Add_Project_Details/input_name'
+
+2018-06-27 13:55:49 - [MESSAGE][PASSED] - All options with label 'Buildings' are selected in object 'Object Repository/Add_Project_Details/select_Select a Project TypeCo'  using regular expression
+
+2018-06-27 13:55:49 - [MESSAGE][PASSED] - All options with label 'None' are selected in object 'Object Repository/Add_Project_Details/select_Select a Rating SystemL'  using regular expression
+
+2018-06-27 13:55:51 - [MESSAGE][PASSED] - All options with label 'Airport: Hangar' are selected in object 'Object Repository/Add_Project_Details/select_Select space type'  using regular expression
+
+2018-06-27 13:55:53 - [MESSAGE][PASSED] - All options with label 'Business Improvement District' are selected in object 'Object Repository/Add_Project_Details/select_Select Owner Type'  using regular expression
+
+2018-06-27 13:55:53 - [MESSAGE][PASSED] - Text 'Habitat for Humanity' is set on object 'Object Repository/Add_Project_Details/input_organization'
+
+2018-06-27 13:55:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Project_Details/input_organization' is clicked on
+
+2018-06-27 13:55:55 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-27 13:55:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Project_Details/span_Habitat for Humanity' is clicked on
+
+2018-06-27 13:55:57 - [MESSAGE][PASSED] - Text 'usgbcarc@gmail.com' is set on object 'Object Repository/Add_Project_Details/input_owner_email'
+
+2018-06-27 13:55:57 - [MESSAGE][PASSED] - All options with label 'India' are selected in object 'Object Repository/Add_Project_Details/select_OwnerCountry' 
+
+2018-06-27 13:55:57 - [MESSAGE][PASSED] - Text '50000' is set on object 'Object Repository/Add_Project_Details/input_gross_area'
+
+2018-06-27 13:55:59 - [MESSAGE][PASSED] - Text '611-618, Tower A, Spaze I-Tech Park, Sohna Road, Sector 53' is set on object 'Object Repository/Add_Project_Details/input_street'
+
+2018-06-27 13:55:59 - [MESSAGE][PASSED] - Text 'Gurgaon' is set on object 'Object Repository/Add_Project_Details/input_city'
+
+2018-06-27 13:55:59 - [MESSAGE][PASSED] - All options with label 'India' are selected in object 'Object Repository/Add_Project_Details/country' 
+
+2018-06-27 13:56:01 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-27 13:56:02 - [MESSAGE][PASSED] - All options with label 'Haryana' are selected in object 'Object Repository/Add_Project_Details/state' 
+
+2018-06-27 13:56:03 - [MESSAGE][PASSED] - Text '122022' is set on object 'Object Repository/Add_Project_Details/input_zip_code'
+
+2018-06-27 13:56:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Project_Details/input_reg_agreement' is clicked on
+
+2018-06-27 13:56:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Project_Details/button_Next' is clicked on
+
+2018-06-27 13:56:08 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-27 13:56:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/Add_Project_Details/strong_Promotional Code' is: 'Promotional Code'
+
+2018-06-27 13:56:13 - [MESSAGE][PASSED] - Actual text 'Promotional Code' and expected text 'Promotional Code' are matched  using regular expression
+
+2018-06-27 13:56:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/Add_Project_Details/td_BuildingID' is: '1000073611'
+
+2018-06-27 13:56:18 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-27 13:56:18 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsAddNewProject.buildingAddNewProject is PASSED
+
+2018-06-27 13:56:18 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Browser is closed
+
+2018-06-27 13:56:18 - [TEST_STEP][PASSED] - switchToDefaultContent: Switching to default content
+
+2018-06-27 13:56:19 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Name : " + testCase.getTestCaseId()): Test Case Name : Test Cases/Buildings/MyBuildings/BuildingNone/AddNewProjectTest
+
+2018-06-27 13:56:19 - [MESSAGE][WARNING] - Test Case Name : Test Cases/Buildings/MyBuildings/BuildingNone/AddNewProjectTest
+
+2018-06-27 13:56:19 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Status : " + testCase.getTestCaseStatus()): Test Case Status : PASSED
+
+2018-06-27 13:56:19 - [MESSAGE][WARNING] - Test Case Status : PASSED
+
+2018-06-27 13:56:19 - [TEST_STEP][PASSED] - Statement - If ("FAILED".equalsIgnoreCase(testCase.getTestCaseStatus())): null
+
+2018-06-27 13:56:19 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-27 13:56:20 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest" classname="Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest" status="FAILED">
+         <failure type="FAILED" message="Unable to clear text of object 'Object Repository/PaymenntLocator/input_zip_code' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 76285dde042ff6dfff7d509730f7b882)"/>
+         <system-out><![CDATA[2018-06-27 13:56:20 - [TEST_CASE][FAILED] - Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest: Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest FAILED because (of) Unable to clear text of object 'Object Repository/PaymenntLocator/input_zip_code' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 76285dde042ff6dfff7d509730f7b882)
+
+2018-06-27 13:56:20 - [TEST_STEP][PASSED] - Start listener action : beforeTestListener: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 13:56:20 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 13:56:28 - [MESSAGE][PASSED] - Browser is opened with url: 'http://www.qas.arconline.io/'
+
+2018-06-27 13:56:30 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-27 13:56:30 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-06-27 13:56:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_ACCEPT AND CLOSE' is clicked on
+
+2018-06-27 13:56:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/Click_Log in' is clicked on
+
+2018-06-27 13:56:32 - [MESSAGE][PASSED] - Text 'testleed1@gmail.com' is set on object 'Object Repository/Page_Home  Arc/input_name'
+
+2018-06-27 13:56:32 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/Page_Home  Arc/input_pass'
+
+2018-06-27 13:56:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/input_field_policy_accept' is clicked on
+
+2018-06-27 13:56:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_Log in' is clicked on
+
+2018-06-27 13:56:57 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-27 13:56:57 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/span_My Projects' is: 'My Projects'
+
+2018-06-27 13:56:57 - [MESSAGE][PASSED] - Actual text 'My Projects' and expected text 'My Projects' are matched  using regular expression
+
+2018-06-27 13:57:00 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-27 13:57:00 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-27 13:57:01 - [TEST_STEP][FAILED] - Statement - Try: Unable to clear text of object 'Object Repository/PaymenntLocator/input_zip_code' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 76285dde042ff6dfff7d509730f7b882)
+
+2018-06-27 13:57:01 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram: com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram is PASSED
+
+2018-06-27 13:57:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/sideBar' is clicked on
+
+2018-06-27 13:57:04 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-06-27 13:57:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/input_searchBar1' is clicked on
+
+2018-06-27 13:57:04 - [MESSAGE][PASSED] - Text '1000073611' is set on object 'Object Repository/Page_Arc dashboard/input_searchBar1'
+
+2018-06-27 13:57:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/input_searchBar1' is clicked on
+
+2018-06-27 13:57:08 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-27 13:57:08 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/no_Project (1 project)' is: 'Project (1 project)'
+
+2018-06-27 13:57:08 - [MESSAGE][PASSED] - Actual text 'Project (1 project)' and expected text 'Project (1 project)' are matched 
+
+2018-06-27 13:57:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/search_Result' is clicked on
+
+2018-06-27 13:57:11 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-27 13:57:11 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram is PASSED
+
+2018-06-27 13:57:11 - [TEST_STEP][FAILED] - com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCheck: Unable to clear text of object 'Object Repository/PaymenntLocator/input_zip_code' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 76285dde042ff6dfff7d509730f7b882)
+
+2018-06-27 13:57:11 - [MESSAGE][PASSED] - Text of object 'Object Repository/PaymenntLocator/input_party_name' is cleared
+
+2018-06-27 13:57:12 - [MESSAGE][PASSED] - Text 'J R Gems' is set on object 'Object Repository/PaymenntLocator/input_party_name'
+
+2018-06-27 13:57:12 - [MESSAGE][PASSED] - Text of object 'Object Repository/PaymenntLocator/input_email' is cleared
+
+2018-06-27 13:57:13 - [MESSAGE][PASSED] - Text 'usgbcarc@gmail.com' is set on object 'Object Repository/PaymenntLocator/input_email'
+
+2018-06-27 13:57:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/PaymenntLocator/input_street' is cleared
+
+2018-06-27 13:57:14 - [MESSAGE][PASSED] - Text '611-618, Tower A, Spaze I-Tech Park, Sohna Road, Sector 51' is set on object 'Object Repository/PaymenntLocator/input_street'
+
+2018-06-27 13:57:14 - [MESSAGE][PASSED] - Text of object 'Object Repository/PaymenntLocator/input_city' is cleared
+
+2018-06-27 13:57:14 - [MESSAGE][PASSED] - Text 'Gurgaon' is set on object 'Object Repository/PaymenntLocator/input_city'
+
+2018-06-27 13:57:14 - [MESSAGE][PASSED] - All options with label 'India' are selected in object 'Object Repository/PaymenntLocator/Country' 
+
+2018-06-27 13:57:15 - [MESSAGE][PASSED] - All options with label 'Haryana' are selected in object 'Object Repository/PaymenntLocator/Select_State'  using regular expression
+
+2018-06-27 13:57:16 - [MESSAGE][FAILED] - Unable to clear text of object 'Object Repository/PaymenntLocator/input_zip_code' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 76285dde042ff6dfff7d509730f7b882)
+[[ATTACHMENT|C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Building Suites\\IND Building Suite\\BuildingNone TestSuite\\20180627_135450\\1530088036003.png]]
+
+2018-06-27 13:57:16 - [MESSAGE][FAILED] - Unable to clear text of object 'Object Repository/PaymenntLocator/input_zip_code' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 76285dde042ff6dfff7d509730f7b882)
+
+2018-06-27 13:57:16 - [TEST_STEP][PASSED] - Statement - Catch (Throwable t): null
+
+2018-06-27 13:57:16 - [TEST_STEP][PASSED] - Statement - out.println(t.getLocalizedMessage()): null
+
+2018-06-27 13:57:16 - [TEST_STEP][PASSED] - Statement - e1 = new java.lang.Error(t.getMessage()): null
+
+2018-06-27 13:57:16 - [TEST_STEP][PASSED] - Statement - e1.setStackTrace(t.getStackTrace()): null
+
+2018-06-27 13:57:16 - [TEST_STEP][PASSED] - Statement - e1.printStackTrace(): null
+
+2018-06-27 13:57:16 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Browser is closed
+
+2018-06-27 13:57:16 - [TEST_STEP][PASSED] - switchToDefaultContent: Switching to default content
+
+2018-06-27 13:57:16 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Name : " + testCase.getTestCaseId()): Test Case Name : Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest
+
+2018-06-27 13:57:16 - [MESSAGE][WARNING] - Test Case Name : Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest
+
+2018-06-27 13:57:16 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Status : " + testCase.getTestCaseStatus()): Test Case Status : FAILED
+
+2018-06-27 13:57:16 - [MESSAGE][WARNING] - Test Case Status : FAILED
+
+2018-06-27 13:57:16 - [TEST_STEP][PASSED] - Statement - If ("FAILED".equalsIgnoreCase(testCase.getTestCaseStatus())): Taking screenshot successfully
+
+2018-06-27 13:57:16 - [TEST_STEP][PASSED] - Statement - println("Test case Fail taking Screenshot"): null
+
+2018-06-27 13:57:16 - [TEST_STEP][PASSED] - Statement - Try: Taking screenshot successfully
+
+2018-06-27 13:57:16 - [TEST_STEP][PASSED] - Statement - data = new java.util.Date(java.lang.System.currentTimeMillis()): null
+
+2018-06-27 13:57:16 - [TEST_STEP][PASSED] - Statement - formatarDate = new java.text.SimpleDateFormat(yyyyMMddHHmmss): null
+
+2018-06-27 13:57:16 - [TEST_STEP][PASSED] - takeScreenshot: Taking screenshot successfully
+
+2018-06-27 13:57:16 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\ScreenShot\\screenshot_20180627135716.png]]
+
+2018-06-27 13:57:16 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-27 13:57:17 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2018-06-27 13:56:20 - [TEST_CASE][FAILED] - Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest: Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest FAILED because (of) Unable to clear text of object 'Object Repository/PaymenntLocator/input_zip_code' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 76285dde042ff6dfff7d509730f7b882)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-27 13:54:56 - [TEST_SUITE][FAILED] - BuildingNone TestSuite: Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest FAILED because (of) Unable to clear text of object 'Object Repository/PaymenntLocator/input_zip_code' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 76285dde042ff6dfff7d509730f7b882)]]></system-out>
+      <system-err><![CDATA[2018-06-27 13:54:56 - [TEST_SUITE][FAILED] - BuildingNone TestSuite: Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest FAILED because (of) Unable to clear text of object 'Object Repository/PaymenntLocator/input_zip_code' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'G10CHLT003', ip: '172.18.0.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\Group10\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 76285dde042ff6dfff7d509730f7b882)]]></system-err>
+   </testsuite>
+</testsuites>

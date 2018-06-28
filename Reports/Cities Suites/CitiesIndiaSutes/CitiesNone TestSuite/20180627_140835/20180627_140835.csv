@@ -1,0 +1,13 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+CitiesNone TestSuite,Chrome 67.0.3396.99,,2018-06-27 14:08:44,2018-06-27 14:11:11,2m - 26.768s,FAILED
+,,,,,,
+Test Cases/MyCities/CitiesNone/AddNewProjectTest,Chrome 67.0.3396.99,Verify ability to add new city porject,2018-06-27 14:08:49,2018-06-27 14:10:16,1m - 27.117s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-27 14:08:49,2018-06-27 14:09:32,43.558s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-27 14:09:33,2018-06-27 14:10:15,42.126s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-27 14:10:15,2018-06-27 14:10:16,0.969s,PASSED
+,,,,,,
+Test Cases/MyCities/CitiesNone/RegPaymentByCheckTest,Chrome 67.0.3396.99,,2018-06-27 14:10:16,2018-06-27 14:11:11,55.107s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-27 14:10:16,2018-06-27 14:10:56,40.122s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-27 14:10:57,2018-06-27 14:11:09,12.535s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-27 14:11:09,2018-06-27 14:11:09,0.054s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-27 14:11:09,2018-06-27 14:11:11,1.727s,PASSED

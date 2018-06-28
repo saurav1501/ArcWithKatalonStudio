@@ -81,9 +81,9 @@ public class ReusableMethodsNavigation {
 
 	@Keyword
 	public void navigateToCommunities(){
-		WebUI.click(findTestObject('Page_Arc dashboard/Page_Arc dashboard/a_ My Communities'))
+		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/a_ My Communities'))
 		WebUI.delay(1)
-		String postNavigationLoginText = WebUI.getText(findTestObject('Page_Arc dashboard/Page_Arc dashboard/span_My Communities'))
+		String postNavigationLoginText = WebUI.getText(findTestObject('Page_Arc dashboard/span_My Communities'))
 		WebUI.verifyMatch(postNavigationLoginText,'My Communities',false)
 	}
 

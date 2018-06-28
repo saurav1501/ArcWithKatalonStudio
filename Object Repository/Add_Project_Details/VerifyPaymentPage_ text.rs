@@ -4,6 +4,12 @@
    <name>VerifyPaymentPage_ text</name>
    <tag></tag>
    <elementGuidId>821a4928-e430-4904-8118-47cef400443d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//h4[@class = 'payment-label' and (text() = 'Payment type' or . = 'Payment type')]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -14,7 +20,7 @@
       <value>h4</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>

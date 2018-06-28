@@ -5,6 +5,8 @@
 
 import java.lang.String
 
+import com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+
 import com.kms.katalon.core.testobject.TestObject
 
 import java.sql.Connection
@@ -14,6 +16,14 @@ def static "com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCC"(
     	String sheetName	
      , 	int rowNum	) {
     (new com.arc.ReusableMethods.ReusableMethodsPayment()).paymentByCC(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCheck"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsPayment()).paymentByCheck(
         	sheetName
          , 	rowNum)
 }
@@ -44,28 +54,6 @@ def static "com.arc.ReusableMethods.ReusableMethodsLogin.logoutFromArcApplicatio
     (new com.arc.ReusableMethods.ReusableMethodsLogin()).logoutFromArcApplication()
 }
 
-def static "com.helper.javascript.JavaScriptHelper.executeScript"(
-    	String script	) {
-    (new com.helper.javascript.JavaScriptHelper()).executeScript(
-        	script)
-}
-
-def static "com.helper.javascript.JavaScriptHelper.executeScriptOnTestObject"(
-    	String string	
-     , 	TestObject testObject	) {
-    (new com.helper.javascript.JavaScriptHelper()).executeScriptOnTestObject(
-        	string
-         , 	testObject)
-}
-
-def static "com.helper.javascript.JavaScriptHelper.executeAndReturnValue"(
-    	String script	
-     , 	TestObject testObject	) {
-    (new com.helper.javascript.JavaScriptHelper()).executeAndReturnValue(
-        	script
-         , 	testObject)
-}
-
 def static "com.arc.ReusableMethods.ReusableMethodsDataInput.uploadArcDataTempte"() {
     (new com.arc.ReusableMethods.ReusableMethodsDataInput()).uploadArcDataTempte()
 }
@@ -90,28 +78,34 @@ def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createWaterMeterRea
          , 	rowNum)
 }
 
-def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createWasteGeneration"(
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createWasteGenerationMeterReading"(
     	String sheetName	
      , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createWasteGeneration(
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createWasteGenerationMeterReading(
         	sheetName
          , 	rowNum)
 }
 
 def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createWasteDiversionMeterReading"(
-    	String param	
-     , 	String sheetName	
+    	String sheetName	
      , 	int rowNum	) {
     (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createWasteDiversionMeterReading(
-        	param
-         , 	sheetName
+        	sheetName
          , 	rowNum)
 }
 
-def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createADReadingPointOptionB"(
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createTransportReading"(
     	String sheetName	
      , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createADReadingPointOptionB(
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createTransportReading(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createHumanExpMeterReading"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createHumanExpMeterReading(
         	sheetName
          , 	rowNum)
 }
@@ -124,24 +118,6 @@ def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createADMeterReadin
          , 	rowNum)
 }
 
-def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createTransportReading"(
-    	String param	
-     , 	String sheetName	
-     , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createTransportReading(
-        	param
-         , 	sheetName
-         , 	rowNum)
-}
-
-def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createHumtMeterReading"(
-    	String sheetName	
-     , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createHumtMeterReading(
-        	sheetName
-         , 	rowNum)
-}
-
 def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createHumanExpMeterReading"(
     	String param	
      , 	String sheetName	
@@ -150,6 +126,28 @@ def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createHumanExpMeter
         	param
          , 	sheetName
          , 	rowNum)
+}
+
+def static "com.helper.javascript.JavaScriptHelper.executeScript"(
+    	String script	) {
+    (new com.helper.javascript.JavaScriptHelper()).executeScript(
+        	script)
+}
+
+def static "com.helper.javascript.JavaScriptHelper.executeScriptOnTestObject"(
+    	String string	
+     , 	TestObject testObject	) {
+    (new com.helper.javascript.JavaScriptHelper()).executeScriptOnTestObject(
+        	string
+         , 	testObject)
+}
+
+def static "com.helper.javascript.JavaScriptHelper.executeAndReturnValue"(
+    	String script	
+     , 	TestObject testObject	) {
+    (new com.helper.javascript.JavaScriptHelper()).executeAndReturnValue(
+        	script
+         , 	testObject)
 }
 
 def static "com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram"(
@@ -168,10 +166,18 @@ def static "com.arc.ReusableMethods.ReusableMethodsAddNewProject.buildingAddNewP
          , 	rowNum)
 }
 
-def static "com.arc.ReusableMethods.ReusableMethodsAddNewProject.USCommunitiesAddNewProject"(
+def static "com.arc.ReusableMethods.ReusableMethodsAddNewProject.addNewProjectCityORCom"(
     	String sheetName	
      , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsAddNewProject()).USCommunitiesAddNewProject(
+    (new com.arc.ReusableMethods.ReusableMethodsAddNewProject()).addNewProjectCityORCom(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsAddNewProject.parkingAddNewProject"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsAddNewProject()).parkingAddNewProject(
         	sheetName
          , 	rowNum)
 }
@@ -194,6 +200,14 @@ def static "com.helper.mysql.ConnectMySqlRemoteDB.execute"(
          , 	conn)
 }
 
+def static "com.arc.ReusableMethods.ReusableMethodsBasescore.basePointOptionA"(
+    	String cdataInputSheet	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsBasescore()).basePointOptionA(
+        	cdataInputSheet
+         , 	rowNum)
+}
+
 def static "com.helper.grid.GridHelper.GetValueFromGrid"(
     	TestObject baseTestObject	
      , 	int rowIndex	
@@ -214,14 +228,6 @@ def static "com.helper.grid.GridHelper.getValueOrClickOnColumn"(
          , 	rowIndex
          , 	colIndex
          , 	type)
-}
-
-def static "com.arc.ReusableMethods.ReusableMethodsBasescore.basePointOptionA"(
-    	String cdataInputSheet	
-     , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsBasescore()).basePointOptionA(
-        	cdataInputSheet
-         , 	rowNum)
 }
 
 def static "com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToMenuItem"(

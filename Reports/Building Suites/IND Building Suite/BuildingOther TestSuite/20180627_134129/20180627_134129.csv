@@ -1,0 +1,13 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+BuildingOther TestSuite,Chrome 67.0.3396.99,,2018-06-27 13:41:34,2018-06-27 13:43:51,2m - 16.392s,FAILED
+,,,,,,
+Test Cases/Buildings/MyBuildings/BuildingOther/AddNewProjectTest,Chrome 67.0.3396.99,US Building None Project Registration,2018-06-27 13:41:39,2018-06-27 13:43:02,1m - 23.195s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-27 13:41:39,2018-06-27 13:42:22,42.739s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-27 13:42:22,2018-06-27 13:43:01,38.613s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-27 13:43:01,2018-06-27 13:43:02,0.970s,PASSED
+,,,,,,
+Test Cases/Buildings/MyBuildings/BuildingOther/RegPaymentByCheckTest,Chrome 67.0.3396.99,,2018-06-27 13:43:02,2018-06-27 13:43:51,48.885s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-27 13:43:02,2018-06-27 13:43:37,35.536s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-27 13:43:38,2018-06-27 13:43:49,11.481s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-27 13:43:49,2018-06-27 13:43:49,0.046s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-27 13:43:49,2018-06-27 13:43:51,1.484s,PASSED

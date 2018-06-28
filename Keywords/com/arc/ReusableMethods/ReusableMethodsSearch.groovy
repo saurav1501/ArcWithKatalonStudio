@@ -40,7 +40,6 @@ public class ReusableMethodsSearch extends BaseClass{
 		//	if(WebUI.getText(findTestObject('Object Repository/Page_Arc dashboard/input_searchBar1'))!= null)
 		//	WebUI.clearText(findTestObject('Object Repository/Page_Arc dashboard/input_searchBar1'))
 
-
 		WebUI.setText(findTestObject('Object Repository/Page_Arc dashboard/input_searchBar1'), projectId)
 		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/input_searchBar1'))
 		WebUI.delay(3)
@@ -48,12 +47,7 @@ public class ReusableMethodsSearch extends BaseClass{
 		println nuberOfProjects
 		WebUI.verifyMatch(nuberOfProjects,'Project (1 project)', false)
 		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/search_Result'))
-		WebUI.delay(3)
-	//	WebUI.click(findTestObject('DataInput/a_Projects'))
-		WebUI.delay(2)
-
-
-
+		WebUI.delay(7)
 	}
 }
 

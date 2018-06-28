@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+CommunitiesOther TestSuite,Chrome 67.0.3396.99,,2018-06-27 14:28:10,2018-06-27 14:31:15,3m - 5.101s,FAILED
+,,,,,,
+Test Cases/MyCommunities/CommunitiesOther/AddNewProjectTest,Chrome 67.0.3396.99,Verify ablility to register the new communities project.,2018-06-27 14:28:15,2018-06-27 14:29:57,1m - 41.995s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-27 14:28:15,2018-06-27 14:28:55,39.882s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-27 14:28:56,2018-06-27 14:29:56,1m - 0.485s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-27 14:29:56,2018-06-27 14:29:56,0.041s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-27 14:29:56,2018-06-27 14:29:57,1.022s,PASSED
+,,,,,,
+Test Cases/MyCommunities/CommunitiesOther/RegPaymentByCheckTest,Chrome 67.0.3396.99,,2018-06-27 14:29:57,2018-06-27 14:31:15,1m - 17.815s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-27 14:29:57,2018-06-27 14:30:34,36.913s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-27 14:30:35,2018-06-27 14:31:14,39.431s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-27 14:31:14,2018-06-27 14:31:14,0.036s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-27 14:31:14,2018-06-27 14:31:15,1.213s,PASSED

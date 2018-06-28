@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="CommunityIndiaTest Suite" time="33" tests="0" failures="0" errors="1">
+   <testsuite name="CommunityIndiaTest Suite" tests="0" failures="0" errors="1" time="33" timestamp="2018-06-26 16:08:52" hostname="Group10 - G10CHLT003" id="Test Suites/Communities Suites/CommunityIndiaTest Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Communities Suites\\CommunityIndiaTest Suite\\20180626_160850"/>
+         <property name="logFiles" value="C:\\Users\\Group10\\git\\KatalonStudio\\ArcWithKatalonStudio\\Reports\\Communities Suites\\CommunityIndiaTest Suite\\20180626_160850\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Group10 - G10CHLT003"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="172.18.0.84"/>
+         <property name="sessionId" value="3b2fbf72ccd7a180b74f896935fe30ad"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/MyCommunities/CommunitiesNone/AddNewProjectTest" classname="Test Cases/MyCommunities/CommunitiesNone/AddNewProjectTest" status="ERROR">
+         <error type="ERROR" message="Test Cases/MyCommunities/CommunitiesNone/AddNewProjectTest FAILED because (of) org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: com.arc.ReusableMethods.ReusableMethodsAddNewProject.USCommunitiesAddNewProject() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [CommunityIndiaProject, 4]"/>
+         <system-out><![CDATA[2018-06-26 16:08:54 - [TEST_CASE][ERROR] - Test Cases/MyCommunities/CommunitiesNone/AddNewProjectTest: Test Cases/MyCommunities/CommunitiesNone/AddNewProjectTest FAILED because (of) org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: com.arc.ReusableMethods.ReusableMethodsAddNewProject.USCommunitiesAddNewProject() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [CommunityIndiaProject, 4]
+
+2018-06-26 16:08:54 - [TEST_STEP][PASSED] - Start listener action : beforeTestListener: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-26 16:08:54 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable: com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-26 16:09:02 - [MESSAGE][PASSED] - Browser is opened with url: 'http://www.qas.arconline.io/'
+
+2018-06-26 16:09:04 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-26 16:09:04 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-06-26 16:09:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_ACCEPT AND CLOSE' is clicked on
+
+2018-06-26 16:09:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/Click_Log in' is clicked on
+
+2018-06-26 16:09:05 - [MESSAGE][PASSED] - Text 'usgbcarc@gmail.com' is set on object 'Object Repository/Page_Home  Arc/input_name'
+
+2018-06-26 16:09:05 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/Page_Home  Arc/input_pass'
+
+2018-06-26 16:09:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/input_field_policy_accept' is clicked on
+
+2018-06-26 16:09:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home  Arc/button_Log in' is clicked on
+
+2018-06-26 16:09:20 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-06-26 16:09:21 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/span_My Projects' is: 'My Projects'
+
+2018-06-26 16:09:21 - [MESSAGE][PASSED] - Actual text 'My Projects' and expected text 'My Projects' are matched  using regular expression
+
+2018-06-26 16:09:24 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-26 16:09:24 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithGlobalVariable is PASSED
+
+2018-06-26 16:09:24 - [TEST_STEP][ERROR] - Statement - Try: No signature of method: com.arc.ReusableMethods.ReusableMethodsAddNewProject.USCommunitiesAddNewProject() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [CommunityIndiaProject, 4]
+
+2018-06-26 16:09:24 - [TEST_STEP][PASSED] - com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToCommunities: com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToCommunities is PASSED
+
+2018-06-26 16:09:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Arc dashboard/a_ My Communities' is clicked on
+
+2018-06-26 16:09:25 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-06-26 16:09:25 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Arc dashboard/span_My Communities' is: 'My Communities'
+
+2018-06-26 16:09:25 - [MESSAGE][PASSED] - Actual text 'My Communities' and expected text 'My Communities' are matched 
+
+2018-06-26 16:09:25 - [MESSAGE][PASSED] - com.arc.ReusableMethods.ReusableMethodsNavigation.navigateToCommunities is PASSED
+
+2018-06-26 16:09:25 - [TEST_STEP][ERROR] - com.arc.ReusableMethods.ReusableMethodsAddNewProject.USCommunitiesAddNewProject: No signature of method: com.arc.ReusableMethods.ReusableMethodsAddNewProject.USCommunitiesAddNewProject() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [CommunityIndiaProject, 4]
+
+2018-06-26 16:09:25 - [MESSAGE][ERROR] - No signature of method: com.arc.ReusableMethods.ReusableMethodsAddNewProject.USCommunitiesAddNewProject() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [CommunityIndiaProject, 4]
+
+2018-06-26 16:09:25 - [TEST_STEP][PASSED] - Statement - Catch (Throwable t): null
+
+2018-06-26 16:09:25 - [TEST_STEP][PASSED] - Statement - out.println(t.getLocalizedMessage()): null
+
+2018-06-26 16:09:25 - [TEST_STEP][PASSED] - Statement - e1 = new java.lang.Error(t.getMessage()): null
+
+2018-06-26 16:09:25 - [TEST_STEP][PASSED] - Statement - e1.setStackTrace(t.getStackTrace()): null
+
+2018-06-26 16:09:25 - [TEST_STEP][PASSED] - Statement - e1.printStackTrace(): null
+
+2018-06-26 16:09:25 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: Browser is closed
+
+2018-06-26 16:09:25 - [TEST_STEP][PASSED] - switchToDefaultContent: Switching to default content
+
+2018-06-26 16:09:25 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Name : " + testCase.getTestCaseId()): Test Case Name : Test Cases/MyCommunities/CommunitiesNone/AddNewProjectTest
+
+2018-06-26 16:09:25 - [MESSAGE][WARNING] - Test Case Name : Test Cases/MyCommunities/CommunitiesNone/AddNewProjectTest
+
+2018-06-26 16:09:25 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.util.KeywordUtil.markWarning("Test Case Status : " + testCase.getTestCaseStatus()): Test Case Status : ERROR
+
+2018-06-26 16:09:25 - [MESSAGE][WARNING] - Test Case Status : ERROR
+
+2018-06-26 16:09:25 - [TEST_STEP][PASSED] - Statement - If ("FAILED".equalsIgnoreCase(testCase.getTestCaseStatus())): null
+
+2018-06-26 16:09:25 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-26 16:09:26 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2018-06-26 16:08:54 - [TEST_CASE][ERROR] - Test Cases/MyCommunities/CommunitiesNone/AddNewProjectTest: Test Cases/MyCommunities/CommunitiesNone/AddNewProjectTest FAILED because (of) org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: com.arc.ReusableMethods.ReusableMethodsAddNewProject.USCommunitiesAddNewProject() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [CommunityIndiaProject, 4]]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-26 16:08:52 - [TEST_SUITE][ERROR] - CommunityIndiaTest Suite: Test Cases/MyCommunities/CommunitiesNone/AddNewProjectTest FAILED because (of) org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: com.arc.ReusableMethods.ReusableMethodsAddNewProject.USCommunitiesAddNewProject() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [CommunityIndiaProject, 4]]]></system-out>
+      <system-err><![CDATA[2018-06-26 16:08:52 - [TEST_SUITE][ERROR] - CommunityIndiaTest Suite: Test Cases/MyCommunities/CommunitiesNone/AddNewProjectTest FAILED because (of) org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: com.arc.ReusableMethods.ReusableMethodsAddNewProject.USCommunitiesAddNewProject() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [CommunityIndiaProject, 4]]]></system-err>
+   </testsuite>
+</testsuites>

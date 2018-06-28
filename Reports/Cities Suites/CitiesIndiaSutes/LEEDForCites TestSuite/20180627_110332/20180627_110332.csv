@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+LEEDForCites TestSuite,Chrome 67.0.3396.99,,2018-06-27 11:03:36,2018-06-27 11:05:05,1m - 28.883s,FAILED
+,,,,,,
+Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest,Chrome 67.0.3396.99,,2018-06-27 11:03:39,2018-06-27 11:05:05,1m - 25.821s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-27 11:03:39,2018-06-27 11:04:16,36.550s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-27 11:04:16,2018-06-27 11:05:04,47.519s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-27 11:05:04,2018-06-27 11:05:04,0.102s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-27 11:05:04,2018-06-27 11:05:05,1.325s,PASSED

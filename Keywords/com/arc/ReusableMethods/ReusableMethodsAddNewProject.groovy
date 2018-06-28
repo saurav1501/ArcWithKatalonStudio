@@ -29,7 +29,7 @@ import WebUiBuiltInKeywords as WebUI
 public class ReusableMethodsAddNewProject extends BaseClass{
 	ReusableMethodsNavigation navigation = new ReusableMethodsNavigation()
 	Date date = new Date(System.currentTimeMillis())
-	SimpleDateFormat formatarDate = new SimpleDateFormat(' HHmmss')
+	SimpleDateFormat formatarDate = new SimpleDateFormat(' HH:mm:ss')
 	@Keyword
 	public void buildingAddNewProject(String sheetName , int rowNum) {
 		/**************Reading data form excel sheet*************************/
@@ -73,8 +73,8 @@ public class ReusableMethodsAddNewProject extends BaseClass{
 		WebUI.click(findTestObject('Add_Project_Details/input_reg_agreement'))
 		WebUI.click(findTestObject('Add_Project_Details/button_Next'))
 		WebUI.delay(5)
-		String PaymentPageText = WebUI.getText(findTestObject('Add_Project_Details/VerifyPaymentPage_ text'))
-		WebUI.verifyMatch(PaymentPageText,'Payment type',true)
+		String PaymentPageText = WebUI.getText(findTestObject('Object Repository/Add_Project_Details/strong_Promotional Code'))
+		WebUI.verifyMatch(PaymentPageText,'Promotional Code',true)
 		String Project_ID = WebUI.getText(findTestObject('Object Repository/Add_Project_Details/td_BuildingID'))
 		System.out.println(Project_ID)
 		data.setCellData(sheetName,"Project ID", rowNum, Project_ID)
@@ -82,8 +82,9 @@ public class ReusableMethodsAddNewProject extends BaseClass{
 	}
 
 	@Keyword
-	public void USCommunitiesAddNewProject(String sheetName , int rowNum) {
-
+	public void addNewProjectCityORCom(String sheetName , int rowNum) {
+		/**************Reading data form excel sheet*************************/
+		String prjName      = data.getCellData(sheetName,"ProjectName", rowNum)
 		String prjType 		= data.getCellData(sheetName, "ProjectType", rowNum);
 		String prjRating 	= data.getCellData(sheetName, "RatingSystem", rowNum);
 		String ownerOrg 	= data.getCellData(sheetName, "OwnerOrganization", rowNum);
@@ -98,7 +99,7 @@ public class ReusableMethodsAddNewProject extends BaseClass{
 		String prjState 	= data.getCellData(sheetName, "State", rowNum);
 		String prjZip 		= data.getCellData(sheetName, "Zip", rowNum);
 
-		String ProjectName = "USCom" +prjRating+formatarDate.format(date)
+		String ProjectName = prjName + prjRating +formatarDate.format(date)
 		data.setCellData(sheetName,"Project Name", rowNum, ProjectName)
 		navigation.clickAddProject()
 
@@ -122,11 +123,14 @@ public class ReusableMethodsAddNewProject extends BaseClass{
 		WebUI.click(findTestObject('Add_Project_Details/input_reg_agreement'))
 		WebUI.click(findTestObject('Add_Project_Details/button_Next'))
 		WebUI.delay(5)
-		String PaymentPageText = WebUI.getText(findTestObject('Add_Project_Details/VerifyPaymentPage_ text'))
-		WebUI.verifyMatch(PaymentPageText,'Payment type',true)
+		String PaymentPageText = WebUI.getText(findTestObject('Object Repository/Add_Project_Details/strong_Promotional Code'))
+		WebUI.verifyMatch(PaymentPageText,'Promotional Code',true)
 		String Project_ID = WebUI.getText(findTestObject('Object Repository/Add_Project_Details/td_BuildingID'))
 		System.out.println(Project_ID)
 		data.setCellData(sheetName,"Project ID", rowNum, Project_ID)
 		WebUI.delay(5)
+	}
+	@Keyword
+	public void parkingAddNewProject(String sheetName , int rowNum) {
 	}
 }

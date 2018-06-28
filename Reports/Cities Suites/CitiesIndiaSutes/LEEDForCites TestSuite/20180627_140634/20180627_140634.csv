@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+LEEDForCites TestSuite,Chrome 67.0.3396.99,,2018-06-27 14:06:43,2018-06-27 14:08:19,1m - 36.242s,FAILED
+,,,,,,
+Test Cases/MyCities/LEEDForCities/AddNewProjectTest,Chrome 67.0.3396.99,Verify ability to add new city porject,2018-06-27 14:06:49,2018-06-27 14:07:39,50.445s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-27 14:06:49,2018-06-27 14:07:36,46.969s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-27 14:07:36,2018-06-27 14:07:37,0.642s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-27 14:07:37,2018-06-27 14:07:37,0.249s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-27 14:07:37,2018-06-27 14:07:39,2.019s,PASSED
+,,,,,,
+Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest,Chrome 67.0.3396.99,,2018-06-27 14:07:39,2018-06-27 14:08:19,40.046s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-27 14:07:39,2018-06-27 14:08:17,37.735s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-06-27 14:08:17,2018-06-27 14:08:18,0.636s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-27 14:08:18,2018-06-27 14:08:18,0.012s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-27 14:08:18,2018-06-27 14:08:19,1.195s,PASSED
