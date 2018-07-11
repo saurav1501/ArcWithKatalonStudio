@@ -84,4 +84,9 @@
       <initValue>'CDataInput'</initValue>
       <name>CDataInput</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Portfolio'</initValue>
+      <name>PortfoliosSheet</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

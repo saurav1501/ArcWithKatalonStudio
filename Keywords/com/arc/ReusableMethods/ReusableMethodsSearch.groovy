@@ -31,9 +31,8 @@ public class ReusableMethodsSearch extends BaseClass{
 	/*************Search By Project ID **************************************/
 	@Keyword
 	public void searchProgram(String sheetName , int rowNum) {
-
 		String projectId = data.getCellData(sheetName,"Project ID",rowNum)
-		WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
+		//WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
 		WebUI.delay(2)
 		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/input_searchBar1'))
 
@@ -47,7 +46,21 @@ public class ReusableMethodsSearch extends BaseClass{
 		println nuberOfProjects
 		WebUI.verifyMatch(nuberOfProjects,'Project (1 project)', false)
 		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/search_Result'))
-		WebUI.delay(7)
+		WebUI.delay(5)
+	}
+	@Keyword
+	public void searchProgramPortfolio(String sheetName , int rowNum) {
+		String projectName = data.getCellData(sheetName,"ProjectName",rowNum)
+		WebUI.delay(2)
+		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/input_searchBar1'))
+		WebUI.setText(findTestObject('Object Repository/Page_Arc dashboard/input_searchBar1'), projectName)
+		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/input_searchBar1'))
+		WebUI.delay(3)
+		String nuberOfProtfolio = WebUI.getText(findTestObject('Portfolio/Common/TNoPortfolio (1 portfolio)'))
+		println nuberOfProtfolio
+		WebUI.verifyMatch(nuberOfProtfolio,'Portfolio (1 portfolio)', false)
+		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/search_Result'))
+		WebUI.delay(5)
 	}
 }
 

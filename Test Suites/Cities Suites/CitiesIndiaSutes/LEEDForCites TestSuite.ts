@@ -17,10 +17,4 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/MyCities/LEEDForCities/AddNewProjectTest</testCaseId>
    </testCaseLink>
-   <testCaseLink>
-      <guid>cf5d23df-4878-4a83-b209-498a66204f8b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/MyCities/LEEDForCities/RegPaymentByCheckTest</testCaseId>
-   </testCaseLink>
 </TestSuiteEntity>

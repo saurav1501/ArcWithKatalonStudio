@@ -4,7 +4,17 @@
    <name>sideBar</name>
    <tag></tag>
    <elementGuidId>a101c1e4-f43f-4755-b9c4-87409a397bf0</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;app&quot;)/div[@class=&quot;ng-scope&quot;]/nav[@class=&quot;page-controls navbar navbar-default ng-scope&quot;]/div[@class=&quot;container-fluid ng-scope&quot;]/div[@class=&quot;navbar-header&quot;]/ul[@class=&quot;nav navbar-nav&quot;]/li[1]/a[@class=&quot;hidden-sm hidden-xs&quot;]/i[@class=&quot;fa fa-bars fa-lg&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//i[@class = 'fa fa-bars fa-lg'])[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

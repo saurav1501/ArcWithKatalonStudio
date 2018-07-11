@@ -1,8 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
-CommunityIndiaTest Suite,Chrome 67.0.3396.99,,2018-06-26 16:08:52,2018-06-26 16:09:26,33.777s,ERROR
-,,,,,,
-Test Cases/MyCommunities/CommunitiesNone/AddNewProjectTest,Chrome 67.0.3396.99,Verify ablility to register the new communities project.,2018-06-26 16:08:54,2018-06-26 16:09:26,31.728s,ERROR
-Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-26 16:08:54,2018-06-26 16:09:24,29.522s,PASSED
-Statement - Try,Chrome 67.0.3396.99,,2018-06-26 16:09:24,2018-06-26 16:09:25,1.299s,ERROR
-Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-26 16:09:25,2018-06-26 16:09:25,0.033s,PASSED
-Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-26 16:09:25,2018-06-26 16:09:26,0.663s,PASSED

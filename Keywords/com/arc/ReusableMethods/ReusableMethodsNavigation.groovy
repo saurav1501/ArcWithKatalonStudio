@@ -60,7 +60,6 @@ public class ReusableMethodsNavigation {
 		WebUI.delay(2)
 		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/a_ My Buildings'))
 		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/i_fa fa-bars fa-lg'))
-		print "Making Slider On"
 		String postNavigationLoginText = WebUI.getText(findTestObject('Object Repository/Page_Arc dashboard/span_My Buildings'))
 		WebUI.verifyMatch(postNavigationLoginText,'My Buildings',true)
 	}
@@ -89,17 +88,22 @@ public class ReusableMethodsNavigation {
 
 	@Keyword
 	public void navigateToParking(){
-		WebUI.click(findTestObject('Page_Arc dashboard/Page_Arc dashboard/a_ My Parking'))
-		WebUI.delay(1)
-		String postNavigationLoginText = WebUI.getText(findTestObject('Page_Arc dashboard/Page_Arc dashboard/span_My Parking'))
+		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/a_ Buildings'))
+		WebUI.delay(2)
+		WebUI.click(findTestObject('Page_Arc dashboard/a_ My Parking'))
+		WebUI.delay(2)
+		String postNavigationLoginText = WebUI.getText(findTestObject('Page_Arc dashboard/span_My Parking'))
 		WebUI.verifyMatch(postNavigationLoginText,'My Parking',false)
 	}
-
 	@Keyword
 	public void navigateToPortfolio(){
-		WebUI.click(findTestObject('Page_Arc dashboard/Page_Arc dashboard/a_ My Portfolios'))
-		WebUI.delay(1)
-		String postNavigationLoginText = WebUI.getText(findTestObject('Page_Arc dashboard/Page_Arc dashboard/span_My Portfolios'))
+		WebUI.click(findTestObject('Object Repository/Page_Arc dashboard/a_ Buildings'))
+		WebUI.delay(2)
+		WebUI.click(findTestObject('Portfolio/Common/a_ My Portfolios'))
+
+		WebUI.click(findTestObject('Portfolio/Common/span_My Portfolios'))
+
+		String postNavigationLoginText = WebUI.getText(findTestObject('Page_Arc dashboard/span_My Portfolios'))
 		WebUI.verifyMatch(postNavigationLoginText,'My Portfolios',false)
 	}
 }

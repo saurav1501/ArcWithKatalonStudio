@@ -1,8 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
-BuildingNone TestSuite,Chrome 67.0.3396.99,,2018-06-27 13:29:09,2018-06-27 13:30:37,1m - 27.921s,FAILED
-,,,,,,
-Test Cases/Buildings/MyBuildings/BuildingNone/RegPaymentByCheckTest,Chrome 67.0.3396.99,,2018-06-27 13:29:13,2018-06-27 13:30:37,1m - 23.549s,FAILED
-Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-27 13:29:13,2018-06-27 13:29:55,41.400s,PASSED
-Statement - Try,Chrome 67.0.3396.99,,2018-06-27 13:29:55,2018-06-27 13:30:35,40.080s,FAILED
-Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-27 13:30:35,2018-06-27 13:30:35,0.088s,PASSED
-Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-27 13:30:35,2018-06-27 13:30:37,1.501s,PASSED

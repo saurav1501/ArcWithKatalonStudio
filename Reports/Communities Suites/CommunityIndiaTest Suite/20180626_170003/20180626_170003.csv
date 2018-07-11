@@ -1,8 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
-CommunityIndiaTest Suite,Chrome 67.0.3396.99,,2018-06-26 17:00:06,2018-06-26 17:01:26,1m - 20.189s,FAILED
-,,,,,,
-Test Cases/MyCommunities/LEEDForCommunities/AddNewProjectTest,Chrome 67.0.3396.99,Verify ablility to register the new communities project.,2018-06-26 17:00:08,2018-06-26 17:01:26,1m - 18.110s,FAILED
-Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-06-26 17:00:08,2018-06-26 17:00:35,27.649s,PASSED
-Statement - Try,Chrome 67.0.3396.99,,2018-06-26 17:00:36,2018-06-26 17:01:25,49.205s,FAILED
-Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-06-26 17:01:25,2018-06-26 17:01:25,0.038s,PASSED
-Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-06-26 17:01:25,2018-06-26 17:01:26,1.018s,PASSED

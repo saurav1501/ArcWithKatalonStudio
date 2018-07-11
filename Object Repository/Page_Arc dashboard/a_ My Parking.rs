@@ -3,7 +3,7 @@
    <description></description>
    <name>a_ My Parking</name>
    <tag></tag>
-   <elementGuidId>b13139c6-bbcc-4f24-a765-4e59b9c4d881</elementGuidId>
+   <elementGuidId>12ee56c3-4558-4735-b355-8bd952c0521e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>

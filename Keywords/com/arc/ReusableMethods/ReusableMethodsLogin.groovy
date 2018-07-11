@@ -99,7 +99,7 @@ public class ReusableMethodsLogin extends BaseClass{
 		WebUI.click(findTestObject('Page_Arc dashboard/b_caret'))
 		WebUI.delay(1)
 		WebUI.click(findTestObject('Page_Arc dashboard/a_ Log Out'))
-		WebUI.delay(2)
+		WebUI.delay(10)
 		WebUI.waitForPageLoad(GlobalVariable.timeOut)
 		String Logintext = WebUI.getText(findTestObject('Page_Home  Arc/Click_Log in'))
 		WebUI.verifyMatch(Logintext,'LOG IN',, false)

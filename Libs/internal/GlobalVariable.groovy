@@ -89,7 +89,8 @@ public class GlobalVariable {
     public static Object password
      
     /**
-     * <p>Profile QAS-IND-MEM : Explicit Wait Timeout
+     * <p>Profile PRD-IND-MEM  : Explicit Wait Timeout
+Profile QAS-IND-MEM : Explicit Wait Timeout
 Profile QAS-IND-NON-MEM  : Explicit Wait Timeout
 Profile STG-CA : Explicit Wait Timeout
 Profile STG-CN : Explicit Wait Timeout
@@ -106,7 +107,8 @@ Profile qas : Explicit Wait Timeout</p>
     public static Object env
      
     /**
-     * <p>Profile QAS-IND-MEM : Adding India projects
+     * <p>Profile PRD-IND-MEM  : Adding India projects
+Profile QAS-IND-MEM : Adding India projects
 Profile QAS-IND-NON-MEM  : Adding India projects
 Profile STG-CA : Adding canada projects
 Profile STG-CN : Adding china projects
@@ -116,7 +118,8 @@ Profile STG-US : Adding US projects</p>
     public static Object BuildingSheet
      
     /**
-     * <p>Profile QAS-IND-MEM : Adding new team member 
+     * <p>Profile PRD-IND-MEM  : Adding new team member 
+Profile QAS-IND-MEM : Adding new team member 
 Profile QAS-IND-NON-MEM  : Adding new team member 
 Profile STG-CA : Adding new team member 
 Profile STG-CN : Adding new team member 
@@ -126,7 +129,8 @@ Profile STG-US : Adding new team member </p>
     public static Object BuildingTeam
      
     /**
-     * <p>Profile QAS-IND-MEM : Adding Credit Card payment details 
+     * <p>Profile PRD-IND-MEM  : Adding Credit Card payment details 
+Profile QAS-IND-MEM : Adding Credit Card payment details 
 Profile QAS-IND-NON-MEM  : Adding Credit Card payment details 
 Profile STG-CA : Adding Credit Card payment details 
 Profile STG-CN : Adding Credit Card payment details 
@@ -161,14 +165,16 @@ Profile STG-US : Adding Credit Card payment details </p>
     public static Object rowNumSix
      
     /**
-     * <p>Profile QAS-IND-MEM : Adding new  india city projects 
+     * <p>Profile PRD-IND-MEM  : Adding new  india city projects 
+Profile QAS-IND-MEM : Adding new  india city projects 
 Profile QAS-IND-NON-MEM  : Adding new  india city projects 
 Profile STG-IND  : Adding new  india city projects </p>
      */
     public static Object CitySheet
      
     /**
-     * <p>Profile QAS-IND-MEM : Adding new Inida community projects 
+     * <p>Profile PRD-IND-MEM  : Adding new Inida community projects 
+Profile QAS-IND-MEM : Adding new Inida community projects 
 Profile QAS-IND-NON-MEM  : Adding new Inida community projects 
 Profile STG-CA : Adding new canada projects
 Profile STG-CN : Adding new china projects
@@ -184,18 +190,24 @@ Profile STG-IND  : Adding new Inida community projects </p>
     /**
      * <p></p>
      */
+    public static Object PortfoliosSheet
+     
+    /**
+     * <p></p>
+     */
     public static Object rowNum
      
 
     static {
         def allVariables = [:]        
         allVariables.put('default', ['StgUrl' : 'http://www.stg.arconline.io/', 'StgUserName' : 'Saurav@groupten.com', 'StgPassword' : 'LEEDg10', 'DelayTime' : 3, 'TimeOut' : 40, 'Env' : 'qas', 'QasUrl' : 'http://www.qas.arconline.io', 'QasUserName' : 'usgbcarc@gmail.com', 'QasPassword' : 'initpass', 'DevUrl' : 'http://www.dev.arconline.io', 'DevUserName' : 'rmishra@usgbc.org', 'DevPassword' : 'initpass'])
+        allVariables.put('PRD-IND-MEM ', allVariables['default'] + ['url' : 'http://arcskoru.com/', 'userName' : 'shahul_shefa@yahoo.com', 'password' : 'Changeme@1$', 'timeOut' : 40, 'env' : 'stg', 'BuildingSheet' : 'BuildingIndiaProject', 'BuildingTeam' : 'BTeam', 'CCPayment' : 'Payment', 'rowNumTwo' : 2, 'rowNumThree' : 3, 'rowNumFour' : 4, 'rowNumFive' : 5, 'rowNumSix' : 6, 'CitySheet' : 'CityIndiaProject', 'CommunitySheet' : 'CommunityIndiaProject', 'CDataInput' : 'CDataInput'])
         allVariables.put('QAS-IND-MEM', allVariables['default'] + ['url' : 'http://www.qas.arconline.io/', 'userName' : 'testleed1@gmail.com', 'password' : 'initpass', 'timeOut' : 40, 'env' : 'stg', 'BuildingSheet' : 'BuildingIndiaProject', 'BuildingTeam' : 'BTeam', 'CCPayment' : 'Payment', 'rowNumTwo' : 2, 'rowNumThree' : 3, 'rowNumFour' : 4, 'rowNumFive' : 5, 'rowNumSix' : 6, 'CitySheet' : 'CityIndiaProject', 'CommunitySheet' : 'CommunityIndiaProject', 'CDataInput' : 'CDataInput'])
         allVariables.put('QAS-IND-NON-MEM ', allVariables['default'] + ['url' : 'http://www.qas.arconline.io/', 'userName' : 'usgbcarc@gmail.com', 'password' : 'initpass', 'timeOut' : 40, 'env' : 'stg', 'BuildingSheet' : 'BuildingIndiaProject', 'BuildingTeam' : 'BTeam', 'CCPayment' : 'Payment', 'rowNumTwo' : 2, 'rowNumThree' : 3, 'rowNumFour' : 4, 'rowNumFive' : 5, 'rowNumSix' : 6, 'CitySheet' : 'CityIndiaProject', 'CommunitySheet' : 'CommunityIndiaProject', 'CDataInput' : 'CDataInput'])
         allVariables.put('STG-CA', allVariables['default'] + ['url' : 'http://www.stg.arconline.io/', 'userName' : 'Saurav@groupten.com', 'password' : 'LEEDg10', 'timeOut' : 40, 'env' : 'stg', 'BuildingSheet' : 'CanadaBuildingProject', 'BuildingTeam' : 'BTeam', 'CCPayment' : 'Payment', 'rowNumTwo' : 2, 'rowNumThree' : 3, 'rowNumFour' : 4, 'rowNumFive' : 5, 'rowNumSix' : 6, 'CitySheet' : 'CanadaCityProject', 'CommunitySheet' : 'CanadaCommunityProject', 'CDataInput' : 'CDataInput'])
         allVariables.put('STG-CN', allVariables['default'] + ['url' : 'http://www.stg.arconline.io/', 'userName' : 'Saurav@groupten.com', 'password' : 'LEEDg10', 'timeOut' : 40, 'env' : 'stg', 'BuildingSheet' : 'ChinaBuildingProejct', 'BuildingTeam' : 'BTeam', 'CCPayment' : 'Payment', 'rowNumTwo' : 2, 'rowNumThree' : 3, 'rowNumFour' : 4, 'rowNumFive' : 5, 'rowNumSix' : 6, 'CitySheet' : 'ChinaCityProject', 'CommunitySheet' : 'ChinaCommunityProject', 'CDataInput' : 'CDataInput'])
         allVariables.put('STG-IND ', allVariables['default'] + ['url' : 'http://www.stg.arconline.io/', 'userName' : 'Saurav@groupten.com', 'password' : 'LEEDg10', 'timeOut' : 40, 'env' : 'stg', 'BuildingSheet' : 'BuildingIndiaProject', 'BuildingTeam' : 'BTeam', 'CCPayment' : 'Payment', 'rowNumTwo' : 2, 'rowNumThree' : 3, 'rowNumFour' : 4, 'rowNumFive' : 5, 'rowNumSix' : 6, 'CitySheet' : 'CityIndiaProject', 'CommunitySheet' : 'CommunityIndiaProject', 'CDataInput' : 'CDataInput'])
-        allVariables.put('STG-US', allVariables['default'] + ['url' : 'http://www.stg.arconline.io/', 'userName' : 'Saurav@groupten.com', 'password' : 'LEEDg10', 'timeOut' : 40, 'env' : 'stg', 'BuildingSheet' : 'USBuildingProject', 'BuildingTeam' : 'BTeam', 'CCPayment' : 'Payment', 'rowNumTwo' : 2, 'rowNumThree' : 3, 'rowNumFour' : 4, 'rowNumFive' : 5, 'rowNumSix' : 6, 'CitySheet' : 'USCityProject', 'CommunitySheet' : 'USCommunityProject', 'CDataInput' : 'CDataInput'])
+        allVariables.put('STG-US', allVariables['default'] + ['url' : 'http://www.stg.arconline.io/', 'userName' : 'Saurav@groupten.com', 'password' : 'LEEDg10', 'timeOut' : 40, 'env' : 'stg', 'BuildingSheet' : 'USBuildingProject', 'BuildingTeam' : 'BTeam', 'CCPayment' : 'Payment', 'rowNumTwo' : 2, 'rowNumThree' : 3, 'rowNumFour' : 4, 'rowNumFive' : 5, 'rowNumSix' : 6, 'CitySheet' : 'USCityProject', 'CommunitySheet' : 'USCommunityProject', 'CDataInput' : 'CDataInput', 'PortfoliosSheet' : 'Portfolio'])
         allVariables.put('dev', allVariables['default'] + ['timeOut' : 40, 'env' : 'dev', 'url' : 'http://www.dev.arconline.io', 'userName' : 'rmishra@usgbc.org', 'password' : 'initpass', 'rowNum' : 5])
         allVariables.put('qas', allVariables['default'] + ['timeOut' : 40, 'env' : 'qas', 'url' : 'http://www.qas.arconline.io', 'userName' : 'usgbcarc@gmail.com', 'password' : 'initpass', 'rowNumTwo' : 2, 'rowNumThree' : 3, 'rowNumFour' : 4, 'rowNumFive' : 5, 'rowNumSix' : 6])
         
@@ -230,6 +242,7 @@ Profile STG-IND  : Adding new Inida community projects </p>
         CitySheet = selectedVariables['CitySheet']
         CommunitySheet = selectedVariables['CommunitySheet']
         CDataInput = selectedVariables['CDataInput']
+        PortfoliosSheet = selectedVariables['PortfoliosSheet']
         rowNum = selectedVariables['rowNum']
         
     }

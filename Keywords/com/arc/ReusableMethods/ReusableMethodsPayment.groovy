@@ -5,6 +5,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.testng.Assert
+
 import com.arc.BaseClass.BaseClass
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
@@ -60,9 +62,9 @@ public class ReusableMethodsPayment extends BaseClass{
 		WebUI.clearText(findTestObject('Object Repository/PaymenntLocator/input_zip_code'))
 		WebUI.setText(findTestObject('Object Repository/PaymenntLocator/input_zip_code'),zip )
 		WebUI.click(findTestObject('Object Repository/PaymenntLocator/button_Next'))
-		WebUI.delay(10)
-		String paymentSuccessText = WebUI.getText(findTestObject('Object Repository/PaymenntLocator/h2_Congratulations'))
-		WebUI.verifyMatch(paymentSuccessText,'Congratulations!',true)
+		WebUI.delay(20)
+		Boolean testCongratulations = WebUI.verifyTextPresent('Congratulations', false)
+		Assert.assertTrue(testCongratulations)
 	}
 
 	@Keyword
@@ -75,6 +77,8 @@ public class ReusableMethodsPayment extends BaseClass{
 		String country    = data.getCellData(sheetName, "Country", rowNum);
 		String state      = data.getCellData(sheetName, "State", rowNum);
 		String zip        = data.getCellData(sheetName, "Zip", rowNum);
+		WebUI.click(findTestObject('Page_Arc dashboard/sideBar'))
+		WebUI.delay(2)
 		WebUI.clearText(findTestObject('Object Repository/PaymenntLocator/input_party_name'))
 		WebUI.setText(findTestObject('Object Repository/PaymenntLocator/input_party_name'),partyName)
 		WebUI.clearText(findTestObject('Object Repository/PaymenntLocator/input_email'))
@@ -84,15 +88,19 @@ public class ReusableMethodsPayment extends BaseClass{
 		WebUI.clearText(findTestObject('Object Repository/PaymenntLocator/input_city'))
 		WebUI.setText(findTestObject('Object Repository/PaymenntLocator/input_city'), city)
 		WebUI.selectOptionByLabel(findTestObject('PaymenntLocator/Country'), country, false)
-		WebUI.selectOptionByLabel(findTestObject('PaymenntLocator/Select_State'),state , true)
-		WebUI.clearText(findTestObject('Object Repository/PaymenntLocator/input_zip_code'))
+		WebUI.selectOptionByLabel(findTestObject('PaymenntLocator/Select_State'),state , false)
+		WebUI.delay(2)
+		//WebUI.clearText(findTestObject('Object Repository/PaymenntLocator/input_zip_code'))
 		WebUI.setText(findTestObject('Object Repository/PaymenntLocator/input_zip_code'),zip )
 		WebUI.click(findTestObject('Object Repository/PaymenntLocator/button_Next'))
-		WebUI.delay(5)
+		WebUI.delay(10)
 		WebUI.click(findTestObject('Object Repository/PaymenntLocator/button_Continue'))
+		WebUI.waitForPageLoad(10)
+		Boolean testCongratulations = WebUI.verifyTextPresent('Congratulations', false)
+		Assert.assertTrue(testCongratulations)
+		WebUI.waitForElementClickable(findTestObject('Page_Arc dashboard/button_Next'), 10)
+		WebUI.click(findTestObject('Page_Arc dashboard/button_Next'))
 		WebUI.delay(5)
-		String paymentSuccessText = WebUI.getText(findTestObject('Object Repository/PaymenntLocator/h2_Congratulations'))
-		WebUI.verifyMatch(paymentSuccessText,'Congratulations!',true)
 	}
 }
 

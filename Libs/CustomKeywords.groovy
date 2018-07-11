@@ -5,8 +5,6 @@
 
 import java.lang.String
 
-import com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
-
 import com.kms.katalon.core.testobject.TestObject
 
 import java.sql.Connection
@@ -26,6 +24,30 @@ def static "com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCheck"(
     (new com.arc.ReusableMethods.ReusableMethodsPayment()).paymentByCheck(
         	sheetName
          , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsPrerequisites.narrativeTextSave"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsPrerequisites()).narrativeTextSave(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsMeasuresParking.measureMangementPoint"() {
+    (new com.arc.ReusableMethods.ReusableMethodsMeasuresParking()).measureMangementPoint()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsMeasuresParking.measureProgramsPoint"() {
+    (new com.arc.ReusableMethods.ReusableMethodsMeasuresParking()).measureProgramsPoint()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsMeasuresParking.measureTechnologyDesignPoint"() {
+    (new com.arc.ReusableMethods.ReusableMethodsMeasuresParking()).measureTechnologyDesignPoint()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsMeasuresParking.measureInnovationPointt"() {
+    (new com.arc.ReusableMethods.ReusableMethodsMeasuresParking()).measureInnovationPointt()
 }
 
 def static "com.arc.ReusableMethods.ReusableMethodsLogin.LoginToArcWithRemoteDBMySQL"() {
@@ -52,6 +74,180 @@ def static "com.arc.ReusableMethods.ReusableMethodsLogin.loginIntoArcWithExcelDa
 
 def static "com.arc.ReusableMethods.ReusableMethodsLogin.logoutFromArcApplication"() {
     (new com.arc.ReusableMethods.ReusableMethodsLogin()).logoutFromArcApplication()
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.createNewPortfolio"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).createNewPortfolio(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.AddProjectInPortfolio"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).AddProjectInPortfolio(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.addProjectDVProtfolio"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).addProjectDVProtfolio(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.portfolioTScorePDetailsVerifcation"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).portfolioTScorePDetailsVerifcation(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.analyticsEnergyScore"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).analyticsEnergyScore(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.analyticsTotalScore"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).analyticsTotalScore(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.analyticsCarbonScore"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).analyticsCarbonScore(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.analyticsWaterScore"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).analyticsWaterScore(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.analyticsWasteScore"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).analyticsWasteScore(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.analyticsTransportScore"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).analyticsTransportScore(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.analyticsHExperiaceScore"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).analyticsHExperiaceScore(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.goalCarbon"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).goalCarbon(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.goalEnergy"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).goalEnergy(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.goalWater"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).goalWater(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.goalGeneratedWaste"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).goalGeneratedWaste(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.goalDivertedWaste"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).goalDivertedWaste(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.goalTransport"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).goalTransport(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.goalHumanExp"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).goalHumanExp(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.goalCertification"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).goalCertification(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.totalEnergyConsumption"() {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).totalEnergyConsumption()
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.waterConsumptionTest"() {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).waterConsumptionTest()
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.totalCarbonConsumption"(
+    	String param	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).totalCarbonConsumption(
+        	param)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.transprtTransportationMetrics"() {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).transprtTransportationMetrics()
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.humExpTransportationMetrics"() {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).humExpTransportationMetrics()
 }
 
 def static "com.arc.ReusableMethods.ReusableMethodsDataInput.uploadArcDataTempte"() {
@@ -118,16 +314,6 @@ def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createADMeterReadin
          , 	rowNum)
 }
 
-def static "com.arc.ReusableMethods.ReusableMethodsDataInput.createHumanExpMeterReading"(
-    	String param	
-     , 	String sheetName	
-     , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsDataInput()).createHumanExpMeterReading(
-        	param
-         , 	sheetName
-         , 	rowNum)
-}
-
 def static "com.helper.javascript.JavaScriptHelper.executeScript"(
     	String script	) {
     (new com.helper.javascript.JavaScriptHelper()).executeScript(
@@ -158,6 +344,14 @@ def static "com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram"(
          , 	rowNum)
 }
 
+def static "com.arc.ReusableMethods.ReusableMethodsSearch.searchProgramPortfolio"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsSearch()).searchProgramPortfolio(
+        	sheetName
+         , 	rowNum)
+}
+
 def static "com.arc.ReusableMethods.ReusableMethodsAddNewProject.buildingAddNewProject"(
     	String sheetName	
      , 	int rowNum	) {
@@ -182,6 +376,14 @@ def static "com.arc.ReusableMethods.ReusableMethodsAddNewProject.parkingAddNewPr
          , 	rowNum)
 }
 
+def static "com.arc.ReusableMethods.ReusableMethodsAddNewProject.PortfolioProjectVerifcation"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsAddNewProject()).PortfolioProjectVerifcation(
+        	sheetName
+         , 	rowNum)
+}
+
 def static "com.helper.mysql.ConnectMySqlRemoteDB.executeQuery"(
     	String queryString	) {
     (new com.helper.mysql.ConnectMySqlRemoteDB()).executeQuery(
@@ -198,14 +400,6 @@ def static "com.helper.mysql.ConnectMySqlRemoteDB.execute"(
     (new com.helper.mysql.ConnectMySqlRemoteDB()).execute(
         	queryString
          , 	conn)
-}
-
-def static "com.arc.ReusableMethods.ReusableMethodsBasescore.basePointOptionA"(
-    	String cdataInputSheet	
-     , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsBasescore()).basePointOptionA(
-        	cdataInputSheet
-         , 	rowNum)
 }
 
 def static "com.helper.grid.GridHelper.GetValueFromGrid"(
@@ -274,6 +468,18 @@ def static "com.arc.BaseClass.XlsWriteToNewFileNewFile.writeTOExcelFile"(
          , 	colNo)
 }
 
-def static "com.arc.ReusableMethods.ReusableMethodsManage.verifyBillingDate"() {
-    (new com.arc.ReusableMethods.ReusableMethodsManage()).verifyBillingDate()
+def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointOptionA"(
+    	String cdataInputSheet	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).basePointOptionA(
+        	cdataInputSheet
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointOptionB"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).basePointOptionB(
+        	sheetName
+         , 	rowNum)
 }

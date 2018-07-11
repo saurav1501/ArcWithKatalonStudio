@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify ability to add new city porject</description>
-   <name>AddNewProjectTest</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>14ed5a0b-c3c5-4f34-a87e-b2eb0b6bb1cd</testCaseGuid>
-</TestCaseEntity>
