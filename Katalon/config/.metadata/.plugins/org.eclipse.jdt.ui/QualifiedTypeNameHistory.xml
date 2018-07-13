@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="BaseClass"/>
+<fullyQualifiedTypeName name="com.kms.katalon.core.testobject.TestObject"/>
+<fullyQualifiedTypeName name="com.mysql.cj.x.protobuf.MysqlxExpect.Open.Condition"/>
+<fullyQualifiedTypeName name="org.apache.ivy.core.module.descriptor.ExtendsDescriptor"/>
+<fullyQualifiedTypeName name="com.sun.jna.platform.win32.Secur32.EXTENDED_NAME_FORMAT"/>
+<fullyQualifiedTypeName name="com.arc.BaseClass.BaseClass"/>
+<fullyQualifiedTypeName name="internal.GlobalVariable"/>
+<fullyQualifiedTypeName name="com.sun.net.httpserver.Authenticator.Success"/>
+<fullyQualifiedTypeName name="com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.kms.katalon.core.testobject.ConditionType"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="com.google.common.collect.ArrayTable.Row"/>
+<fullyQualifiedTypeName name="com.mysql.cj.protocol.ResultsetRow"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.serialize.IndentPrinter"/>
+<fullyQualifiedTypeName name="java.awt.TexturePaintContext.Int"/>
+<fullyQualifiedTypeName name="CustomKeywords"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
+<fullyQualifiedTypeName name="com.kms.katalon.core.annotation.Keyword"/>
+</qualifiedTypeNameHistroy>

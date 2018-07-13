@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="Group 10 &lt;Group 10@Group10-THINK&gt;"/>
+		<item value="Group10 &lt;Group10@G10CHLT003&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Group 10 &lt;Group 10@Group10-THINK&gt;"/>
+		<item value="Group10 &lt;Group10@G10CHLT003&gt;"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item value="666" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="457" key="DIALOG_HEIGHT"/>
+		<item value="358" key="DIALOG_X_ORIGIN"/>
+		<item value="68" key="DIALOG_Y_ORIGIN"/>
+		<list key="sashWeights">
+			<item value="600"/>
+			<item value="400"/>
+		</list>
+	</section>
+	<section name="com.kms.katalon.objectspy.dialog.NewObjectSpyDialog.dialogBounds">
+		<item value="500" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="true" key="DIALOG_BOUNDS_SET"/>
+		<item value="720" key="DIALOG_HEIGHT"/>
+		<item value="302" key="DIALOG_X_ORIGIN"/>
+		<item value="150" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="D:\workspace\KatalonStudio\ArcWithKatalonStudio\.git">
+			<item value="false"/>
+			<item value="Group 10 &lt;Group 10@Group10-THINK&gt;"/>
+			<item value="&quot;Portfolio&quot;"/>
+			<item value="Group 10 &lt;Group 10@Group10-THINK&gt;"/>
+			<item value="a967dd3c822a8227a9003d8a7d7bc938b1e42742"/>
+		</list>
+		<list key="C:\Users\Group 10\git\ArcWithKatalonStudio\.git">
+			<item value="false"/>
+			<item value="Group 10 &lt;Group 10@Group10-THINK&gt;"/>
+			<item value="&quot;Test&quot;"/>
+			<item value="Group 10 &lt;Group 10@Group10-THINK&gt;"/>
+			<item value="dcc4d0e5ac7b7c9abd02d2c7bbcd88583dfe8357"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="500,500" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="false" key="sortItemState"/>
+		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>
