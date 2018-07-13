@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Verifying the  calcuation of waste Generation reduction targets percentage  &amp;  average MTCO2e/occupant &amp; average MTCO2e/square foot .</description>
    <name>AnalyticsGenerationWasteDataTest</name>
    <tag></tag>
    <comment></comment>

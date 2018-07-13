@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Verifying the  calcuation of  transpot  reduction targets percentage .</description>
    <name>AnalyticsTransportDataTest</name>
    <tag></tag>
    <comment></comment>

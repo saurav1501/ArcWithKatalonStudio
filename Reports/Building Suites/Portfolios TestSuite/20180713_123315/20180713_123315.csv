@@ -1,0 +1,173 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Portfolios TestSuite,Chrome 67.0.3396.99,,2018-07-13 12:33:18,2018-07-13 13:08:00,34m - 42.256s,FAILED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/LoginWithPortfolioTest,Chrome 67.0.3396.99,Verify if ability to login with portfolio & respective text for portfolio section.,2018-07-13 12:33:21,2018-07-13 12:34:01,40.067s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:33:21,2018-07-13 12:33:57,36.183s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:33:57,2018-07-13 12:34:00,2.701s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:34:00,2018-07-13 12:34:01,0.928s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/CreateNewPortfolioTest,Chrome 67.0.3396.99,Verify if ability to create new portfolio & checking the title on the landing page of the portfolio.,2018-07-13 12:34:01,2018-07-13 12:35:00,58.912s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:34:01,2018-07-13 12:34:33,31.908s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:34:33,2018-07-13 12:34:59,26.130s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:34:59,2018-07-13 12:35:00,0.678s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/SearchProgramPortfolioTest,Chrome 67.0.3396.99,"Verifying the search dropdown and verfiy the no of projects, if no project found it throws error.",2018-07-13 12:35:00,2018-07-13 12:35:47,47.284s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:35:00,2018-07-13 12:35:33,33.023s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:35:33,2018-07-13 12:35:46,13.300s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:35:46,2018-07-13 12:35:47,0.690s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/AddProjectInsidePortfolioTest,Chrome 67.0.3396.99,Verify if the portfolio have ability to add projects  & after adding each project we are verifying that add project success text on the model.,2018-07-13 12:35:47,2018-07-13 12:39:14,3m - 27.037s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:35:47,2018-07-13 12:36:23,35.863s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:36:23,2018-07-13 12:39:13,2m - 50.308s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:39:13,2018-07-13 12:39:14,0.666s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/ProjectDetailVerificationTest,Chrome 67.0.3396.99,"Verify if the calculation of total number of added projects displays the correct gross floor area, total occupancy , certification area , total number of project correctly in front end.",2018-07-13 12:39:14,2018-07-13 12:40:01,46.494s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:39:14,2018-07-13 12:39:48,33.885s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:39:48,2018-07-13 12:40:00,11.594s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:40:00,2018-07-13 12:40:01,0.682s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/AnalyticsWaterScoreTest,Chrome 67.0.3396.99,"Verifying the highest, average and lowest Water Score and filtering the top five projects on the basis of energy score.",2018-07-13 12:40:01,2018-07-13 12:40:52,51.639s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:40:01,2018-07-13 12:40:31,30.363s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:40:31,2018-07-13 12:40:51,19.808s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-07-13 12:40:51,2018-07-13 12:40:51,0.019s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:40:51,2018-07-13 12:40:52,1.281s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/PTScoreOtherDetailsTest,Chrome 67.0.3396.99,Verfifying the names of the projects added based on the order and performance score.,2018-07-13 12:40:52,2018-07-13 12:41:40,47.886s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:40:52,2018-07-13 12:41:24,31.759s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:41:24,2018-07-13 12:41:38,14.152s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-07-13 12:41:38,2018-07-13 12:41:38,0.005s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:41:39,2018-07-13 12:41:40,1.601s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/AnalyticsEnergyScoreTest,Chrome 67.0.3396.99,"Verifying the highest, average and lowest Energy Score and filtering the top five projects on the basis of energy score.",2018-07-13 12:41:40,2018-07-13 12:42:34,54.175s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:41:40,2018-07-13 12:42:13,32.726s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:42:13,2018-07-13 12:42:33,19.947s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-07-13 12:42:33,2018-07-13 12:42:33,0.005s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:42:33,2018-07-13 12:42:34,1.236s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/AnalyticsWasteScoreTest,Chrome 67.0.3396.99,"Verifying the highest, average and lowest waste Score and filtering the top five projects on the basis of waste score.",2018-07-13 12:42:34,2018-07-13 12:43:31,56.734s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:42:34,2018-07-13 12:43:09,34.704s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:43:09,2018-07-13 12:43:30,20.383s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-07-13 12:43:30,2018-07-13 12:43:30,0.008s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:43:30,2018-07-13 12:43:31,1.354s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/AnalyticsCarbonTopScoreTest,Chrome 67.0.3396.99,"Verifying the highest, average and lowest  data for carbon project  and filtering the top five projects on the of carbon generated project.",2018-07-13 12:43:31,2018-07-13 12:44:33,1m - 2.091s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:43:31,2018-07-13 12:44:12,40.951s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:44:12,2018-07-13 12:44:32,19.756s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-07-13 12:44:32,2018-07-13 12:44:32,0.003s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:44:32,2018-07-13 12:44:33,1.204s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/AnalyticsTotalScoreTest,Chrome 67.0.3396.99,"Verifying and calculating the highest , average and lowest socre in analytics total section .",2018-07-13 12:44:33,2018-07-13 12:45:25,52.085s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:44:33,2018-07-13 12:45:04,30.617s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:45:04,2018-07-13 12:45:24,19.947s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-07-13 12:45:24,2018-07-13 12:45:24,0.008s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:45:24,2018-07-13 12:45:25,1.243s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/EnergyGoalTest,Chrome 67.0.3396.99,"Verifying energy text area,calculating the energy reduction, base line value and energy goal calculation and we are also asserting the calculated data displaying with the manual calculation of data.",2018-07-13 12:45:25,2018-07-13 12:46:41,1m - 15.267s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:45:25,2018-07-13 12:45:59,33.465s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:45:59,2018-07-13 12:46:40,40.954s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:46:40,2018-07-13 12:46:41,0.677s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/GoalCarbonTest,Chrome 67.0.3396.99,"Verifying the carbon text area, calculating the carbon reduction, base line value and carbon goal calculation and we are also asserting the calculated data displaying with the manual calculation of data.",2018-07-13 12:46:41,2018-07-13 12:47:53,1m - 12.877s,ERROR
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:46:41,2018-07-13 12:47:12,31.334s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:47:12,2018-07-13 12:47:52,40.214s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-07-13 12:47:52,2018-07-13 12:47:52,0.004s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:47:52,2018-07-13 12:47:53,1.169s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/GoalWasteDivertionTest,Chrome 67.0.3396.99,"Verifying the text area, and calculating the waste divertion reduction, base line value and waste divertion goal calculation. And we are also asserting the calculated data displaying with the manual calculation of data.",2018-07-13 12:47:53,2018-07-13 12:48:52,58.207s,ERROR
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:47:53,2018-07-13 12:48:25,31.527s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:48:25,2018-07-13 12:48:51,25.486s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-07-13 12:48:51,2018-07-13 12:48:51,0.003s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:48:51,2018-07-13 12:48:52,1.048s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/GoalWasteGenerationTest,Chrome 67.0.3396.99,"Verifying the  text area, and calculating the waste generation reduction, base line value and waste generation goal calculation and we are also asserting the calculated data displaying with the manual calculation of data.",2018-07-13 12:48:52,2018-07-13 12:50:05,1m - 13.453s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:48:52,2018-07-13 12:49:22,30.424s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:49:22,2018-07-13 12:50:04,42.216s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:50:04,2018-07-13 12:50:05,0.667s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/GoalWaterTest,Chrome 67.0.3396.99,"Verifying the water text area, and calculating the use of water reduction, base line value and water goal  calculation and we are also asserting the calculated data displaying with the manual calculation of data.",2018-07-13 12:50:05,2018-07-13 12:51:24,1m - 18.628s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:50:05,2018-07-13 12:50:41,35.435s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:50:41,2018-07-13 12:51:23,42.373s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:51:23,2018-07-13 12:51:24,0.631s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/AddTeamMemberTest,Chrome 67.0.3396.99,Verify if portfolio have ablility to add new team member .,2018-07-13 12:51:24,2018-07-13 12:52:17,53.086s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:51:24,2018-07-13 12:51:55,31.024s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:51:55,2018-07-13 12:52:16,21.230s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:52:16,2018-07-13 12:52:17,0.660s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/AnalyticsCarbonDataTest,Chrome 67.0.3396.99,Verifying the  calcuation of carbon  reduction targets percentage  &  average MTCO2e/occupant & average MTCO2e/square foot .,2018-07-13 12:52:17,2018-07-13 12:53:16,59.268s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:52:17,2018-07-13 12:52:49,32.439s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:52:49,2018-07-13 12:53:15,26.016s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:53:15,2018-07-13 12:53:16,0.672s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/AnalyticsDiversionWasteDataTest,Chrome 67.0.3396.99,Verifying the  calcuation of waste diversion  reduction targets percentage  &  average MTCO2e/occupant & average MTCO2e/square foot .,2018-07-13 12:53:16,2018-07-13 12:54:29,1m - 12.801s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:53:16,2018-07-13 12:54:02,45.781s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:54:02,2018-07-13 12:54:28,26.189s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:54:28,2018-07-13 12:54:29,0.685s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/AnalyticsEnergyDataTest,Chrome 67.0.3396.99,"Verifying the energy scope 1  & scope 2 &  avg occupant scope 1 & scope 2 , energy goal by  evaluteing  the  data form analytics total section.",2018-07-13 12:54:29,2018-07-13 12:55:31,1m - 1.823s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:54:29,2018-07-13 12:55:04,34.717s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:55:04,2018-07-13 12:55:30,26.286s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:55:30,2018-07-13 12:55:31,0.660s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/AnalyticsGenerationWasteDataTest,Chrome 67.0.3396.99,Verifying the  calcuation of waste Generation reduction targets percentage  &  average MTCO2e/occupant & average MTCO2e/square foot .,2018-07-13 12:55:31,2018-07-13 12:56:28,57.014s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:55:31,2018-07-13 12:56:01,30.472s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:56:01,2018-07-13 12:56:27,25.768s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:56:27,2018-07-13 12:56:28,0.645s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/AnalyticsHumanExperienceScoreTest,Chrome 67.0.3396.99,"Verifying if calculating the highest , average and lowest Human Experience socre manually and the asserting it with the score displying on the webpage and also we are doing with the top five filtered Human Experience score.",2018-07-13 12:56:28,2018-07-13 12:57:48,1m - 20.068s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:56:28,2018-07-13 12:57:19,51.252s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:57:19,2018-07-13 12:57:46,27.281s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-07-13 12:57:46,2018-07-13 12:57:46,0.003s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:57:46,2018-07-13 12:57:48,1.346s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/AnalyticsHumExpDataTest,Chrome 67.0.3396.99,Verifying the  calcuation of human experiace  reduction targets percentage .,2018-07-13 12:57:48,2018-07-13 12:58:56,1m - 7.950s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:57:48,2018-07-13 12:58:26,38.581s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:58:26,2018-07-13 12:58:55,28.590s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:58:55,2018-07-13 12:58:56,0.660s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/AnalyticsTransportationScoreTest,Chrome 67.0.3396.99,"Verifying and  calculating the highest , average and lowest transportation socre manually and the asserting it with the score displying on the webpage and also we are doing with the top five filtered transportation score.",2018-07-13 12:58:56,2018-07-13 12:59:57,1m - 0.931s,FAILED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:58:56,2018-07-13 12:59:28,32.033s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 12:59:28,2018-07-13 12:59:55,27.345s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-07-13 12:59:55,2018-07-13 12:59:55,0.003s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 12:59:55,2018-07-13 12:59:57,1.360s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/AnalyticsTransportDataTest,Chrome 67.0.3396.99,Verifying the  calcuation of  transpot  reduction targets percentage .,2018-07-13 12:59:57,2018-07-13 13:00:57,59.923s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 12:59:57,2018-07-13 13:00:30,32.976s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 13:00:30,2018-07-13 13:00:56,26.084s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 13:00:56,2018-07-13 13:00:57,0.746s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/AnalyticsWaterDataTest,Chrome 67.0.3396.99,Verifying the  calcuation of waste Generation reduction targets percentage  &  average MTCO2e/occupant & average MTCO2e/square foot .,2018-07-13 13:00:57,2018-07-13 13:01:56,59.507s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 13:00:57,2018-07-13 13:01:30,32.915s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 13:01:30,2018-07-13 13:01:55,25.777s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 13:01:55,2018-07-13 13:01:56,0.664s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/GoalCertificationTest,Chrome 67.0.3396.99,"Verifying the certification text area, and calculating the percentage Certification reduction, base line value and Certification goal calculation. And we are also asserting the calculated data displaying with the manual calculation of data.",2018-07-13 13:01:56,2018-07-13 13:02:49,52.926s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 13:01:56,2018-07-13 13:02:31,34.662s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 13:02:31,2018-07-13 13:02:48,17.461s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 13:02:48,2018-07-13 13:02:49,0.662s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/GoalHumanExperienceTest,Chrome 67.0.3396.99,"Verifying the carbon text area, and calculating the percentage Human Experience reduction, base line value and Human Experience goal calculation. And we are also asserting the calculated data displaying with the manual calculation of data.",2018-07-13 13:02:49,2018-07-13 13:04:07,1m - 18.430s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 13:02:49,2018-07-13 13:03:24,35.376s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 13:03:25,2018-07-13 13:04:07,42.134s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 13:04:07,2018-07-13 13:04:07,0.770s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/GoalTransportationTest,Chrome 67.0.3396.99,"Verifying the Transportation text area, Percentage transportation reduction, base line value and Transportation goal calculation. And we are also asserting the calculated data displaying with the manual calculation of data.",2018-07-13 13:04:07,2018-07-13 13:05:23,1m - 15.976s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 13:04:07,2018-07-13 13:04:38,30.467s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 13:04:38,2018-07-13 13:05:23,44.679s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 13:05:23,2018-07-13 13:05:23,0.684s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/EditTeamMemberRoleTest,Chrome 67.0.3396.99,Verify if the portfolio have ablility to edit the existing role of the team member which is already added in the portfolio.,2018-07-13 13:05:23,2018-07-13 13:06:18,54.110s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 13:05:23,2018-07-13 13:05:53,29.765s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 13:05:53,2018-07-13 13:06:17,23.338s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 13:06:17,2018-07-13 13:06:18,0.861s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/EditPortfolioDetailTest,Chrome 67.0.3396.99,"Verify if the portfolio have ablity to edit & save the below deatils after the refresh like name , org , mob ,country , email & other details .",2018-07-13 13:06:18,2018-07-13 13:07:18,1m - 0.089s,ERROR
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 13:06:18,2018-07-13 13:06:49,31.498s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 13:06:49,2018-07-13 13:07:15,25.696s,FAILED
+Statement - Catch (Throwable t),Chrome 67.0.3396.99,,2018-07-13 13:07:15,2018-07-13 13:07:15,0.003s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 13:07:15,2018-07-13 13:07:18,2.561s,PASSED
+,,,,,,
+Test Cases/Buildings/MyPortfolios/LogoutToArcTest,Chrome 67.0.3396.99,Verify the logout functionlity of Arc.,2018-07-13 13:07:18,2018-07-13 13:08:00,42.583s,PASSED
+Start listener action : beforeTestListener,Chrome 67.0.3396.99,,2018-07-13 13:07:18,2018-07-13 13:07:48,30.119s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-13 13:07:48,2018-07-13 13:08:00,11.712s,PASSED
+Start listener action : afterTestCase,Chrome 67.0.3396.99,,2018-07-13 13:08:00,2018-07-13 13:08:00,0.643s,PASSED

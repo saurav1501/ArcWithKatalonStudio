@@ -10,6 +10,14 @@ import com.kms.katalon.core.testobject.TestObject
 import java.sql.Connection
 
 
+def static "com.arc.ReusableMethods.ReusableMethodsPrerequisites.narrativeTextSave"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsPrerequisites()).narrativeTextSave(
+        	sheetName
+         , 	rowNum)
+}
+
 def static "com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCC"(
     	String sheetName	
      , 	int rowNum	) {
@@ -22,14 +30,6 @@ def static "com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCheck"(
     	String sheetName	
      , 	int rowNum	) {
     (new com.arc.ReusableMethods.ReusableMethodsPayment()).paymentByCheck(
-        	sheetName
-         , 	rowNum)
-}
-
-def static "com.arc.ReusableMethods.ReusableMethodsPrerequisites.narrativeTextSave"(
-    	String sheetName	
-     , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsPrerequisites()).narrativeTextSave(
         	sheetName
          , 	rowNum)
 }
@@ -246,8 +246,32 @@ def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.transprtTransportat
     (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).transprtTransportationMetrics()
 }
 
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.wasteDiversionTest"() {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).wasteDiversionTest()
+}
+
 def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.humExpTransportationMetrics"() {
     (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).humExpTransportationMetrics()
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.wasteGenerationTest"() {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).wasteGenerationTest()
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.editPortfolioDetails"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).editPortfolioDetails(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ResuableMethodsPortfolio.AddTeamMember"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ResuableMethodsPortfolio()).AddTeamMember(
+        	sheetName
+         , 	rowNum)
 }
 
 def static "com.arc.ReusableMethods.ReusableMethodsDataInput.uploadArcDataTempte"() {

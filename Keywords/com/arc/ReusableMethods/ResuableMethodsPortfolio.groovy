@@ -1,13 +1,12 @@
 package com.arc.ReusableMethods
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
 import java.math.RoundingMode
 import java.text.SimpleDateFormat
-
+import javax.management.relation.Role
 import org.testng.Assert
-
 import com.arc.BaseClass.BaseClass
 import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.keyword.builtin.VerifyMatchKeyword
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
@@ -810,21 +809,21 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.sendKeys(findTestObject('Portfolio/Goal/energy_baseline_value'), cbValue)
 
 		WebUI.click(findTestObject('Portfolio/Goal/CarbonDiffGoal'))
-		WebUI.delay(1)
+		WebUI.delay(3)
 		String forntenddiffGoal = WebUI.getText(findTestObject('Portfolio/Goal/CarbonDiffGoal'))
 		System.out.println(forntenddiffGoal);
 
 		String currentProgress=WebUI.getText(findTestObject('Portfolio/Goal/CarbonCurrentProgess'))
 		System.out.println(currentProgress);
-		String replace = currentProgress.replace("%" , "");
+		String replace = currentProgress.replace("%" , "")
 		double replace1=Double.parseDouble(replace);
 		System.out.println("Fatching replaced value");
 		System.out.println(replace)
-		double depReduction=Double.parseDouble(cpReduction);
+		double depReduction=Double.parseDouble(cpReduction)
 		double result1 =depReduction -replace1;
 		//NumberFormat formatter = new result("#000.00");
 		BigDecimal result2 = new BigDecimal(result1);
-		result2 = result2 .setScale(2, RoundingMode.HALF_UP);
+		result2 = result2 .setScale(2, RoundingMode.HALF_UP)
 		String calcalteddiffGoal = result2 + " %";
 		WebUI.verifyMatch(forntenddiffGoal,calcalteddiffGoal, false)
 		println "Test passed verified differece goal successfully"
@@ -850,7 +849,7 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.delay(2)
 		WebUI.refresh()
 		WebUI.delay(5)
-
+        println cbValue
 		println "Test started verifying carbon textarea, carbon reducion , base line value after refersh"
 		Assert.assertTrue(WebUI.getAttribute(findTestObject('Object Repository/Portfolio/Goal/carbon_baseline_value'),"value").contains(cbValue),"Not Valid")
 		Assert.assertTrue(WebUI.getAttribute(findTestObject('Portfolio/Goal/carbon_percent_reduction'),"value").contains(cpReduction),"Not Valid")
@@ -1742,6 +1741,90 @@ public class ResuableMethodsPortfolio extends BaseClass {
 	}
 
 	@Keyword
+	public void wasteDiversionTest() throws IOException, InterruptedException {
+		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Portfolio/Common/a_ Analytics'))
+		WebUI.delay(2)
+		WebUI.click(findTestObject('Portfolio/Common/a_ Total'))
+		WebUI.delay(5)
+		println "counting total number of project based on size"
+		String lessthan50000  =   WebUI.getText(findTestObject('Portfolio/Total/Lessthan50000'))
+		String lessthan250000  =  WebUI.getText(findTestObject('Portfolio/Total/Lessthan250000'))
+		String lessthan500000  =  WebUI.getText(findTestObject('Portfolio/Total/Lessthan500000'))
+		String lessthan1000000  = WebUI.getText(findTestObject('Portfolio/Total/Lessthan1000000'))
+		String morethan1000000 =  WebUI.getText(findTestObject('Portfolio/Total/Morethan1000000'))
+		double dlessthan50000  =  Double.parseDouble(lessthan50000)
+		double dlessthan250000 =  Double.parseDouble(lessthan250000)
+		double dlessthan500000 =  Double.parseDouble(lessthan500000)
+		double dlessthan1000000 = Double.parseDouble(lessthan1000000)
+		double dmorethan1000000 = Double.parseDouble(morethan1000000)
+		Double total_No_Proj = (dlessthan50000 + dlessthan250000 + dlessthan500000 + dlessthan1000000 + dmorethan1000000)
+		System.out.println(total_No_Proj)
+
+		println "Test passed counted total number of project based on Size"
+		String  avgWasteGen=  WebUI.getText(findTestObject('Portfolio/Total/AvgWasteDiv'))
+		System.out.println(avgWasteGen)
+		double avgwasteGen =Double.parseDouble(avgWasteGen)
+		String   avgOccupanit = WebUI.getText(findTestObject('Portfolio/Total/AOccupanit'))
+		String repavgOccupanit  = avgOccupanit.replace(" occupants", "")
+		double favgOccupanit_proj =Double.parseDouble(repavgOccupanit)
+		String avg_sqarefoot =WebUI.getText(findTestObject('Portfolio/Total/AvgSqaurefoot'))
+		String avg_sqarefoot1  = avg_sqarefoot.replace(" sf", "")
+		double avg_sqarefoot2 =Double.parseDouble(avg_sqarefoot1)
+		System.out.println(avg_sqarefoot2);
+
+		WebUI.click(findTestObject('Portfolio/Common/a_ Waste'))
+		WebUI.delay(5)
+
+		println "Test started verifying 2018 Reduction Targets"
+		String carbonGoal = WebUI.getText(findTestObject('Portfolio/Total/WasteGoal'))
+		String greplace = carbonGoal.replace("%" , "");
+		double cGoalPercetage=Double.parseDouble(greplace)
+		double result =((avgwasteGen) * (cGoalPercetage * total_No_Proj))/100
+		BigDecimal cGoalPercentage = new BigDecimal(result)
+		cGoalPercentage =  cGoalPercentage .setScale(2, RoundingMode.HALF_UP)
+		String areductionTarget = WebUI.getText(findTestObject('Portfolio/Total/WasteDRTarget'))
+		double areductionTarget1 = Double.parseDouble(areductionTarget)
+		BigDecimal areductionTarget2 = new BigDecimal(areductionTarget1)
+		areductionTarget2 =  areductionTarget2 .setScale(2, RoundingMode.HALF_UP)
+		Assert.assertEquals(areductionTarget2, cGoalPercentage)
+		println "verifyed 2018 Reduction Targets"
+
+
+		//Issue Found in rounding 4 postion after decimal can be fix later .
+		println "Test started verifying average occpant per project"
+		String totalNoOccupaint = WebUI.getText(findTestObject('Portfolio/Total/AvgWasteGenPerOccupaint'))
+		double expavgmtco2_peroccupant = Double.parseDouble(totalNoOccupaint)
+		BigDecimal expavgmtco2_peroccupant1 = new BigDecimal(expavgmtco2_peroccupant)
+		expavgmtco2_peroccupant1 = expavgmtco2_peroccupant1.setScale(4, RoundingMode.HALF_UP)
+		double occupancyCalcuation = (avgwasteGen / favgOccupanit_proj)
+		BigDecimal avgmtco2_peroccupant = new BigDecimal(occupancyCalcuation)
+		avgmtco2_peroccupant = avgmtco2_peroccupant.setScale(4, RoundingMode.HALF_UP)
+		System.out.println(avgmtco2_peroccupant);
+		System.out.println(expavgmtco2_peroccupant1);
+		Assert.assertEquals(avgmtco2_peroccupant, expavgmtco2_peroccupant1);
+		println "verified average occpant per project successully"
+
+		println "Test started verifying average sqaure feet per project"
+		String avg_squarefoot =  WebUI.getText(findTestObject('Portfolio/Total/AvgWasteGenPerSqFoot'))
+		System.out.println(avg_squarefoot)
+		double avg_squarefoot1 = Double.parseDouble(avg_squarefoot)
+		BigDecimal avg_squarefoot2 = new BigDecimal(avg_squarefoot1)
+		avg_squarefoot2 = avg_squarefoot2.setScale(4, RoundingMode.HALF_UP)
+		System.out.println(avg_squarefoot)
+		double cavg_squarefoot = (avgwasteGen / avg_sqarefoot2)
+		BigDecimal cavg_squarefoot1 = new BigDecimal(cavg_squarefoot)
+		cavg_squarefoot1 = cavg_squarefoot1.setScale(4, RoundingMode.HALF_UP)
+		Assert.assertEquals(avg_squarefoot2, cavg_squarefoot1);
+		println "verified average sqaure feet per project successully"
+
+
+	}
+
+
+
+	@Keyword
 	public void humExpTransportationMetrics()throws IOException, InterruptedException {
 		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
 		WebUI.delay(1)
@@ -1780,6 +1863,182 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		println "Test passed verified hum exp avg socre sucore successully"
 		Assert.assertEquals(ahAvgsatisfaction, thAvgsatisfaction)
 		println " Test Passed verified hum exp average satisfaction"
+	}
+
+	@Keyword
+	public void wasteGenerationTest() throws IOException, InterruptedException {
+		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Portfolio/Common/a_ Analytics'))
+		WebUI.delay(2)
+		WebUI.click(findTestObject('Portfolio/Common/a_ Total'))
+		WebUI.delay(5)
+		println "counting total number of project based on size"
+		String lessthan50000  =   WebUI.getText(findTestObject('Portfolio/Total/Lessthan50000'))
+		String lessthan250000  =  WebUI.getText(findTestObject('Portfolio/Total/Lessthan250000'))
+		String lessthan500000  =  WebUI.getText(findTestObject('Portfolio/Total/Lessthan500000'))
+		String lessthan1000000  = WebUI.getText(findTestObject('Portfolio/Total/Lessthan1000000'))
+		String morethan1000000 =  WebUI.getText(findTestObject('Portfolio/Total/Morethan1000000'))
+		double dlessthan50000  =  Double.parseDouble(lessthan50000)
+		double dlessthan250000 =  Double.parseDouble(lessthan250000)
+		double dlessthan500000 =  Double.parseDouble(lessthan500000)
+		double dlessthan1000000 = Double.parseDouble(lessthan1000000)
+		double dmorethan1000000 = Double.parseDouble(morethan1000000)
+		Double total_No_Proj = (dlessthan50000 + dlessthan250000 + dlessthan500000 + dlessthan1000000 + dmorethan1000000)
+		System.out.println(total_No_Proj)
+
+		println "Test passed counted total number of project based on Size"
+		String  avgWasteGen=  WebUI.getText(findTestObject('Portfolio/Total/AvgWasteGen'))
+		System.out.println(avgWasteGen)
+		double avgwasteGen =Double.parseDouble(avgWasteGen)
+		String   avgOccupanit = WebUI.getText(findTestObject('Portfolio/Total/AOccupanit'))
+		String repavgOccupanit  = avgOccupanit.replace(" occupants", "")
+		double favgOccupanit_proj =Double.parseDouble(repavgOccupanit)
+		String avg_sqarefoot =WebUI.getText(findTestObject('Portfolio/Total/AvgSqaurefoot'))
+		String avg_sqarefoot1  = avg_sqarefoot.replace(" sf", "")
+		double avg_sqarefoot2 =Double.parseDouble(avg_sqarefoot1)
+		System.out.println(avg_sqarefoot2);
+
+		WebUI.click(findTestObject('Portfolio/Common/a_ Waste'))
+		WebUI.delay(5)
+
+		println "Test started verifying 2018 Reduction Targets"
+		String carbonGoal = WebUI.getText(findTestObject('Portfolio/Total/WasteGoal'))
+		String greplace = carbonGoal.replace("%" , "");
+		double cGoalPercetage=Double.parseDouble(greplace)
+		double result =((avgwasteGen) * (cGoalPercetage * total_No_Proj))/100
+		BigDecimal cGoalPercentage = new BigDecimal(result)
+		cGoalPercentage =  cGoalPercentage .setScale(2, RoundingMode.HALF_UP)
+		String areductionTarget = WebUI.getText(findTestObject('Portfolio/Total/WasteGRTarget'))
+		double areductionTarget1 = Double.parseDouble(areductionTarget)
+		BigDecimal areductionTarget2 = new BigDecimal(areductionTarget1)
+		areductionTarget2 =  areductionTarget2 .setScale(2, RoundingMode.HALF_UP)
+		Assert.assertEquals(areductionTarget2, cGoalPercentage)
+		println "verifyed 2018 Reduction Targets"
+
+
+		//Issue Found in rounding 4 postion after decimal can be fix later .
+		println "Test started verifying average occpant per project"
+		String totalNoOccupaint = WebUI.getText(findTestObject('Portfolio/Total/AvgWasteGenPerOccupaint'))
+		double expavgmtco2_peroccupant = Double.parseDouble(totalNoOccupaint)
+		BigDecimal expavgmtco2_peroccupant1 = new BigDecimal(expavgmtco2_peroccupant)
+		expavgmtco2_peroccupant1 = expavgmtco2_peroccupant1.setScale(4, RoundingMode.HALF_UP)
+		double occupancyCalcuation = (avgwasteGen / favgOccupanit_proj)
+		BigDecimal avgmtco2_peroccupant = new BigDecimal(occupancyCalcuation)
+		avgmtco2_peroccupant = avgmtco2_peroccupant.setScale(4, RoundingMode.HALF_UP)
+		System.out.println(avgmtco2_peroccupant);
+		System.out.println(expavgmtco2_peroccupant1);
+		Assert.assertEquals(avgmtco2_peroccupant, expavgmtco2_peroccupant1);
+		println "verified average occpant per project successully"
+
+		println "Test started verifying average sqaure feet per project"
+		String avg_squarefoot =  WebUI.getText(findTestObject('Portfolio/Total/AvgWasteGenPerSqFoot'))
+		System.out.println(avg_squarefoot)
+		double avg_squarefoot1 = Double.parseDouble(avg_squarefoot)
+		BigDecimal avg_squarefoot2 = new BigDecimal(avg_squarefoot1)
+		avg_squarefoot2 = avg_squarefoot2.setScale(4, RoundingMode.HALF_UP)
+		System.out.println(avg_squarefoot)
+		double cavg_squarefoot = (avgwasteGen / avg_sqarefoot2)
+		BigDecimal cavg_squarefoot1 = new BigDecimal(cavg_squarefoot)
+		cavg_squarefoot1 = cavg_squarefoot1.setScale(4, RoundingMode.HALF_UP)
+		Assert.assertEquals(avg_squarefoot2, cavg_squarefoot1);
+		println "verified average sqaure feet per project successully"
+
+	}
+	@Keyword
+	public void editPortfolioDetails(String sheetName, int rowNum) throws IOException, InterruptedException {
+		String projectName   = data.getCellData(sheetName, "ProjectName", 2);
+		String organization  = data.getCellData(sheetName, "Organization", 3);
+		String orgCountry 	 = data.getCellData(sheetName, "orgCountry", 3);
+		String orgContact    = data.getCellData(sheetName, "orgContact", 3);
+		String location      = data.getCellData(sheetName, "location", 3);
+		String email         = data.getCellData(sheetName, "email", 3);
+		String prjDesc       = data.getCellData(sheetName, "portfolioDesc", 3);
+		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('Portfolio/Total/a_ Manage'))
+		WebUI.click(findTestObject('Portfolio/Total/a_ Portfolio'))
+
+		WebUI.click(findTestObject('Portfolio/Total/span_Edit'))
+		WebUI.delay(1)
+		WebUI.clearText(findTestObject('Portfolio/Total/portfolio_name'))
+
+		WebUI.sendKeys(findTestObject('Portfolio/Total/portfolio_name'), projectName);
+		WebUI.clearText(findTestObject('Portfolio/Total/textarea_organization'))
+
+		WebUI.sendKeys(findTestObject('Portfolio/Total/textarea_organization'), organization)
+		WebUI.click(findTestObject('Portfolio/Total/textarea_organization'))
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('Portfolio/Total/OrgV Architecture'))
+		WebUI.delay(1)
+		println "Entering the Portfolio Organization Name"
+
+		WebUI.selectOptionByLabel(findTestObject('Portfolio/Total/org_country'), orgCountry, false)
+
+		WebUI.clearText(findTestObject('Portfolio/Total/textarea_Mob'))
+		WebUI.sendKeys(findTestObject('Portfolio/Total/textarea_Mob'), orgContact)
+
+
+		WebUI.clearText(findTestObject('Portfolio/Total/textarea_Location'))
+		WebUI.sendKeys(findTestObject('Portfolio/Total/textarea_Location'), location)
+
+		WebUI.clearText(findTestObject('Portfolio/Total/textarea_Email'))
+		WebUI.sendKeys(findTestObject('Portfolio/Total/textarea_Email'), email)
+
+		WebUI.clearText(findTestObject('Portfolio/Total/textarea_Description'))
+		WebUI.sendKeys(findTestObject('Portfolio/Total/textarea_Description'), prjDesc)
+
+		WebUI.click(findTestObject('Portfolio/Total/span_Save'))
+		WebUI.delay(2)
+
+		WebUI.refresh()
+		WebUI.waitForPageLoad(10)
+
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Portfolio/Total/portfolio_name'),"value").contains(projectName),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Portfolio/Total/textarea_organization'),"value").contains(organization),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Portfolio/Total/org_country'),"value").contains("TR"),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Portfolio/Total/textarea_Mob'),"value").contains(orgContact),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Portfolio/Total/textarea_Location'),"value").contains(location),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Portfolio/Total/textarea_Description'),"value").contains(prjDesc),"Not Valid")
+		println  "Edit Project  Verified Successfully"
+	}
+	@Keyword
+	public void AddTeamMember(String sheetName, int rowNum) throws IOException, InterruptedException {
+		String teamMember   = data.getCellData(sheetName, "teamMember", rowNum)
+		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Portfolio/Total/a_ Manage'))
+		WebUI.delay(1)
+		WebUI.doubleClick(findTestObject('Portfolio/Total/a_ Team'))
+		WebUI.sendKeys(findTestObject('Portfolio/Total/input_AddCollabrator'), teamMember)
+		WebUI.click(findTestObject('Portfolio/Total/button_Add'))
+		WebUI.delay(7)
+		String teammember = WebUI.getText(findTestObject('Portfolio/Total/VerifyTeamMail'))
+		println teammember
+		WebUI.verifyMatch(teammember, teamMember, false)
+		println  "Add New Team Member Verified Successfully"
+	}
+
+	public void editTeamMember() throws IOException, InterruptedException {
+		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Portfolio/Total/a_ Manage'))
+		WebUI.delay(1)
+		WebUI.doubleClick(findTestObject('Portfolio/Total/a_ Team'))
+		WebUI.delay(4)
+
+		WebUI.click(findTestObject('Portfolio/Total/EditRole'))
+		WebUI.click(findTestObject('Portfolio/Total/EditAuthRight'))
+		WebUI.click(findTestObject('Portfolio/Total/SelectRole'))
+		WebUI.click(findTestObject('Portfolio/Total/SaveRole'))
+		WebUI.delay(5)
+
+		String role = WebUI.getText(findTestObject('Portfolio/Total/GetRole'))
+		WebUI.verifyMatch(role, "Can Edit", false)
+		println "Team Member Authourization is updated"
+		println "Edit Team Member Authourization Verified Successfully"
 	}
 }
 

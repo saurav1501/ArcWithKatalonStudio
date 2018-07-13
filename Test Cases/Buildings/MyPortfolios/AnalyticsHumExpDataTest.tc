@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Verifying the  calcuation of human experiace  reduction targets percentage .</description>
    <name>AnalyticsHumExpDataTest</name>
    <tag></tag>
    <comment></comment>
