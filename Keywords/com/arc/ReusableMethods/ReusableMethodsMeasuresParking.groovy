@@ -1,6 +1,9 @@
 package com.arc.ReusableMethods
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import org.testng.Assert
+
 import com.arc.BaseClass.BaseClass
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -463,19 +466,99 @@ public class ReusableMethodsMeasuresParking extends BaseClass {
 	}
 	@Keyword
 	public void uploadImageParking() throws IOException, InterruptedException {
-       
-		
-        WebUI.sendKeys(findTestObject('Manage/Parking/ParkPdfUpload'), parkImageUpload)
-		WebUI.delay(4)
-		WebUI.waitForElementVisible('Manage/Parking/FileUploadVerifyImage',15)
-		println "Parking image 1 file Uploaded successfully" 
-		  
-	/*	CommonMethod.testlog( "Pass", "Clicking on Project");
-		CommonMethod.displayhiddenElement("ParkPdfUpload");
-		CommonMethod.sendKeys("ParkPdfUpload", CommonMethod.parkImageUpload);
-		CommonMethod.WaitUntilInVisibility("ImageLoader");
-		Thread.sleep(5000);
-		CommonMethod.testlog( "Pass","Parking image 2 file Uploaded successfully");*/
+		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Manage/Parking/Manage'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Manage/Parking/ManageProject'))
+		WebUI.delay(2)
+		WebUI.doubleClick(findTestObject('Manage/Parking/span_Upload'))
+		WebUI.uploadFile(findTestObject('Manage/Parking/ParkPdfUpload'), parkImageUpload)
+		WebUI.delay(7)
+		String uploadImage = WebUI.getText(findTestObject('Manage/Parking/span_Parking SJ.jpg'))
+		WebUI.verifyMatch(uploadImage, "Parking SJ.jpg", false)
+		println "Parking image file Uploaded successfully"
+	}
+	@Keyword
+	public void uploadSuppotingDocMeasure() throws IOException, InterruptedException {
+		WebUI.doubleClick(findTestObject('Page_Arc dashboard/a_ Programs'))
+		WebUI.delay(2)
+		WebUI.doubleClick(findTestObject('Page_Arc dashboard/span_B1 - Placemaking'))
+		WebUI.waitForPageLoad(10)
 
+		WebUI.doubleClick(findTestObject('Manage/Parking/UploadDoccumentParking'))
+		WebUI.uploadFile(findTestObject('Manage/Parking/ParkPdfUpload'), pdfFile)
+		WebUI.delay(7)
+		String uploadImage = WebUI.getText(findTestObject('Manage/Parking/span_USGBC.pdf'))
+		WebUI.verifyMatch(uploadImage, "USGBC.pdf", false)
+		println "Parking meausre pdf file Uploaded successfully"
+	}
+
+
+
+	@Keyword
+	public void editProjectDetailsParking() throws IOException, InterruptedException {
+		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Manage/Parking/Manage'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Manage/Parking/ManageProject'))
+		WebUI.delay(2)
+
+		WebUI.clearText(findTestObject('Manage/Parking/input_noOfParkingSpace'))
+		WebUI.sendKeys(findTestObject('Manage/Parking/input_noOfParkingSpace'),"50")
+		WebUI.click(findTestObject('Manage/Parking/input_noOfParkingLevels'))
+
+		WebUI.clearText(findTestObject('Manage/Parking/input_noOfParkingLevels'))
+		WebUI.sendKeys(findTestObject('Manage/Parking/input_noOfParkingLevels'),"50")
+		WebUI.click(findTestObject('Manage/Parking/ClickSave'))
+
+		WebUI.sendKeys(findTestObject('Manage/Parking/input_projectWebsite'),"http://www.parking-net.com")
+		WebUI.sendKeys(findTestObject('Manage/Parking/textarea_projectInfo'),"When assigned parking is provided, designated accessible parking .");
+
+		WebUI.click(findTestObject('Manage/Parking/ClickSave'))
+		WebUI.delay(5)
+		WebUI.refresh();
+		WebUI.waitForPageLoad(5)
+
+		println "Verifying edited functionlity for no of parking space , level , website , about parking fields after refresh"
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/input_noOfParkingSpace'),"value").contains("50"),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/input_noOfParkingLevels'),"value").contains("50"),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/input_projectWebsite'),"value").contains("http://www.parking-net.com"),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/textarea_projectInfo'),"value").contains("When assigned parking is provided, designated accessible parking ."),"Not Valid")
+		println  "Verifying edited functionlity for no of parking space , level , website , about parking fields after refresh"
+	}
+	@Keyword
+	public void verifyProjectDetailsParking(String sheetName,int rowNum) throws IOException, InterruptedException {
+
+		String prjId 		= data.getCellData(sheetName, "Project ID", rowNum)
+		String ownerOrg 	= data.getCellData(sheetName, "Owner Organization", rowNum)
+		String ownerCountry = data.getCellData(sheetName, "Owner Country", rowNum)
+		String ownerMail 	= data.getCellData(sheetName, "Owner Email", rowNum)
+		String dataCommisioned= data.getCellData(sheetName, "Data Commisioned", rowNum)
+		String prjAddress 	= data.getCellData(sheetName, "Address", rowNum)
+		String prjCity 		= data.getCellData(sheetName, "City", rowNum)
+		String prjCountry 	= data.getCellData(sheetName, "Country", rowNum)
+		String prjState 	= data.getCellData(sheetName, "State", rowNum)
+
+
+		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Manage/Parking/Manage'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Manage/Parking/ManageProject'))
+		WebUI.delay(2)
+
+		println "Verify if  registered project  project id , address , city  , country , owner details , data commissioned , project country & satate fields displays the correct data."
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/project_ID'),"value").contains(prjId),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/Owner_organization'),"value").contains(ownerOrg),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/projectOwnerCounty'),"value").contains(ownerCountry),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/project_owneremail'),"value").contains(ownerMail),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/project_DateComissioned'),"value").contains(dataCommisioned),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/Project_Address'),"value").contains(prjAddress),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/project_City'),"value").contains(prjCity),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/projectCountry'),"value").contains(prjCountry),"Not Valid")
+		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/Parking/Porject_State'),"value").contains(prjState),"Not Valid")
+		println "Verified successfully  registered project project id , address , city  , country , owner details , data commissioned , project country & satate fields"
 	}
 }

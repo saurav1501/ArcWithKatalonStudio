@@ -54,6 +54,22 @@ def static "com.arc.ReusableMethods.ReusableMethodsMeasuresParking.uploadImagePa
     (new com.arc.ReusableMethods.ReusableMethodsMeasuresParking()).uploadImageParking()
 }
 
+def static "com.arc.ReusableMethods.ReusableMethodsMeasuresParking.uploadSuppotingDocMeasure"() {
+    (new com.arc.ReusableMethods.ReusableMethodsMeasuresParking()).uploadSuppotingDocMeasure()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsMeasuresParking.editProjectDetailsParking"() {
+    (new com.arc.ReusableMethods.ReusableMethodsMeasuresParking()).editProjectDetailsParking()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsMeasuresParking.verifyProjectDetailsParking"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsMeasuresParking()).verifyProjectDetailsParking(
+        	sheetName
+         , 	rowNum)
+}
+
 def static "com.arc.ReusableMethods.ReusableMethodsLogin.LoginToArcWithRemoteDBMySQL"() {
     (new com.arc.ReusableMethods.ReusableMethodsLogin()).LoginToArcWithRemoteDBMySQL()
 }
@@ -496,34 +512,6 @@ def static "com.arc.BaseClass.XlsWriteToNewFileNewFile.writeTOExcelFile"(
          , 	colNo)
 }
 
-def static "com.arc.ReusableMethods.ReusableMethodsManage.verifyProjectDetailsCityCom"(
-    	String sheetName	
-     , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsManage()).verifyProjectDetailsCityCom(
-        	sheetName
-         , 	rowNum)
-}
-
-def static "com.arc.ReusableMethods.ReusableMethodsManage.editProjectDetailsCityCom"(
-    	String sheetName	
-     , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsManage()).editProjectDetailsCityCom(
-        	sheetName
-         , 	rowNum)
-}
-
-def static "com.arc.ReusableMethods.ReusableMethodsManage.editProjectDetailsParking"(
-    	String sheetName	
-     , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsManage()).editProjectDetailsParking(
-        	sheetName
-         , 	rowNum)
-}
-
-def static "com.arc.ReusableMethods.ReusableMethodsManage.verifyProjectDetailsParking"() {
-    (new com.arc.ReusableMethods.ReusableMethodsManage()).verifyProjectDetailsParking()
-}
-
 def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointOptionA"(
     	String cdataInputSheet	
      , 	int rowNum	) {
@@ -536,6 +524,22 @@ def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointOptionB"(
     	String sheetName	
      , 	int rowNum	) {
     (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).basePointOptionB(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsManage.verifyProjectDetailsCityCom"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsManage()).verifyProjectDetailsCityCom(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsManage.editProjectDetailsCityCom"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsManage()).editProjectDetailsCityCom(
         	sheetName
          , 	rowNum)
 }

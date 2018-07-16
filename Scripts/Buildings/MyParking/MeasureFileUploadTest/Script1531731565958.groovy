@@ -19,10 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-
 try {
-	CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram'(GlobalVariable.CitySheet, GlobalVariable.rowNumTwo)
-	CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsManage.editProjectDetailsCityCom'(GlobalVariable.CitySheet,GlobalVariable.rowNumTwo)
+	CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram'(GlobalVariable.BuildingSheet, GlobalVariable.rowNumFour)
+	CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsMeasuresParking.uploadSuppotingDocMeasure'()
 			
 } catch (Throwable t) {
 	System.out.println(t.getLocalizedMessage())

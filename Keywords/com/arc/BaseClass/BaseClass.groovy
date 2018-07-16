@@ -4,6 +4,7 @@ import com.kms.katalon.core.testobject.TestObject
 public class BaseClass{
 	public static String filePath= RunConfiguration.getProjectDir()+"\\ArcTest.xlsx"
 	public static XlsReader data = new XlsReader(filePath)
+	public static String pdfFile = System.getProperty("user.dir")+"\\ARCDataTemplete\\USGBC.pdf";
 	public static String screenShot = System.getProperty("user.dir")+"\\ScreenShot\\screenshot_"
 	public static String UploadArcDataTemplete = System.getProperty("user.dir") +"\\ARCDataTemplete\\Arc_Data_Template.xlsm"
 	public static String parkImageUpload = System.getProperty("user.dir")+"\\ARCDataTemplete\\Parking SJ.jpg";
