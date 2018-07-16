@@ -50,6 +50,10 @@ def static "com.arc.ReusableMethods.ReusableMethodsMeasuresParking.measureInnova
     (new com.arc.ReusableMethods.ReusableMethodsMeasuresParking()).measureInnovationPointt()
 }
 
+def static "com.arc.ReusableMethods.ReusableMethodsMeasuresParking.uploadImageParking"() {
+    (new com.arc.ReusableMethods.ReusableMethodsMeasuresParking()).uploadImageParking()
+}
+
 def static "com.arc.ReusableMethods.ReusableMethodsLogin.LoginToArcWithRemoteDBMySQL"() {
     (new com.arc.ReusableMethods.ReusableMethodsLogin()).LoginToArcWithRemoteDBMySQL()
 }

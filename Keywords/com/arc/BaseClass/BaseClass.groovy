@@ -6,6 +6,7 @@ public class BaseClass{
 	public static XlsReader data = new XlsReader(filePath)
 	public static String screenShot = System.getProperty("user.dir")+"\\ScreenShot\\screenshot_"
 	public static String UploadArcDataTemplete = System.getProperty("user.dir") +"\\ARCDataTemplete\\Arc_Data_Template.xlsm"
+	public static String parkImageUpload = System.getProperty("user.dir")+"\\ARCDataTemplete\\Parking SJ.jpg";
 	public static TestObject myTestObject = new TestObject("customObject")
 	public static Date date = new Date(System.currentTimeMillis())
 }

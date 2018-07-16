@@ -460,8 +460,22 @@ public class ReusableMethodsMeasuresParking extends BaseClass {
 		WebUI.doubleClick(findTestObject('Page_Arc dashboard/a_ Innovation'))
 		WebUI.println "Verified Total Points By Marking all credit for Management section successuflly"
 		WebUI.delay(2)
-	
 	}
-	
-	
+	@Keyword
+	public void uploadImageParking() throws IOException, InterruptedException {
+       
+		
+        WebUI.sendKeys(findTestObject('Manage/Parking/ParkPdfUpload'), parkImageUpload)
+		WebUI.delay(4)
+		WebUI.waitForElementVisible('Manage/Parking/FileUploadVerifyImage',15)
+		println "Parking image 1 file Uploaded successfully" 
+		  
+	/*	CommonMethod.testlog( "Pass", "Clicking on Project");
+		CommonMethod.displayhiddenElement("ParkPdfUpload");
+		CommonMethod.sendKeys("ParkPdfUpload", CommonMethod.parkImageUpload);
+		CommonMethod.WaitUntilInVisibility("ImageLoader");
+		Thread.sleep(5000);
+		CommonMethod.testlog( "Pass","Parking image 2 file Uploaded successfully");*/
+
+	}
 }

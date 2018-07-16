@@ -1,12 +1,9 @@
 package com.arc.ReusableMethods
-
 import org.testng.Assert
-
 import com.arc.BaseClass.BaseClass
 import com.kms.katalon.core.annotation.Keyword
 
 public class ReusableMethodsManage extends BaseClass {
-
 	@Keyword
 	public void verifyProjectDetailsCityCom(String sheetName, int rowNum) throws IOException, InterruptedException {
 		String ProjectName     = data.getCellData(sheetName, "Project ID", rowNum);
