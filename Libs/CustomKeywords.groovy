@@ -10,6 +10,14 @@ import com.kms.katalon.core.testobject.TestObject
 import java.sql.Connection
 
 
+def static "com.arc.ReusableMethods.ReusableMethodsPrerequisites.narrativeTextSave"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsPrerequisites()).narrativeTextSave(
+        	sheetName
+         , 	rowNum)
+}
+
 def static "com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCC"(
     	String sheetName	
      , 	int rowNum	) {
@@ -22,14 +30,6 @@ def static "com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCheck"(
     	String sheetName	
      , 	int rowNum	) {
     (new com.arc.ReusableMethods.ReusableMethodsPayment()).paymentByCheck(
-        	sheetName
-         , 	rowNum)
-}
-
-def static "com.arc.ReusableMethods.ReusableMethodsPrerequisites.narrativeTextSave"(
-    	String sheetName	
-     , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsPrerequisites()).narrativeTextSave(
         	sheetName
          , 	rowNum)
 }
@@ -492,22 +492,6 @@ def static "com.arc.BaseClass.XlsWriteToNewFileNewFile.writeTOExcelFile"(
          , 	colNo)
 }
 
-def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointOptionA"(
-    	String cdataInputSheet	
-     , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).basePointOptionA(
-        	cdataInputSheet
-         , 	rowNum)
-}
-
-def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointOptionB"(
-    	String sheetName	
-     , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).basePointOptionB(
-        	sheetName
-         , 	rowNum)
-}
-
 def static "com.arc.ReusableMethods.ReusableMethodsManage.verifyProjectDetailsCityCom"(
     	String sheetName	
      , 	int rowNum	) {
@@ -534,4 +518,20 @@ def static "com.arc.ReusableMethods.ReusableMethodsManage.editProjectDetailsPark
 
 def static "com.arc.ReusableMethods.ReusableMethodsManage.verifyProjectDetailsParking"() {
     (new com.arc.ReusableMethods.ReusableMethodsManage()).verifyProjectDetailsParking()
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointOptionA"(
+    	String cdataInputSheet	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).basePointOptionA(
+        	cdataInputSheet
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointOptionB"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).basePointOptionB(
+        	sheetName
+         , 	rowNum)
 }
