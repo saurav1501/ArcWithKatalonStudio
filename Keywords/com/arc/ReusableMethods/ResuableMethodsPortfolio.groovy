@@ -849,7 +849,7 @@ public class ResuableMethodsPortfolio extends BaseClass {
 		WebUI.delay(2)
 		WebUI.refresh()
 		WebUI.delay(5)
-        println cbValue
+		println cbValue
 		println "Test started verifying carbon textarea, carbon reducion , base line value after refersh"
 		Assert.assertTrue(WebUI.getAttribute(findTestObject('Object Repository/Portfolio/Goal/carbon_baseline_value'),"value").contains(cbValue),"Not Valid")
 		Assert.assertTrue(WebUI.getAttribute(findTestObject('Portfolio/Goal/carbon_percent_reduction'),"value").contains(cpReduction),"Not Valid")

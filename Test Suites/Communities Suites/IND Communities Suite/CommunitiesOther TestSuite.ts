@@ -17,10 +17,4 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/MyCommunities/CommunitiesOther/AddNewProjectTest</testCaseId>
    </testCaseLink>
-   <testCaseLink>
-      <guid>be0b9283-4f78-4169-a86d-0ca832aaa0a0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/MyCommunities/CommunitiesOther/RegPaymentByCheckTest</testCaseId>
-   </testCaseLink>
 </TestSuiteEntity>

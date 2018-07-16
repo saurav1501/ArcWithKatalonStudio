@@ -22,7 +22,7 @@ import org.openqa.selenium.Keys as Keys
 
 	try {	
 			CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsSearch.searchProgram'(GlobalVariable.CitySheet, GlobalVariable.rowNumFour)
-			CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCC'(GlobalVariable.CCPayment , GlobalVariable.rowNumFour)	
+			CustomKeywords.'com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCC'(GlobalVariable.CCPayment , GlobalVariable.rowNumTwo)	
 					
 	} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage())

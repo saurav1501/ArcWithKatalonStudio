@@ -460,5 +460,8 @@ public class ReusableMethodsMeasuresParking extends BaseClass {
 		WebUI.doubleClick(findTestObject('Page_Arc dashboard/a_ Innovation'))
 		WebUI.println "Verified Total Points By Marking all credit for Management section successuflly"
 		WebUI.delay(2)
+	
 	}
+	
+	
 }

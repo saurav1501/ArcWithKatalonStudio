@@ -10,14 +10,6 @@ import com.kms.katalon.core.testobject.TestObject
 import java.sql.Connection
 
 
-def static "com.arc.ReusableMethods.ReusableMethodsPrerequisites.narrativeTextSave"(
-    	String sheetName	
-     , 	int rowNum	) {
-    (new com.arc.ReusableMethods.ReusableMethodsPrerequisites()).narrativeTextSave(
-        	sheetName
-         , 	rowNum)
-}
-
 def static "com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCC"(
     	String sheetName	
      , 	int rowNum	) {
@@ -30,6 +22,14 @@ def static "com.arc.ReusableMethods.ReusableMethodsPayment.paymentByCheck"(
     	String sheetName	
      , 	int rowNum	) {
     (new com.arc.ReusableMethods.ReusableMethodsPayment()).paymentByCheck(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsPrerequisites.narrativeTextSave"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsPrerequisites()).narrativeTextSave(
         	sheetName
          , 	rowNum)
 }
@@ -506,4 +506,32 @@ def static "com.arc.ReusableMethods.ReusableMethodsBasePoint.basePointOptionB"(
     (new com.arc.ReusableMethods.ReusableMethodsBasePoint()).basePointOptionB(
         	sheetName
          , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsManage.verifyProjectDetailsCityCom"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsManage()).verifyProjectDetailsCityCom(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsManage.editProjectDetailsCityCom"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsManage()).editProjectDetailsCityCom(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsManage.editProjectDetailsParking"(
+    	String sheetName	
+     , 	int rowNum	) {
+    (new com.arc.ReusableMethods.ReusableMethodsManage()).editProjectDetailsParking(
+        	sheetName
+         , 	rowNum)
+}
+
+def static "com.arc.ReusableMethods.ReusableMethodsManage.verifyProjectDetailsParking"() {
+    (new com.arc.ReusableMethods.ReusableMethodsManage()).verifyProjectDetailsParking()
 }

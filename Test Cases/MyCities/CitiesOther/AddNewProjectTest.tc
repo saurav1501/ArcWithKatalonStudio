@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Verify ability to add new city porject</description>
+   <description>Verify ability to register new city other  ratings  porject .</description>
    <name>AddNewProjectTest</name>
    <tag></tag>
    <comment></comment>

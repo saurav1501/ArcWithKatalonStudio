@@ -21,6 +21,6 @@
       <guid>63b2ad95-f7b6-49b2-9aed-f2a625f68d82</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/MyCommunities/LEEDForCommunities/RegPaymentByCheckTest</testCaseId>
+      <testCaseId>Test Cases/MyCommunities/LEEDForCommunities/INDRegPaymentByCheckTest</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
