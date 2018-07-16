@@ -41,7 +41,6 @@ public class ReusableMethodsManage extends BaseClass {
 		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/CityCom/input_population'),"value").contains(Population),"Not Valid")
 		
 		println "Verified successfully  registered project project id , address , city  , country , owner details , project country & satate population & area fields"
-
 			
 	}
 
@@ -49,8 +48,7 @@ public class ReusableMethodsManage extends BaseClass {
 	public void editProjectDetailsCityCom( String sheetName, int rowNum) throws IOException, InterruptedException {
 
 		String editArea  = data.getCellData(sheetName, "editArea", rowNum);
-		String editPopulation  = data.getCellData(sheetName, "editPopulation", rowNum);
-		
+		String editPopulation  = data.getCellData(sheetName, "editPopulation", rowNum)	
 		WebUI.click(findTestObject('Page_Arc dashboard/a_Projects'))
 		WebUI.delay(1)
 		WebUI.click(findTestObject('Manage/Parking/Manage'))
@@ -74,4 +72,6 @@ public class ReusableMethodsManage extends BaseClass {
 		Assert.assertTrue(WebUI.getAttribute(findTestObject('Manage/CityCom/input_population'),"value").contains(editPopulation),"Not Valid")
 		 
 	}
+	
+	
 }
